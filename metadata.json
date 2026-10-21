@@ -1,0 +1,6 @@
+{
+  "name": "B69 Curriculum & Repo Intelligence Platform",
+  "description": "Curriculum intelligence and repository matching platform indexing the 7,200-hour engineering curriculum with >=70% correlation, multimedia companion library, Gemini 4 high-thinking synthesis, live search grounding, and Google Workspace export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
