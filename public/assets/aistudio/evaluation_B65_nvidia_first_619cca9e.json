@@ -1,0 +1,2442 @@
+{
+ "meta": {
+  "batch": "B65",
+  "date": "2026-10-10",
+  "request": "NVIDIA-first: ATS degree effect, Germany MSc, direct PhDs (ISTA, ETH DD, UW, Unimore NVAITC), Poland, Spain as fallback"
+ },
+ "game": {
+  "rounds": [
+   {
+    "round": 1,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P31 Swiss free movement ends (quota only)",
+    "eliminated": "O3x-BRSTAY",
+    "score": 3.811
+   },
+   {
+    "round": 2,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P02 remote foreign offers at half",
+    "eliminated": "O3x-ONL_BRSTAY",
+    "score": 3.923
+   },
+   {
+    "round": 3,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P03 remote pay -30%",
+    "eliminated": "O3x-ONL_US_MS",
+    "score": 4.269
+   },
+   {
+    "round": 4,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P05 experience inflation doubled",
+    "eliminated": "O3x-CA_FT_US",
+    "score": 4.711
+   },
+   {
+    "round": 5,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P15 investment return -2 points",
+    "eliminated": "O3x-US_B_FULL",
+    "score": 4.86
+   },
+   {
+    "round": 6,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P32 Spanish nationality two years slower",
+    "eliminated": "O3x-ONL_UNIMORE",
+    "score": 6.285
+   },
+   {
+    "round": 7,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P25 Zurich offers at half",
+    "eliminated": "O3x-ONL_ETH_DD",
+    "score": 6.294
+   },
+   {
+    "round": 8,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P23 AI bust: AI offers x0.7, no premium",
+    "eliminated": "O3x-ONL_ISTA",
+    "score": 6.301
+   },
+   {
+    "round": 9,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P27 Swiss pay -15%",
+    "eliminated": "O3x-ONL_PL_WAW",
+    "score": 6.329
+   },
+   {
+    "round": 10,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P16 job loss twice as likely",
+    "eliminated": "O3x-RWTH_SF_ZRH",
+    "score": 6.341
+   },
+   {
+    "round": 11,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P01 first Brazil job twice as slow",
+    "eliminated": "O3x-ONL_UW_PHD",
+    "score": 6.348
+   },
+   {
+    "round": 12,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P54 online degree not accepted (no ZAB equivalence / MSc admission)",
+    "eliminated": "O3x-MUC20_ZRH",
+    "score": 6.363
+   },
+   {
+    "round": 13,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P29 US pay -20%, US layoffs doubled",
+    "eliminated": "O3x-ONL_PHD_LADDER",
+    "score": 6.377
+   },
+   {
+    "round": 14,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P42 tier-A hazards halved everywhere",
+    "eliminated": "O3x-ONL_DE_ZRH",
+    "score": 6.4
+   },
+   {
+    "round": 15,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P30 merged projects worth nothing, patches need 100%",
+    "eliminated": "O3x-ONL_ES_ZRH",
+    "score": 6.451
+   },
+   {
+    "round": 16,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P18 Brazilian contractor net -10%",
+    "eliminated": "O3h-ONL_MSC_DE",
+    "score": 6.481
+   },
+   {
+    "round": 17,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P33 Spanish nomad-visa income bar +30%",
+    "eliminated": "O3x-PL_WAW_FT",
+    "score": 6.534
+   },
+   {
+    "round": 18,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P21 pulled-forward tasks 25% slower",
+    "eliminated": "O3h-ONL_ES_MSC_ZRH",
+    "score": 6.575
+   },
+   {
+    "round": 19,
+    "leader": "O3x-ONL_ES_MSC_ZRH",
+    "play_added": "P51 language + exam hours x1.6",
+    "eliminated": "O3x-ONL_MSC_DE",
+    "score": 6.587
+   }
+  ],
+  "final3_overall": [
+   "O3x-ONL_ES_MSC_ZRH",
+   "O3x-ES_FT_ZRH",
+   "O3x-ES_BCN_CAT"
+  ],
+  "final3_compliant": [
+   "O3x-ES_FT_ZRH",
+   "O3x-ES_BCN_CAT",
+   "O3x-PL_WAW_FT"
+  ],
+  "final3_online": [
+   "O3x-ONL_ES_MSC_ZRH",
+   "O3x-ONL_MSC_DE",
+   "O3h-ONL_ES_MSC_ZRH"
+  ],
+  "robust": {
+   "O3x-ONL_ES_MSC_ZRH": 6.668,
+   "O3x-ES_BCN_CAT": 6.601,
+   "O3x-ONL_ES_ZRH": 6.473,
+   "O3x-ONL_DE_ZRH": 6.42,
+   "O3x-ONL_MSC_DE": 6.587,
+   "O3x-ONL_PL_WAW": 6.358,
+   "O3x-ONL_ISTA": 6.351,
+   "O3x-ONL_ETH_DD": 6.353,
+   "O3x-ONL_UW_PHD": 6.384,
+   "O3x-ONL_UNIMORE": 6.339,
+   "O3x-ONL_PHD_LADDER": 6.405,
+   "O3x-ONL_US_MS": 4.388,
+   "O3x-PL_WAW_FT": 6.541,
+   "O3x-RWTH_SF_ZRH": 6.39,
+   "O3x-US_B_FULL": 4.93,
+   "O3x-CA_FT_US": 4.802,
+   "O3x-ES_FT_ZRH": 6.608,
+   "O3x-ONL_BRSTAY": 3.893,
+   "O3x-BRSTAY": 3.763,
+   "O3h-ONL_ES_MSC_ZRH": 6.579,
+   "O3h-ONL_MSC_DE": 6.495,
+   "O3x-MUC20_ZRH": 6.387
+  },
+  "robust_nv": {
+   "O3x-ONL_ES_MSC_ZRH": 6.976,
+   "O3x-ES_BCN_CAT": 6.907,
+   "O3x-ONL_ES_ZRH": 6.805,
+   "O3x-ONL_DE_ZRH": 6.779,
+   "O3x-ONL_MSC_DE": 6.935,
+   "O3x-ONL_PL_WAW": 6.698,
+   "O3x-ONL_ISTA": 6.664,
+   "O3x-ONL_ETH_DD": 6.663,
+   "O3x-ONL_UW_PHD": 6.719,
+   "O3x-ONL_UNIMORE": 6.676,
+   "O3x-ONL_PHD_LADDER": 6.747,
+   "O3x-ONL_US_MS": 4.472,
+   "O3x-PL_WAW_FT": 6.917,
+   "O3x-RWTH_SF_ZRH": 6.711,
+   "O3x-US_B_FULL": 5.131,
+   "O3x-CA_FT_US": 4.902,
+   "O3x-ES_FT_ZRH": 6.923,
+   "O3x-ONL_BRSTAY": 3.893,
+   "O3x-BRSTAY": 3.763,
+   "O3h-ONL_ES_MSC_ZRH": 6.893,
+   "O3h-ONL_MSC_DE": 6.848,
+   "O3x-MUC20_ZRH": 6.707
+  },
+  "main_share": {
+   "O3x-ONL_ES_MSC_ZRH": 0.0,
+   "O3x-ES_BCN_CAT": 0.0,
+   "O3x-ONL_ES_ZRH": 0.0,
+   "O3x-ONL_DE_ZRH": 0.0,
+   "O3x-ONL_MSC_DE": 0.716,
+   "O3x-ONL_PL_WAW": 0.406,
+   "O3x-ONL_ISTA": 0.056,
+   "O3x-ONL_ETH_DD": 0.03,
+   "O3x-ONL_UW_PHD": 0.185,
+   "O3x-ONL_UNIMORE": 0.331,
+   "O3x-ONL_PHD_LADDER": 0.358,
+   "O3x-ONL_US_MS": 0.544,
+   "O3x-PL_WAW_FT": 0.0,
+   "O3x-RWTH_SF_ZRH": 1.0,
+   "O3x-US_B_FULL": 0.756,
+   "O3x-CA_FT_US": 0.0,
+   "O3x-ES_FT_ZRH": 0.0,
+   "O3x-ONL_BRSTAY": 0.0,
+   "O3x-BRSTAY": 0.0,
+   "O3h-ONL_ES_MSC_ZRH": 0.0,
+   "O3h-ONL_MSC_DE": 0.716,
+   "O3x-MUC20_ZRH": 0.0
+  },
+  "EV": {
+   "O3x-ONL_ES_MSC_ZRH": 6.731,
+   "O3x-ES_BCN_CAT": 6.662,
+   "O3x-ONL_ES_ZRH": 6.539,
+   "O3x-ONL_DE_ZRH": 6.455,
+   "O3x-ONL_MSC_DE": 6.636,
+   "O3x-ONL_PL_WAW": 6.421,
+   "O3x-ONL_ISTA": 6.41,
+   "O3x-ONL_ETH_DD": 6.412,
+   "O3x-ONL_UW_PHD": 6.441,
+   "O3x-ONL_UNIMORE": 6.391,
+   "O3x-ONL_PHD_LADDER": 6.457,
+   "O3x-ONL_US_MS": 4.436,
+   "O3x-PL_WAW_FT": 6.586,
+   "O3x-RWTH_SF_ZRH": 6.443,
+   "O3x-US_B_FULL": 4.963,
+   "O3x-CA_FT_US": 4.822,
+   "O3x-ES_FT_ZRH": 6.669,
+   "O3x-ONL_BRSTAY": 3.928,
+   "O3x-BRSTAY": 3.793,
+   "O3h-ONL_ES_MSC_ZRH": 6.642,
+   "O3h-ONL_MSC_DE": 6.544,
+   "O3x-MUC20_ZRH": 6.417
+  },
+  "qre": {
+   "5": {
+    "designer_shares": {
+     "O3x-ONL_ES_MSC_ZRH": 0.142,
+     "O3x-ES_FT_ZRH": 0.103,
+     "O3x-ES_BCN_CAT": 0.099,
+     "O3h-ONL_ES_MSC_ZRH": 0.091,
+     "O3x-ONL_MSC_DE": 0.091
+    },
+    "opponent_shares": {
+     "P31 Swiss free movement ends (quota only)": 0.067,
+     "P02 remote foreign offers at half": 0.045,
+     "P05 experience inflation doubled": 0.032,
+     "P03 remote pay -30%": 0.032
+    },
+    "value": 6.552
+   },
+   "16": {
+    "designer_shares": {
+     "O3x-ONL_ES_MSC_ZRH": 0.387,
+     "O3x-ONL_MSC_DE": 0.136,
+     "O3x-ES_FT_ZRH": 0.107,
+     "O3h-ONL_ES_MSC_ZRH": 0.096,
+     "O3x-ES_BCN_CAT": 0.093
+    },
+    "opponent_shares": {
+     "P31 Swiss free movement ends (quota only)": 0.482,
+     "P02 remote foreign offers at half": 0.143,
+     "P05 experience inflation doubled": 0.048,
+     "P03 remote pay -30%": 0.048
+    },
+    "value": 6.476
+   },
+   "50": {
+    "designer_shares": {
+     "O3x-ONL_ES_MSC_ZRH": 0.88,
+     "O3x-ONL_MSC_DE": 0.059,
+     "O3x-PL_WAW_FT": 0.027,
+     "O3h-ONL_ES_MSC_ZRH": 0.012,
+     "O3x-ES_FT_ZRH": 0.011
+    },
+    "opponent_shares": {
+     "P31 Swiss free movement ends (quota only)": 0.984,
+     "P02 remote foreign offers at half": 0.014,
+     "P03 remote pay -30%": 0.001,
+     "P05 experience inflation doubled": 0.001
+    },
+    "value": 6.431
+   }
+  },
+  "bootstrap": {
+   "O3x-ONL_ES_MSC_ZRH": {
+    "point": 6.668,
+    "ci90": [
+     6.655,
+     6.681
+    ],
+    "halfwidth_pct": 0.19,
+    "across_plays_p10_p90": [
+     6.652,
+     6.766
+    ],
+    "EV": 6.731,
+    "people_p10_p90": [
+     6.236,
+     7.073
+    ]
+   },
+   "O3x-ES_FT_ZRH": {
+    "point": 6.608,
+    "ci90": [
+     6.594,
+     6.621
+    ],
+    "halfwidth_pct": 0.21,
+    "across_plays_p10_p90": [
+     6.592,
+     6.701
+    ],
+    "EV": 6.669,
+    "people_p10_p90": [
+     6.155,
+     7.026
+    ]
+   },
+   "O3x-ES_BCN_CAT": {
+    "point": 6.601,
+    "ci90": [
+     6.587,
+     6.614
+    ],
+    "halfwidth_pct": 0.21,
+    "across_plays_p10_p90": [
+     6.584,
+     6.694
+    ],
+    "EV": 6.662,
+    "people_p10_p90": [
+     6.153,
+     7.017
+    ]
+   },
+   "O3h-ONL_ES_MSC_ZRH": {
+    "point": 6.579,
+    "ci90": [
+     6.566,
+     6.591
+    ],
+    "halfwidth_pct": 0.19,
+    "across_plays_p10_p90": [
+     6.564,
+     6.677
+    ],
+    "EV": 6.642,
+    "people_p10_p90": [
+     6.145,
+     6.987
+    ]
+   },
+   "O3x-ONL_MSC_DE": {
+    "point": 6.587,
+    "ci90": [
+     6.565,
+     6.608
+    ],
+    "halfwidth_pct": 0.33,
+    "across_plays_p10_p90": [
+     6.542,
+     6.67
+    ],
+    "EV": 6.636,
+    "people_p10_p90": [
+     6.114,
+     7.095
+    ]
+   },
+   "O3x-PL_WAW_FT": {
+    "point": 6.541,
+    "ci90": [
+     6.526,
+     6.557
+    ],
+    "halfwidth_pct": 0.24,
+    "across_plays_p10_p90": [
+     6.525,
+     6.617
+    ],
+    "EV": 6.586,
+    "people_p10_p90": [
+     6.019,
+     7.019
+    ]
+   }
+  },
+  "sensitivity": {
+   "H3 off (kc=0, kr=0)": {
+    "top3": [
+     "O3x-ONL_ES_MSC_ZRH",
+     "O3h-ONL_ES_MSC_ZRH",
+     "O3x-ES_FT_ZRH"
+    ],
+    "top3_compliant": [
+     "O3x-ES_FT_ZRH",
+     "O3x-ES_BCN_CAT",
+     "O3x-PL_WAW_FT"
+    ]
+   },
+   "H3 x0.5": {
+    "top3": [
+     "O3x-ONL_ES_MSC_ZRH",
+     "O3x-ES_FT_ZRH",
+     "O3x-ES_BCN_CAT"
+    ],
+    "top3_compliant": [
+     "O3x-ES_FT_ZRH",
+     "O3x-ES_BCN_CAT",
+     "O3x-PL_WAW_FT"
+    ]
+   },
+   "H3 x2": {
+    "top3": [
+     "O3x-ONL_ES_MSC_ZRH",
+     "O3x-ES_FT_ZRH",
+     "O3x-ES_BCN_CAT"
+    ],
+    "top3_compliant": [
+     "O3x-ES_FT_ZRH",
+     "O3x-ES_BCN_CAT",
+     "O3x-PL_WAW_FT"
+    ]
+   },
+   "NW x0.5": {
+    "top3": [
+     "O3x-ONL_ES_MSC_ZRH",
+     "O3x-ONL_MSC_DE",
+     "O3x-ES_FT_ZRH"
+    ],
+    "top3_compliant": [
+     "O3x-ES_FT_ZRH",
+     "O3x-ES_BCN_CAT",
+     "O3x-PL_WAW_FT"
+    ]
+   },
+   "NW x1.5": {
+    "top3": [
+     "O3x-ONL_ES_MSC_ZRH",
+     "O3x-ES_FT_ZRH",
+     "O3x-ES_BCN_CAT"
+    ],
+    "top3_compliant": [
+     "O3x-ES_FT_ZRH",
+     "O3x-ES_BCN_CAT",
+     "O3x-PL_WAW_FT"
+    ]
+   },
+   "relocation x0": {
+    "top3": [
+     "O3x-ONL_ES_MSC_ZRH",
+     "O3x-ONL_MSC_DE",
+     "O3x-RWTH_SF_ZRH"
+    ],
+    "top3_compliant": [
+     "O3x-RWTH_SF_ZRH",
+     "O3x-ES_FT_ZRH",
+     "O3x-ES_BCN_CAT"
+    ]
+   },
+   "relocation x2": {
+    "top3": [
+     "O3x-ONL_ES_MSC_ZRH",
+     "O3x-ES_FT_ZRH",
+     "O3x-ES_BCN_CAT"
+    ],
+    "top3_compliant": [
+     "O3x-ES_FT_ZRH",
+     "O3x-ES_BCN_CAT",
+     "O3x-PL_WAW_FT"
+    ]
+   }
+  },
+  "anova": {
+   "v": {
+    "F": 15.03,
+    "p": 0.00010924152022801887,
+    "share": 0.0074
+   },
+   "r": {
+    "F": 24.81,
+    "p": 6.867030726073621e-07,
+    "share": 0.0122
+   },
+   "v:r": {
+    "F": 0.51,
+    "p": 0.47657628224942483,
+    "share": 0.0002
+   },
+   "Residual": {
+    "F": null,
+    "p": null,
+    "share": 0.9802
+   },
+   "levene_p": 9.262519296594819e-07,
+   "kruskal_curriculum_p": 1.2917043444052531e-06
+  },
+  "matrix_shares": {
+   "candidate": 0.9935,
+   "adverse_play": 0.0038,
+   "interaction": 0.0027
+  },
+  "regression": {
+   "O3x-ES_FT_ZRH": {
+    "shapley_r2_shares": {
+     "first_job": 0.0159,
+     "remote_offer": 0.0195,
+     "german_offer": 0.0,
+     "other_offer": 0.0,
+     "city_switch": 0.0003,
+     "pay_level": 0.0698,
+     "zurich_offer": 0.0002,
+     "zurich_tierA": 0.0001,
+     "us_transfer": 0.0003,
+     "degree_completion_draw": 0.0019,
+     "admission_draw": 0.0016
+    },
+    "r2": 0.11,
+    "cv_null": 0.3737,
+    "cv_linear": 0.3548,
+    "cv_quadratic": 0.3645,
+    "breusch_pagan_p": 0.0002957608082823333,
+    "shapiro_p": 4.881274534933717e-13,
+    "resid_sd": 0.3527
+   },
+   "O3x-ES_BCN_CAT": {
+    "shapley_r2_shares": {
+     "first_job": 0.0157,
+     "remote_offer": 0.0191,
+     "german_offer": 0.0,
+     "other_offer": 0.0001,
+     "city_switch": 0.0003,
+     "pay_level": 0.0692,
+     "zurich_offer": 0.0001,
+     "zurich_tierA": 0.0001,
+     "us_transfer": 0.0003,
+     "degree_completion_draw": 0.0018,
+     "admission_draw": 0.0014
+    },
+    "r2": 0.108,
+    "cv_null": 0.3723,
+    "cv_linear": 0.3543,
+    "cv_quadratic": 0.3609,
+    "breusch_pagan_p": 0.0002777804080479822,
+    "shapiro_p": 3.1628386419492786e-13,
+    "resid_sd": 0.3516
+   },
+   "O3x-PL_WAW_FT": {
+    "shapley_r2_shares": {
+     "first_job": 0.0079,
+     "remote_offer": 0.0246,
+     "german_offer": 0.0,
+     "other_offer": 0.0001,
+     "city_switch": 0.0001,
+     "pay_level": 0.0679,
+     "zurich_offer": 0.0019,
+     "zurich_tierA": 0.0,
+     "us_transfer": 0.0002,
+     "degree_completion_draw": 0.0487,
+     "admission_draw": 0.0003
+    },
+    "r2": 0.152,
+    "cv_null": 0.4182,
+    "cv_linear": 0.3878,
+    "cv_quadratic": 0.3961,
+    "breusch_pagan_p": 0.0007367778891301524,
+    "shapiro_p": 7.83292997318803e-13,
+    "resid_sd": 0.3852
+   },
+   "O3x-ONL_ES_MSC_ZRH": {
+    "shapley_r2_shares": {
+     "first_job": 0.0199,
+     "remote_offer": 0.0197,
+     "german_offer": 0.0001,
+     "other_offer": 0.0001,
+     "city_switch": 0.0001,
+     "pay_level": 0.0756,
+     "zurich_offer": 0.0,
+     "zurich_tierA": 0.0003,
+     "us_transfer": 0.0001,
+     "degree_completion_draw": 0.0013,
+     "admission_draw": 0.0006
+    },
+    "r2": 0.118,
+    "cv_null": 0.3511,
+    "cv_linear": 0.332,
+    "cv_quadratic": 0.3396,
+    "breusch_pagan_p": 1.4146701508280401e-05,
+    "shapiro_p": 4.092340840292854e-08,
+    "resid_sd": 0.3298
+   },
+   "O3x-ONL_MSC_DE": {
+    "shapley_r2_shares": {
+     "first_job": 0.0013,
+     "remote_offer": 0.0069,
+     "german_offer": 0.0,
+     "other_offer": 0.0001,
+     "city_switch": 0.0007,
+     "pay_level": 0.0298,
+     "zurich_offer": 0.0001,
+     "zurich_tierA": 0.0006,
+     "us_transfer": 0.0001,
+     "degree_completion_draw": 0.0041,
+     "admission_draw": 0.0003
+    },
+    "r2": 0.044,
+    "cv_null": 0.6274,
+    "cv_linear": 0.6177,
+    "cv_quadratic": 0.6377,
+    "breusch_pagan_p": 0.015171372998447863,
+    "shapiro_p": 7.270461875368206e-30,
+    "resid_sd": 0.6135
+   },
+   "O3h-ONL_ES_MSC_ZRH": {
+    "shapley_r2_shares": {
+     "first_job": 0.0201,
+     "remote_offer": 0.0198,
+     "german_offer": 0.0001,
+     "other_offer": 0.0001,
+     "city_switch": 0.0001,
+     "pay_level": 0.0736,
+     "zurich_offer": 0.0,
+     "zurich_tierA": 0.0003,
+     "us_transfer": 0.0001,
+     "degree_completion_draw": 0.0012,
+     "admission_draw": 0.0008
+    },
+    "r2": 0.116,
+    "cv_null": 0.3525,
+    "cv_linear": 0.3334,
+    "cv_quadratic": 0.3416,
+    "breusch_pagan_p": 1.878847752023262e-05,
+    "shapiro_p": 2.9066732398883103e-08,
+    "resid_sd": 0.3314
+   }
+  }
+ },
+ "metrics": {
+  "O3x-ONL_ES_MSC_ZRH": {
+   "compliant": false,
+   "grade_base": 6.766,
+   "relocation_year": {
+    "p10": 4.75,
+    "p50": 6.75,
+    "p90": 9.5,
+    "mean": 6.93,
+    "date_median": "2033-07"
+   },
+   "p_reloc_by": {
+    "6": 0.372,
+    "8": 0.774,
+    "10": 0.944,
+    "12": 0.985
+   },
+   "relocation_sticks": 1.0,
+   "zurich": {
+    "p": 1.0,
+    "median_year": 12.5
+   },
+   "us": {
+    "p": 0.631
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 3545931,
+    "p50": 4948680,
+    "p90": 6657573,
+    "mean": 5037302
+   },
+   "nw_nominal_unaudited": {
+    "p50": 6419151,
+    "p90": 8585959
+   },
+   "nw_real_audited_p50": 2359247,
+   "h3_city_exposure": 0.641,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.072,
+    "15": 0.544,
+    "20": 0.913,
+    "30": 0.998
+   },
+   "bsc_by20": 0.716,
+   "msc_by20": 0.38,
+   "gross_eur": {
+    "3": 12669,
+    "8": 57492,
+    "15": 258131,
+    "25": 313303
+   },
+   "criteria_index": 4.35,
+   "country_penalty": 0.8,
+   "long_term_residence_by": {
+    "10": 0.49,
+    "15": 0.978,
+    "20": 1.0,
+    "30": 1.0
+   },
+   "seattle_by": {
+    "15": 0.037,
+    "20": 0.184,
+    "30": 0.585
+   },
+   "nvidia_by": {
+    "15": 0.123,
+    "20": 0.408,
+    "30": 0.807
+   },
+   "nvidia_seattle_by": {
+    "20": 0.109,
+    "30": 0.518
+   },
+   "seattle_frontier_other_by30": 0.067,
+   "us_green_card_by30": 0.543,
+   "phd_started": 0.0,
+   "cpt_internships_mean": 0.0
+  },
+  "O3x-ES_BCN_CAT": {
+   "compliant": true,
+   "grade_base": 6.694,
+   "relocation_year": {
+    "p10": 4.25,
+    "p50": 6.25,
+    "p90": 9.25,
+    "mean": 6.49,
+    "date_median": "2033-01"
+   },
+   "p_reloc_by": {
+    "6": 0.492,
+    "8": 0.825,
+    "10": 0.946,
+    "12": 0.981
+   },
+   "relocation_sticks": 1.0,
+   "zurich": {
+    "p": 1.0,
+    "median_year": 12.5
+   },
+   "us": {
+    "p": 0.622
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 3697428,
+    "p50": 5097107,
+    "p90": 6712303,
+    "mean": 5170914
+   },
+   "nw_nominal_unaudited": {
+    "p50": 6608460,
+    "p90": 8669156
+   },
+   "nw_real_audited_p50": 2430009,
+   "h3_city_exposure": 0.61,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.062,
+    "15": 0.561,
+    "20": 0.923,
+    "30": 0.997
+   },
+   "bsc_by20": 0.497,
+   "msc_by20": 0.0,
+   "gross_eur": {
+    "3": 14075,
+    "8": 44766,
+    "15": 262440,
+    "25": 310100
+   },
+   "criteria_index": 3.85,
+   "country_penalty": 0.8,
+   "long_term_residence_by": {
+    "10": 0.611,
+    "15": 0.976,
+    "20": 0.999,
+    "30": 1.0
+   },
+   "seattle_by": {
+    "15": 0.036,
+    "20": 0.185,
+    "30": 0.576
+   },
+   "nvidia_by": {
+    "15": 0.125,
+    "20": 0.405,
+    "30": 0.789
+   },
+   "nvidia_seattle_by": {
+    "20": 0.106,
+    "30": 0.495
+   },
+   "seattle_frontier_other_by30": 0.081,
+   "us_green_card_by30": 0.537,
+   "phd_started": 0.0,
+   "cpt_internships_mean": 0.85
+  },
+  "O3x-ONL_ES_ZRH": {
+   "compliant": false,
+   "grade_base": 6.575,
+   "relocation_year": {
+    "p10": 4.75,
+    "p50": 6.75,
+    "p90": 9.5,
+    "mean": 6.93,
+    "date_median": "2033-07"
+   },
+   "p_reloc_by": {
+    "6": 0.372,
+    "8": 0.774,
+    "10": 0.944,
+    "12": 0.985
+   },
+   "relocation_sticks": 1.0,
+   "zurich": {
+    "p": 1.0,
+    "median_year": 11.5
+   },
+   "us": {
+    "p": 0.647
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 3853689,
+    "p50": 5342166,
+    "p90": 6929749,
+    "mean": 5378442
+   },
+   "nw_nominal_unaudited": {
+    "p50": 6900110,
+    "p90": 8930200
+   },
+   "nw_real_audited_p50": 2546838,
+   "h3_city_exposure": 0.629,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.103,
+    "15": 0.641,
+    "20": 0.935,
+    "30": 0.998
+   },
+   "bsc_by20": 0.716,
+   "msc_by20": 0.0,
+   "gross_eur": {
+    "3": 12669,
+    "8": 57815,
+    "15": 284588,
+    "25": 311743
+   },
+   "criteria_index": 2.62,
+   "country_penalty": 0.8,
+   "long_term_residence_by": {
+    "10": 0.49,
+    "15": 0.978,
+    "20": 1.0,
+    "30": 1.0
+   },
+   "seattle_by": {
+    "15": 0.052,
+    "20": 0.209,
+    "30": 0.599
+   },
+   "nvidia_by": {
+    "15": 0.165,
+    "20": 0.449,
+    "30": 0.82
+   },
+   "nvidia_seattle_by": {
+    "20": 0.127,
+    "30": 0.534
+   },
+   "seattle_frontier_other_by30": 0.065,
+   "us_green_card_by30": 0.566,
+   "phd_started": 0.0,
+   "cpt_internships_mean": 0.0
+  },
+  "O3x-ONL_DE_ZRH": {
+   "compliant": false,
+   "grade_base": 6.493,
+   "relocation_year": {
+    "p10": 6.0,
+    "p50": 8.75,
+    "p90": 13.25,
+    "mean": 9.31,
+    "date_median": "2035-07"
+   },
+   "p_reloc_by": {
+    "6": 0.102,
+    "8": 0.411,
+    "10": 0.694,
+    "12": 0.852
+   },
+   "relocation_sticks": 1.0,
+   "zurich": {
+    "p": 0.956,
+    "median_year": 15.25
+   },
+   "us": {
+    "p": 0.623
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 3470673,
+    "p50": 4712641,
+    "p90": 6235681,
+    "mean": 4776800
+   },
+   "nw_nominal_unaudited": {
+    "p50": 6047949,
+    "p90": 8038160
+   },
+   "nw_real_audited_p50": 2246717,
+   "h3_city_exposure": 0.645,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.166,
+    "15": 0.625,
+    "20": 0.919,
+    "30": 0.997
+   },
+   "bsc_by20": 0.716,
+   "msc_by20": 0.0,
+   "gross_eur": {
+    "3": 12669,
+    "8": 65327,
+    "15": 206972,
+    "25": 309418
+   },
+   "criteria_index": 4.49,
+   "country_penalty": 0.2,
+   "long_term_residence_by": {
+    "10": 0.404,
+    "15": 0.895,
+    "20": 0.981,
+    "30": 1.0
+   },
+   "seattle_by": {
+    "15": 0.053,
+    "20": 0.195,
+    "30": 0.586
+   },
+   "nvidia_by": {
+    "15": 0.219,
+    "20": 0.477,
+    "30": 0.823
+   },
+   "nvidia_seattle_by": {
+    "20": 0.141,
+    "30": 0.529
+   },
+   "seattle_frontier_other_by30": 0.057,
+   "us_green_card_by30": 0.536,
+   "phd_started": 0.0,
+   "cpt_internships_mean": 0.0
+  },
+  "O3x-ONL_MSC_DE": {
+   "compliant": false,
+   "grade_base": 6.67,
+   "relocation_year": {
+    "p10": 5.5,
+    "p50": 7.0,
+    "p90": 9.75,
+    "mean": 8.08,
+    "date_median": "2033-10"
+   },
+   "p_reloc_by": {
+    "6": 0.283,
+    "8": 0.741,
+    "10": 0.915,
+    "12": 0.949
+   },
+   "relocation_sticks": 0.957,
+   "zurich": {
+    "p": 0.944,
+    "median_year": 13.25
+   },
+   "us": {
+    "p": 0.614
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 3218581,
+    "p50": 4695697,
+    "p90": 6349931,
+    "mean": 4753083
+   },
+   "nw_nominal_unaudited": {
+    "p50": 6098653,
+    "p90": 8198240
+   },
+   "nw_real_audited_p50": 2238639,
+   "h3_city_exposure": 0.613,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.085,
+    "15": 0.589,
+    "20": 0.893,
+    "30": 0.955
+   },
+   "bsc_by20": 0.716,
+   "msc_by20": 0.359,
+   "gross_eur": {
+    "3": 12669,
+    "8": 44044,
+    "15": 256553,
+    "25": 301936
+   },
+   "criteria_index": 5.12,
+   "country_penalty": 0.2,
+   "long_term_residence_by": {
+    "10": 0.368,
+    "15": 0.94,
+    "20": 0.956,
+    "30": 0.957
+   },
+   "seattle_by": {
+    "15": 0.048,
+    "20": 0.196,
+    "30": 0.574
+   },
+   "nvidia_by": {
+    "15": 0.203,
+    "20": 0.462,
+    "30": 0.791
+   },
+   "nvidia_seattle_by": {
+    "20": 0.133,
+    "30": 0.516
+   },
+   "seattle_frontier_other_by30": 0.057,
+   "us_green_card_by30": 0.529,
+   "phd_started": 0.0,
+   "cpt_internships_mean": 0.26
+  },
+  "O3x-ONL_PL_WAW": {
+   "compliant": false,
+   "grade_base": 6.46,
+   "relocation_year": {
+    "p10": 5.5,
+    "p50": 8.25,
+    "p90": 10.5,
+    "mean": 8.24,
+    "date_median": "2035-01"
+   },
+   "p_reloc_by": {
+    "6": 0.135,
+    "8": 0.455,
+    "10": 0.859,
+    "12": 0.974
+   },
+   "relocation_sticks": 1.0,
+   "zurich": {
+    "p": 0.99,
+    "median_year": 13.0
+   },
+   "us": {
+    "p": 0.642
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 3684583,
+    "p50": 5144897,
+    "p90": 6816861,
+    "mean": 5214572
+   },
+   "nw_nominal_unaudited": {
+    "p50": 6615217,
+    "p90": 8767305
+   },
+   "nw_real_audited_p50": 2452792,
+   "h3_city_exposure": 0.597,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.147,
+    "15": 0.612,
+    "20": 0.941,
+    "30": 0.999
+   },
+   "bsc_by20": 0.716,
+   "msc_by20": 0.0,
+   "gross_eur": {
+    "3": 12669,
+    "8": 58717,
+    "15": 255930,
+    "25": 312089
+   },
+   "criteria_index": 3.11,
+   "country_penalty": 0.5,
+   "long_term_residence_by": {
+    "10": 0.171,
+    "15": 0.744,
+    "20": 0.833,
+    "30": 0.924
+   },
+   "seattle_by": {
+    "15": 0.056,
+    "20": 0.208,
+    "30": 0.599
+   },
+   "nvidia_by": {
+    "15": 0.169,
+    "20": 0.448,
+    "30": 0.817
+   },
+   "nvidia_seattle_by": {
+    "20": 0.136,
+    "30": 0.535
+   },
+   "seattle_frontier_other_by30": 0.064,
+   "us_green_card_by30": 0.557,
+   "phd_started": 0.0,
+   "cpt_internships_mean": 0.0
+  },
+  "O3x-ONL_ISTA": {
+   "compliant": false,
+   "grade_base": 6.443,
+   "relocation_year": {
+    "p10": 5.5,
+    "p50": 7.75,
+    "p90": 11.0,
+    "mean": 8.06,
+    "date_median": "2034-07"
+   },
+   "p_reloc_by": {
+    "6": 0.161,
+    "8": 0.558,
+    "10": 0.84,
+    "12": 0.96
+   },
+   "relocation_sticks": 1.0,
+   "zurich": {
+    "p": 0.998,
+    "median_year": 13.0
+   },
+   "us": {
+    "p": 0.619
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 3752853,
+    "p50": 5144167,
+    "p90": 6684492,
+    "mean": 5166685
+   },
+   "nw_nominal_unaudited": {
+    "p50": 6614327,
+    "p90": 8585322
+   },
+   "nw_real_audited_p50": 2452444,
+   "h3_city_exposure": 0.596,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.046,
+    "15": 0.557,
+    "20": 0.922,
+    "30": 0.998
+   },
+   "bsc_by20": 0.716,
+   "msc_by20": 0.046,
+   "gross_eur": {
+    "3": 12669,
+    "8": 56300,
+    "15": 254857,
+    "25": 314425
+   },
+   "criteria_index": 2.79,
+   "country_penalty": 0.2,
+   "long_term_residence_by": {
+    "10": 0.238,
+    "15": 0.923,
+    "20": 0.999,
+    "30": 1.0
+   },
+   "seattle_by": {
+    "15": 0.031,
+    "20": 0.177,
+    "30": 0.575
+   },
+   "nvidia_by": {
+    "15": 0.121,
+    "20": 0.413,
+    "30": 0.808
+   },
+   "nvidia_seattle_by": {
+    "20": 0.103,
+    "30": 0.51
+   },
+   "seattle_frontier_other_by30": 0.065,
+   "us_green_card_by30": 0.537,
+   "phd_started": 0.056,
+   "cpt_internships_mean": 0.04
+  },
+  "O3x-ONL_ETH_DD": {
+   "compliant": false,
+   "grade_base": 6.446,
+   "relocation_year": {
+    "p10": 5.5,
+    "p50": 8.0,
+    "p90": 11.0,
+    "mean": 8.11,
+    "date_median": "2034-10"
+   },
+   "p_reloc_by": {
+    "6": 0.155,
+    "8": 0.546,
+    "10": 0.832,
+    "12": 0.958
+   },
+   "relocation_sticks": 1.0,
+   "zurich": {
+    "p": 1.0,
+    "median_year": 12.75
+   },
+   "us": {
+    "p": 0.622
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 3850188,
+    "p50": 5191742,
+    "p90": 6701681,
+    "mean": 5225867
+   },
+   "nw_nominal_unaudited": {
+    "p50": 6674453,
+    "p90": 8617360
+   },
+   "nw_real_audited_p50": 2475125,
+   "h3_city_exposure": 0.599,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.044,
+    "15": 0.548,
+    "20": 0.921,
+    "30": 0.998
+   },
+   "bsc_by20": 0.716,
+   "msc_by20": 0.025,
+   "gross_eur": {
+    "3": 12669,
+    "8": 56692,
+    "15": 262703,
+    "25": 313823
+   },
+   "criteria_index": 2.74,
+   "country_penalty": 0.6,
+   "long_term_residence_by": {
+    "10": 0.239,
+    "15": 0.91,
+    "20": 0.997,
+    "30": 1.0
+   },
+   "seattle_by": {
+    "15": 0.032,
+    "20": 0.179,
+    "30": 0.577
+   },
+   "nvidia_by": {
+    "15": 0.119,
+    "20": 0.41,
+    "30": 0.805
+   },
+   "nvidia_seattle_by": {
+    "20": 0.103,
+    "30": 0.511
+   },
+   "seattle_frontier_other_by30": 0.065,
+   "us_green_card_by30": 0.538,
+   "phd_started": 0.03,
+   "cpt_internships_mean": 0.02
+  },
+  "O3x-ONL_UW_PHD": {
+   "compliant": false,
+   "grade_base": 6.476,
+   "relocation_year": {
+    "p10": 5.5,
+    "p50": 7.75,
+    "p90": 10.75,
+    "mean": 8.44,
+    "date_median": "2034-07"
+   },
+   "p_reloc_by": {
+    "6": 0.169,
+    "8": 0.587,
+    "10": 0.862,
+    "12": 0.948
+   },
+   "relocation_sticks": 0.971,
+   "zurich": {
+    "p": 0.815,
+    "median_year": 12.5
+   },
+   "us": {
+    "p": 0.672
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 3769463,
+    "p50": 5233347,
+    "p90": 6793931,
+    "mean": 5235914
+   },
+   "nw_nominal_unaudited": {
+    "p50": 6754937,
+    "p90": 8754052
+   },
+   "nw_real_audited_p50": 2494960,
+   "h3_city_exposure": 0.603,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.043,
+    "15": 0.602,
+    "20": 0.908,
+    "30": 0.971
+   },
+   "bsc_by20": 0.716,
+   "msc_by20": 0.132,
+   "gross_eur": {
+    "3": 12669,
+    "8": 54225,
+    "15": 261686,
+    "25": 313040
+   },
+   "criteria_index": 3.15,
+   "country_penalty": 1.0,
+   "long_term_residence_by": {
+    "10": 0.234,
+    "15": 0.846,
+    "20": 0.967,
+    "30": 0.971
+   },
+   "seattle_by": {
+    "15": 0.12,
+    "20": 0.276,
+    "30": 0.625
+   },
+   "nvidia_by": {
+    "15": 0.127,
+    "20": 0.435,
+    "30": 0.807
+   },
+   "nvidia_seattle_by": {
+    "20": 0.164,
+    "30": 0.559
+   },
+   "seattle_frontier_other_by30": 0.066,
+   "us_green_card_by30": 0.598,
+   "phd_started": 0.185,
+   "cpt_internships_mean": 0.83
+  },
+  "O3x-ONL_UNIMORE": {
+   "compliant": false,
+   "grade_base": 6.421,
+   "relocation_year": {
+    "p10": 5.5,
+    "p50": 7.5,
+    "p90": 10.5,
+    "mean": 7.8,
+    "date_median": "2034-04"
+   },
+   "p_reloc_by": {
+    "6": 0.196,
+    "8": 0.615,
+    "10": 0.873,
+    "12": 0.968
+   },
+   "relocation_sticks": 1.0,
+   "zurich": {
+    "p": 0.979,
+    "median_year": 14.0
+   },
+   "us": {
+    "p": 0.619
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 3074019,
+    "p50": 4709143,
+    "p90": 6515364,
+    "mean": 4764858
+   },
+   "nw_nominal_unaudited": {
+    "p50": 6125477,
+    "p90": 8358323
+   },
+   "nw_real_audited_p50": 2245050,
+   "h3_city_exposure": 0.592,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.056,
+    "15": 0.615,
+    "20": 0.938,
+    "30": 0.999
+   },
+   "bsc_by20": 0.716,
+   "msc_by20": 0.264,
+   "gross_eur": {
+    "3": 12669,
+    "8": 48424,
+    "15": 218503,
+    "25": 318784
+   },
+   "criteria_index": 3.1,
+   "country_penalty": 0.8,
+   "long_term_residence_by": {
+    "10": 0.218,
+    "15": 0.875,
+    "20": 0.997,
+    "30": 1.0
+   },
+   "seattle_by": {
+    "15": 0.029,
+    "20": 0.169,
+    "30": 0.578
+   },
+   "nvidia_by": {
+    "15": 0.144,
+    "20": 0.447,
+    "30": 0.823
+   },
+   "nvidia_seattle_by": {
+    "20": 0.106,
+    "30": 0.518
+   },
+   "seattle_frontier_other_by30": 0.059,
+   "us_green_card_by30": 0.534,
+   "phd_started": 0.331,
+   "cpt_internships_mean": 0.18
+  },
+  "O3x-ONL_PHD_LADDER": {
+   "compliant": false,
+   "grade_base": 6.488,
+   "relocation_year": {
+    "p10": 5.5,
+    "p50": 7.5,
+    "p90": 10.75,
+    "mean": 7.82,
+    "date_median": "2034-04"
+   },
+   "p_reloc_by": {
+    "6": 0.198,
+    "8": 0.609,
+    "10": 0.864,
+    "12": 0.964
+   },
+   "relocation_sticks": 1.0,
+   "zurich": {
+    "p": 0.978,
+    "median_year": 14.25
+   },
+   "us": {
+    "p": 0.622
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 3064854,
+    "p50": 4650473,
+    "p90": 6442166,
+    "mean": 4737116
+   },
+   "nw_nominal_unaudited": {
+    "p50": 6081719,
+    "p90": 8296086
+   },
+   "nw_real_audited_p50": 2217079,
+   "h3_city_exposure": 0.597,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.052,
+    "15": 0.611,
+    "20": 0.932,
+    "30": 0.999
+   },
+   "bsc_by20": 0.716,
+   "msc_by20": 0.288,
+   "gross_eur": {
+    "3": 12669,
+    "8": 48338,
+    "15": 216098,
+    "25": 318529
+   },
+   "criteria_index": 3.64,
+   "country_penalty": 0.2,
+   "long_term_residence_by": {
+    "10": 0.214,
+    "15": 0.846,
+    "20": 0.995,
+    "30": 1.0
+   },
+   "seattle_by": {
+    "15": 0.029,
+    "20": 0.171,
+    "30": 0.583
+   },
+   "nvidia_by": {
+    "15": 0.145,
+    "20": 0.455,
+    "30": 0.828
+   },
+   "nvidia_seattle_by": {
+    "20": 0.11,
+    "30": 0.526
+   },
+   "seattle_frontier_other_by30": 0.057,
+   "us_green_card_by30": 0.531,
+   "phd_started": 0.358,
+   "cpt_internships_mean": 0.2
+  },
+  "O3x-ONL_US_MS": {
+   "compliant": false,
+   "grade_base": 4.469,
+   "relocation_year": {
+    "p10": 9.75,
+    "p50": 30.0,
+    "p90": 30.0,
+    "mean": 26.53,
+    "date_median": "never"
+   },
+   "p_reloc_by": {
+    "6": 0.0,
+    "8": 0.032,
+    "10": 0.116,
+    "12": 0.161
+   },
+   "relocation_sticks": 0.169,
+   "zurich": {
+    "p": 0.0,
+    "median_year": null
+   },
+   "us": {
+    "p": 0.17
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 2631713,
+    "p50": 3715175,
+    "p90": 5577232,
+    "mean": 3908398
+   },
+   "nw_nominal_unaudited": {
+    "p50": 4513545,
+    "p90": 7087742
+   },
+   "nw_real_audited_p50": 1771182,
+   "h3_city_exposure": 0.16,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.043,
+    "15": 0.169,
+    "20": 0.17,
+    "30": 0.17
+   },
+   "bsc_by20": 0.716,
+   "msc_by20": 0.232,
+   "gross_eur": {
+    "3": 12669,
+    "8": 50854,
+    "15": 124350,
+    "25": 130577
+   },
+   "criteria_index": 4.17,
+   "country_penalty": 1.0,
+   "long_term_residence_by": {
+    "10": 0.0,
+    "15": 0.111,
+    "20": 0.169,
+    "30": 0.169
+   },
+   "seattle_by": {
+    "15": 0.115,
+    "20": 0.139,
+    "30": 0.16
+   },
+   "nvidia_by": {
+    "15": 0.045,
+    "20": 0.106,
+    "30": 0.159
+   },
+   "nvidia_seattle_by": {
+    "20": 0.088,
+    "30": 0.15
+   },
+   "seattle_frontier_other_by30": 0.009,
+   "us_green_card_by30": 0.169,
+   "phd_started": 0.0,
+   "cpt_internships_mean": 0.35
+  },
+  "O3x-PL_WAW_FT": {
+   "compliant": true,
+   "grade_base": 6.617,
+   "relocation_year": {
+    "p10": 4.25,
+    "p50": 5.75,
+    "p90": 9.0,
+    "mean": 6.3,
+    "date_median": "2032-07"
+   },
+   "p_reloc_by": {
+    "6": 0.561,
+    "8": 0.849,
+    "10": 0.948,
+    "12": 0.979
+   },
+   "relocation_sticks": 1.0,
+   "zurich": {
+    "p": 0.964,
+    "median_year": 16.0
+   },
+   "us": {
+    "p": 0.641
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 3093392,
+    "p50": 4459768,
+    "p90": 6129725,
+    "mean": 4549141
+   },
+   "nw_nominal_unaudited": {
+    "p50": 5795786,
+    "p90": 8024255
+   },
+   "nw_real_audited_p50": 2126162,
+   "h3_city_exposure": 0.55,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.362,
+    "15": 0.738,
+    "20": 0.956,
+    "30": 0.999
+   },
+   "bsc_by20": 0.565,
+   "msc_by20": 0.0,
+   "gross_eur": {
+    "3": 14052,
+    "8": 41432,
+    "15": 181782,
+    "25": 308846
+   },
+   "criteria_index": 4.84,
+   "country_penalty": 0.5,
+   "long_term_residence_by": {
+    "10": 0.003,
+    "15": 0.679,
+    "20": 0.822,
+    "30": 0.923
+   },
+   "seattle_by": {
+    "15": 0.041,
+    "20": 0.194,
+    "30": 0.595
+   },
+   "nvidia_by": {
+    "15": 0.213,
+    "20": 0.499,
+    "30": 0.836
+   },
+   "nvidia_seattle_by": {
+    "20": 0.141,
+    "30": 0.539
+   },
+   "seattle_frontier_other_by30": 0.055,
+   "us_green_card_by30": 0.552,
+   "phd_started": 0.0,
+   "cpt_internships_mean": 1.01
+  },
+  "O3x-RWTH_SF_ZRH": {
+   "compliant": true,
+   "grade_base": 6.486,
+   "relocation_year": {
+    "p10": 5.75,
+    "p50": 7.5,
+    "p90": 30.0,
+    "mean": 10.15,
+    "date_median": "2034-04"
+   },
+   "p_reloc_by": {
+    "6": 0.185,
+    "8": 0.63,
+    "10": 0.816,
+    "12": 0.87
+   },
+   "relocation_sticks": 0.882,
+   "zurich": {
+    "p": 0.877,
+    "median_year": 14.0
+   },
+   "us": {
+    "p": 0.559
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 2884250,
+    "p50": 4357620,
+    "p90": 5931696,
+    "mean": 4398143
+   },
+   "nw_nominal_unaudited": {
+    "p50": 5717352,
+    "p90": 7734036
+   },
+   "nw_real_audited_p50": 2077463,
+   "h3_city_exposure": 0.553,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.005,
+    "15": 0.46,
+    "20": 0.821,
+    "30": 0.881
+   },
+   "bsc_by20": 0.763,
+   "msc_by20": 0.0,
+   "gross_eur": {
+    "3": 14075,
+    "8": 24200,
+    "15": 222779,
+    "25": 288997
+   },
+   "criteria_index": 6.12,
+   "country_penalty": 0.2,
+   "long_term_residence_by": {
+    "10": 0.013,
+    "15": 0.825,
+    "20": 0.913,
+    "30": 0.915
+   },
+   "seattle_by": {
+    "15": 0.021,
+    "20": 0.152,
+    "30": 0.519
+   },
+   "nvidia_by": {
+    "15": 0.143,
+    "20": 0.429,
+    "30": 0.75
+   },
+   "nvidia_seattle_by": {
+    "20": 0.099,
+    "30": 0.473
+   },
+   "seattle_frontier_other_by30": 0.045,
+   "us_green_card_by30": 0.48,
+   "phd_started": 0.0,
+   "cpt_internships_mean": 1.07
+  },
+  "O3x-US_B_FULL": {
+   "compliant": true,
+   "grade_base": 5.015,
+   "relocation_year": {
+    "p10": 9.0,
+    "p50": 30.0,
+    "p90": 30.0,
+    "mean": 20.76,
+    "date_median": "never"
+   },
+   "p_reloc_by": {
+    "6": 0.0,
+    "8": 0.038,
+    "10": 0.26,
+    "12": 0.407
+   },
+   "relocation_sticks": 0.467,
+   "zurich": {
+    "p": 0.0,
+    "median_year": null
+   },
+   "us": {
+    "p": 0.488
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 2462404,
+    "p50": 3820011,
+    "p90": 5545163,
+    "mean": 3919094
+   },
+   "nw_nominal_unaudited": {
+    "p50": 4772731,
+    "p90": 7238021
+   },
+   "nw_real_audited_p50": 1821162,
+   "h3_city_exposure": 0.27,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.018,
+    "15": 0.232,
+    "20": 0.472,
+    "30": 0.488
+   },
+   "bsc_by20": 0.607,
+   "msc_by20": 0.205,
+   "gross_eur": {
+    "3": 12189,
+    "8": 49272,
+    "15": 110529,
+    "25": 197301
+   },
+   "criteria_index": 4.09,
+   "country_penalty": 1.0,
+   "long_term_residence_by": {
+    "10": 0.0,
+    "15": 0.086,
+    "20": 0.357,
+    "30": 0.467
+   },
+   "seattle_by": {
+    "15": 0.15,
+    "20": 0.328,
+    "30": 0.431
+   },
+   "nvidia_by": {
+    "15": 0.045,
+    "20": 0.225,
+    "30": 0.431
+   },
+   "nvidia_seattle_by": {
+    "20": 0.169,
+    "30": 0.389
+   },
+   "seattle_frontier_other_by30": 0.043,
+   "us_green_card_by30": 0.467,
+   "phd_started": 0.296,
+   "cpt_internships_mean": 2.24
+  },
+  "O3x-CA_FT_US": {
+   "compliant": true,
+   "grade_base": 4.882,
+   "relocation_year": {
+    "p10": 6.0,
+    "p50": 30.0,
+    "p90": 30.0,
+    "mean": 20.99,
+    "date_median": "never"
+   },
+   "p_reloc_by": {
+    "6": 0.113,
+    "8": 0.295,
+    "10": 0.366,
+    "12": 0.386
+   },
+   "relocation_sticks": 0.397,
+   "zurich": {
+    "p": 0.0,
+    "median_year": null
+   },
+   "us": {
+    "p": 0.397
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 2404315,
+    "p50": 3583584,
+    "p90": 4831951,
+    "mean": 3596212
+   },
+   "nw_nominal_unaudited": {
+    "p50": 4467401,
+    "p90": 6080091
+   },
+   "nw_real_audited_p50": 1708448,
+   "h3_city_exposure": 0.228,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.001,
+    "15": 0.108,
+    "20": 0.363,
+    "30": 0.421
+   },
+   "bsc_by20": 0.577,
+   "msc_by20": 0.0,
+   "gross_eur": {
+    "3": 14075,
+    "8": 42866,
+    "15": 92417,
+    "25": 160778
+   },
+   "criteria_index": 4.09,
+   "country_penalty": 0.4,
+   "long_term_residence_by": {
+    "10": 0.0,
+    "15": 0.285,
+    "20": 0.39,
+    "30": 0.397
+   },
+   "seattle_by": {
+    "15": 0.007,
+    "20": 0.223,
+    "30": 0.368
+   },
+   "nvidia_by": {
+    "15": 0.0,
+    "20": 0.077,
+    "30": 0.291
+   },
+   "nvidia_seattle_by": {
+    "20": 0.064,
+    "30": 0.273
+   },
+   "seattle_frontier_other_by30": 0.096,
+   "us_green_card_by30": 0.0,
+   "phd_started": 0.0,
+   "cpt_internships_mean": 0.8
+  },
+  "O3x-ES_FT_ZRH": {
+   "compliant": true,
+   "grade_base": 6.701,
+   "relocation_year": {
+    "p10": 4.25,
+    "p50": 6.25,
+    "p90": 9.25,
+    "mean": 6.49,
+    "date_median": "2033-01"
+   },
+   "p_reloc_by": {
+    "6": 0.492,
+    "8": 0.825,
+    "10": 0.946,
+    "12": 0.981
+   },
+   "relocation_sticks": 1.0,
+   "zurich": {
+    "p": 1.0,
+    "median_year": 12.5
+   },
+   "us": {
+    "p": 0.629
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 3728448,
+    "p50": 5135031,
+    "p90": 6777655,
+    "mean": 5213760
+   },
+   "nw_nominal_unaudited": {
+    "p50": 6665926,
+    "p90": 8760605
+   },
+   "nw_real_audited_p50": 2448089,
+   "h3_city_exposure": 0.611,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.064,
+    "15": 0.575,
+    "20": 0.929,
+    "30": 0.998
+   },
+   "bsc_by20": 0.497,
+   "msc_by20": 0.0,
+   "gross_eur": {
+    "3": 14075,
+    "8": 44766,
+    "15": 264533,
+    "25": 309878
+   },
+   "criteria_index": 3.85,
+   "country_penalty": 0.8,
+   "long_term_residence_by": {
+    "10": 0.611,
+    "15": 0.976,
+    "20": 0.999,
+    "30": 1.0
+   },
+   "seattle_by": {
+    "15": 0.037,
+    "20": 0.193,
+    "30": 0.583
+   },
+   "nvidia_by": {
+    "15": 0.128,
+    "20": 0.416,
+    "30": 0.794
+   },
+   "nvidia_seattle_by": {
+    "20": 0.111,
+    "30": 0.503
+   },
+   "seattle_frontier_other_by30": 0.08,
+   "us_green_card_by30": 0.545,
+   "phd_started": 0.0,
+   "cpt_internships_mean": 0.85
+  },
+  "O3x-ONL_BRSTAY": {
+   "compliant": false,
+   "grade_base": 3.949,
+   "relocation_year": {
+    "p10": 30.0,
+    "p50": 30.0,
+    "p90": 30.0,
+    "mean": 30.0,
+    "date_median": "never"
+   },
+   "p_reloc_by": {
+    "6": 0.0,
+    "8": 0.0,
+    "10": 0.0,
+    "12": 0.0
+   },
+   "relocation_sticks": 0.0,
+   "zurich": {
+    "p": 0.0,
+    "median_year": null
+   },
+   "us": {
+    "p": 0.0
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 2914157,
+    "p50": 3974681,
+    "p90": 5189349,
+    "mean": 4016000
+   },
+   "nw_nominal_unaudited": {
+    "p50": 4792488,
+    "p90": 6236717
+   },
+   "nw_real_audited_p50": 1894900,
+   "h3_city_exposure": 0.05,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.0,
+    "15": 0.0,
+    "20": 0.0,
+    "30": 0.0
+   },
+   "bsc_by20": 0.716,
+   "msc_by20": 0.0,
+   "gross_eur": {
+    "3": 12669,
+    "8": 56385,
+    "15": 97522,
+    "25": 97500
+   },
+   "criteria_index": 2.94,
+   "country_penalty": 0.0,
+   "long_term_residence_by": {
+    "10": 0.0,
+    "15": 0.0,
+    "20": 0.0,
+    "30": 0.0
+   },
+   "seattle_by": {
+    "15": 0.0,
+    "20": 0.0,
+    "30": 0.0
+   },
+   "nvidia_by": {
+    "15": 0.0,
+    "20": 0.0,
+    "30": 0.0
+   },
+   "nvidia_seattle_by": {
+    "20": 0.0,
+    "30": 0.0
+   },
+   "seattle_frontier_other_by30": 0.0,
+   "us_green_card_by30": 0.0,
+   "phd_started": 0.0,
+   "cpt_internships_mean": 0.0
+  },
+  "O3x-BRSTAY": {
+   "compliant": false,
+   "grade_base": 3.811,
+   "relocation_year": {
+    "p10": 30.0,
+    "p50": 30.0,
+    "p90": 30.0,
+    "mean": 30.0,
+    "date_median": "never"
+   },
+   "p_reloc_by": {
+    "6": 0.0,
+    "8": 0.0,
+    "10": 0.0,
+    "12": 0.0
+   },
+   "relocation_sticks": 0.0,
+   "zurich": {
+    "p": 0.0,
+    "median_year": null
+   },
+   "us": {
+    "p": 0.0
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 3119237,
+    "p50": 4139484,
+    "p90": 5310540,
+    "mean": 4176412
+   },
+   "nw_nominal_unaudited": {
+    "p50": 4957694,
+    "p90": 6328274
+   },
+   "nw_real_audited_p50": 1973469,
+   "h3_city_exposure": 0.05,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.0,
+    "15": 0.0,
+    "20": 0.0,
+    "30": 0.0
+   },
+   "bsc_by20": 0.0,
+   "msc_by20": 0.0,
+   "gross_eur": {
+    "3": 14075,
+    "8": 53190,
+    "15": 90930,
+    "25": 90986
+   },
+   "criteria_index": 1.88,
+   "country_penalty": 0.0,
+   "long_term_residence_by": {
+    "10": 0.0,
+    "15": 0.0,
+    "20": 0.0,
+    "30": 0.0
+   },
+   "seattle_by": {
+    "15": 0.0,
+    "20": 0.0,
+    "30": 0.0
+   },
+   "nvidia_by": {
+    "15": 0.0,
+    "20": 0.0,
+    "30": 0.0
+   },
+   "nvidia_seattle_by": {
+    "20": 0.0,
+    "30": 0.0
+   },
+   "seattle_frontier_other_by30": 0.0,
+   "us_green_card_by30": 0.0,
+   "phd_started": 0.0,
+   "cpt_internships_mean": 0.0
+  },
+  "O3h-ONL_ES_MSC_ZRH": {
+   "compliant": false,
+   "grade_base": 6.677,
+   "relocation_year": {
+    "p10": 4.75,
+    "p50": 6.75,
+    "p90": 9.5,
+    "mean": 6.93,
+    "date_median": "2033-07"
+   },
+   "p_reloc_by": {
+    "6": 0.372,
+    "8": 0.774,
+    "10": 0.944,
+    "12": 0.985
+   },
+   "relocation_sticks": 1.0,
+   "zurich": {
+    "p": 1.0,
+    "median_year": 12.5
+   },
+   "us": {
+    "p": 0.635
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 3587235,
+    "p50": 5001772,
+    "p90": 6715395,
+    "mean": 5085693
+   },
+   "nw_nominal_unaudited": {
+    "p50": 6489860,
+    "p90": 8638511
+   },
+   "nw_real_audited_p50": 2384558,
+   "h3_city_exposure": 0.641,
+   "h3_curriculum_y10": 5.36,
+   "frontier_by": {
+    "10": 0.073,
+    "15": 0.554,
+    "20": 0.917,
+    "30": 0.998
+   },
+   "bsc_by20": 0.716,
+   "msc_by20": 0.378,
+   "gross_eur": {
+    "3": 12669,
+    "8": 57492,
+    "15": 259941,
+    "25": 313096
+   },
+   "criteria_index": 4.35,
+   "country_penalty": 0.8,
+   "long_term_residence_by": {
+    "10": 0.49,
+    "15": 0.978,
+    "20": 1.0,
+    "30": 1.0
+   },
+   "seattle_by": {
+    "15": 0.038,
+    "20": 0.188,
+    "30": 0.589
+   },
+   "nvidia_by": {
+    "15": 0.126,
+    "20": 0.416,
+    "30": 0.812
+   },
+   "nvidia_seattle_by": {
+    "20": 0.112,
+    "30": 0.524
+   },
+   "seattle_frontier_other_by30": 0.065,
+   "us_green_card_by30": 0.547,
+   "phd_started": 0.0,
+   "cpt_internships_mean": 0.0
+  },
+  "O3h-ONL_MSC_DE": {
+   "compliant": false,
+   "grade_base": 6.578,
+   "relocation_year": {
+    "p10": 5.5,
+    "p50": 7.0,
+    "p90": 9.75,
+    "mean": 8.08,
+    "date_median": "2033-10"
+   },
+   "p_reloc_by": {
+    "6": 0.283,
+    "8": 0.741,
+    "10": 0.916,
+    "12": 0.948
+   },
+   "relocation_sticks": 0.956,
+   "zurich": {
+    "p": 0.943,
+    "median_year": 13.25
+   },
+   "us": {
+    "p": 0.617
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 3228531,
+    "p50": 4723287,
+    "p90": 6378735,
+    "mean": 4777501
+   },
+   "nw_nominal_unaudited": {
+    "p50": 6130876,
+    "p90": 8227590
+   },
+   "nw_real_audited_p50": 2251792,
+   "h3_city_exposure": 0.613,
+   "h3_curriculum_y10": 5.36,
+   "frontier_by": {
+    "10": 0.086,
+    "15": 0.6,
+    "20": 0.896,
+    "30": 0.954
+   },
+   "bsc_by20": 0.716,
+   "msc_by20": 0.359,
+   "gross_eur": {
+    "3": 12669,
+    "8": 44044,
+    "15": 259242,
+    "25": 301370
+   },
+   "criteria_index": 5.12,
+   "country_penalty": 0.2,
+   "long_term_residence_by": {
+    "10": 0.368,
+    "15": 0.94,
+    "20": 0.956,
+    "30": 0.956
+   },
+   "seattle_by": {
+    "15": 0.049,
+    "20": 0.201,
+    "30": 0.578
+   },
+   "nvidia_by": {
+    "15": 0.208,
+    "20": 0.47,
+    "30": 0.793
+   },
+   "nvidia_seattle_by": {
+    "20": 0.137,
+    "30": 0.521
+   },
+   "seattle_frontier_other_by30": 0.057,
+   "us_green_card_by30": 0.534,
+   "phd_started": 0.0,
+   "cpt_internships_mean": 0.26
+  },
+  "O3x-MUC20_ZRH": {
+   "compliant": false,
+   "grade_base": 6.454,
+   "relocation_year": {
+    "p10": 5.0,
+    "p50": 7.5,
+    "p90": 12.0,
+    "mean": 8.19,
+    "date_median": "2034-04"
+   },
+   "p_reloc_by": {
+    "6": 0.27,
+    "8": 0.582,
+    "10": 0.798,
+    "12": 0.901
+   },
+   "relocation_sticks": 1.0,
+   "zurich": {
+    "p": 0.961,
+    "median_year": 14.25
+   },
+   "us": {
+    "p": 0.617
+   },
+   "munich": {
+    "p": 0.0
+   },
+   "nw_nominal_audited": {
+    "p10": 3650353,
+    "p50": 4935337,
+    "p90": 6554041,
+    "mean": 5021867
+   },
+   "nw_nominal_unaudited": {
+    "p50": 6301846,
+    "p90": 8429906
+   },
+   "nw_real_audited_p50": 2352886,
+   "h3_city_exposure": 0.679,
+   "h3_curriculum_y10": 5.96,
+   "frontier_by": {
+    "10": 0.167,
+    "15": 0.594,
+    "20": 0.902,
+    "30": 0.997
+   },
+   "bsc_by20": 0.0,
+   "msc_by20": 0.0,
+   "gross_eur": {
+    "3": 14075,
+    "8": 66390,
+    "15": 220398,
+    "25": 298999
+   },
+   "criteria_index": 3.13,
+   "country_penalty": 0.2,
+   "long_term_residence_by": {
+    "10": 0.549,
+    "15": 0.925,
+    "20": 0.986,
+    "30": 1.0
+   },
+   "seattle_by": {
+    "15": 0.059,
+    "20": 0.199,
+    "30": 0.575
+   },
+   "nvidia_by": {
+    "15": 0.196,
+    "20": 0.413,
+    "30": 0.753
+   },
+   "nvidia_seattle_by": {
+    "20": 0.13,
+    "30": 0.482
+   },
+   "seattle_frontier_other_by30": 0.092,
+   "us_green_card_by30": 0.531,
+   "phd_started": 0.0,
+   "cpt_internships_mean": 0.0
+  }
+ }
+}

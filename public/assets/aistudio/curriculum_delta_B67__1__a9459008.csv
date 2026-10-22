@@ -1,0 +1,15 @@
+change_id,module_id,stage_id,item,change_type,role_before,role_after,hours_before,hours_after,delta_hours,displaced_component,note
+C01,NM46,N9,NSA Ghidra,ROLE_CHANGE,BUILD_SLICE,OPERATE,8,8,0,6 h build becomes 6 h operating on official release (no build),Operate only; see ghidra_operate_plan_B67.csv
+C02,NM37,N7,llama-cpp (ggml-org/llama.cpp),ADD_SLICE,none,BUILD_SLICE,0,8,0,"2 h reading_video + 6 h build from the host module (substitution, not an increase)",
+C03,NM25,N4,transformers (huggingface/transformers),ADD_SLICE,none,BUILD_SLICE,0,8,0,"2 h reading_video + 6 h build from the host module (substitution, not an increase)",
+C04,NM25,N4,peft (huggingface/peft),ADD_SLICE,none,BUILD_SLICE,0,8,0,"2 h reading_video + 6 h build from the host module (substitution, not an increase)",
+C05,NM28,N5,langgraph (langchain-ai/langgraph),ADD_SLICE,none,BUILD_SLICE,0,8,0,"2 h reading_video + 6 h build from the host module (substitution, not an increase)",
+C06,NM34,N6,flashinfer (flashinfer-ai/flashinfer),ADD_SLICE,none,BUILD_SLICE,0,8,0,"2 h reading_video + 6 h build from the host module (substitution, not an increase)",Full MVP optional and gate-contingent
+C07,NM36,N7,vllm (vllm-project/vllm),ADD_SLICE,none,BUILD_SLICE,0,8,0,"2 h reading_video + 6 h build from the host module (substitution, not an increase)",Full MVP optional and gate-contingent
+C08,NM30,N5,claude-code (anthropics/claude-code),ADD_SLICE,none,OPERATE,0,8,0,"2 h reading_video + 6 h build from the host module (substitution, not an increase)",
+C09,NM26,N5,ollama (ollama/ollama),ADD_SLICE,none,OPERATE,0,8,0,"2 h reading_video + 6 h build from the host module (substitution, not an increase)",
+C10,NM27,N5,mlflow (mlflow/mlflow),ADD_SLICE,none,OPERATE,0,8,0,"2 h reading_video + 6 h build from the host module (substitution, not an increase)",
+C11,NM39,N7,redis (redis/redis),ADD_SLICE,none,OPERATE,0,8,0,"2 h reading_video + 6 h build from the host module (substitution, not an increase)",
+C12,NM46,N9,Ghidra how-it-was-made reading,ADD_READING,,READING,0,8,0,8 h existing N9 reading,"DevGuide architecture, SLEIGH, decompiler sources, The Ghidra Book (found via search, not opened)"
+C13,NM34,N6,FlashInfer full MVP (optional),OPTIONAL_ONLY,,OPTIONAL_ELECTIVE,0,0,0,+35-80 h if enabled; not inside 7200 h,Only after gate; displaces N6 build time
+C14,NM36,N7,vLLM full MVP (optional),OPTIONAL_ONLY,,OPTIONAL_ELECTIVE,0,0,0,+35-80 h if enabled; not inside 7200 h,Only after gate; displaces N7 build time

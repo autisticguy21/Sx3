@@ -1,0 +1,422 @@
+module,stage,hours,status,decision,name,url,release,stars_used,rationale
+NM01,N0,0,STUDY_POINTER,ADD_STUDY_EDU,EbookFoundation/free-programming-books,https://github.com/EbookFoundation/free-programming-books,,399075,educational resource from a reliable source; 0 h pointer
+NM01,N0,0,STUDY_POINTER,ADD_STUDY_EDU,Google MLCC Prerequisites and Prework,https://developers.google.com/machine-learning/crash-course/prereqs-and-prework,,,educational resource from a reliable source; 0 h pointer
+NM01,N0,0,STUDY_POINTER,ADD_STUDY_EDU,Python Tutorial,https://docs.python.org/3/tutorial/index.html,,,educational resource from a reliable source; 0 h pointer
+NM02,N0,0,STUDY_POINTER,ADD_STUDY_EDU,TheAlgorithms/Python,https://github.com/TheAlgorithms/Python,,,educational resource from a reliable source; 0 h pointer
+NM02,N0,0,STUDY_POINTER,ADD_STUDY_EDU,codecrafters-io/build-your-own-x,https://github.com/codecrafters-io/build-your-own-x,,553750,educational resource from a reliable source; 0 h pointer
+NM02,N0,0,STUDY_POINTER,ADD_STUDY_EDU,freeCodeCamp/freeCodeCamp,https://github.com/FreeCodeCamp/freecodecamp,,457094,educational resource from a reliable source; 0 h pointer
+NM02,N0,0,STUDY_POINTER,ADD_STUDY_EDU,practical-tutorials/project-based-learning,https://github.com/practical-tutorials/project-based-learning,,286734,educational resource from a reliable source; 0 h pointer
+NM02,N0,0,STUDY_POINTER,ADD_STUDY_EDU,trekhleb/homemade-machine-learning,https://github.com/trekhleb/homemade-machine-learning,,24533,educational resource from a reliable source; 0 h pointer
+NM02,N0,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,iamshuaidi/CS-Book,https://github.com/iamshuaidi/CS-Book,,,educational but source not on reliable list; pending review
+NM02,N0,0,PENDING_RELEASE,PENDING_RELEASE,eriklindernoren/ML-From-Scratch,https://github.com/eriklindernoren/ML-From-Scratch,,31331,stars 31331 pass (f1_user); release unverified
+NM02,N0,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code,https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code,,,stars and release both unknown
+NM04,N0,0,PENDING_RELEASE,PENDING_RELEASE,alibaba/zvec,https://github.com/alibaba/zvec,,16116,stars 16116 pass (f1_user); release unverified
+NM04,N0,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,OpenViking,https://github.com/volcengine/OpenViking,,,stars and release both unknown
+NM07,N1,0,PENDING_RELEASE,PENDING_RELEASE,FlagOpen/FlagEmbedding,https://github.com/FlagOpen/FlagEmbedding,,12253,stars 12253 pass (app_user); release unverified
+NM07,N1,0,PENDING_RELEASE,PENDING_RELEASE,QuivrHQ/quivr,https://github.com/QuivrHQ/quivr,,39087,stars 39087 pass (f1_user); release unverified
+NM07,N1,0,PENDING_RELEASE,PENDING_RELEASE,facebookresearch/faiss,https://github.com/facebookresearch/faiss,,41158,stars 41158 pass (f1_user); release unverified
+NM07,N1,0,PENDING_RELEASE,PENDING_RELEASE,huggingface/sentence-transformers,https://github.com/huggingface/sentence-transformers,,19178,stars 19178 pass (app_user); release unverified
+NM07,N1,0,PENDING_STARS,PENDING_STARS,hindsight,https://github.com/vectorize-io/hindsight,2026-10-13,,release in window (CSV) but stars unknown
+NM07,N1,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,falkordb/falkordb,https://github.com/FalkorDB/FalkorDB,,,no topic text in any source; tags must be read live
+NM07,N1,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,neo4j/neo4j,https://github.com/neo4j/neo4j,,,no topic text in any source; tags must be read live
+NM08,N1,0,PENDING_RELEASE,PENDING_RELEASE,kubeflow/kubeflow,https://github.com/kubeflow/kubeflow,,15905,stars 15905 pass (app_user); release unverified
+NM08,N1,0,PENDING_RELEASE,PENDING_RELEASE,swe-bench/SWE-bench,https://github.com/swe-bench/SWE-bench,,6034,stars 6034 pass (f1_user); release unverified
+NM08,N1,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,kevinmeix1/advanced-kubernetes-mlops-platform,https://github.com/kevinmeix1/advanced-kubernetes-mlops-platform,,,stars and release both unknown
+NM08,N1,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,octo-technology/model_platform,https://github.com/octo-technology/model_platform,,,stars and release both unknown
+NM08,N1,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,skypilot-org/skypilot,https://github.com/skypilot-org/skypilot/,,,no topic text in any source; tags must be read live
+NM17,N3,0,PENDING_RELEASE,PENDING_RELEASE,Angel-ML/angel,https://github.com/Angel-ML/angel,,6793,stars 6793 pass (app_user); release unverified
+NM17,N3,0,PENDING_RELEASE,PENDING_RELEASE,EleutherAI/gpt-neox,https://github.com/EleutherAI/gpt-neox,,7469,stars 7469 pass (f1_user); release unverified
+NM17,N3,0,PENDING_RELEASE,PENDING_RELEASE,kserve/kserve,https://github.com/kserve/kserve/,,6120,stars 6120 pass (app_user); release unverified
+NM17,N3,0,PENDING_STARS,PENDING_STARS,Xinference,https://github.com/xorbitsai/inference,2026-10-16,,release in window (CSV) but stars unknown
+NM19,N3,0,PENDING_RELEASE,PENDING_RELEASE,HumanSignal/label-studio,https://github.com/HumanSignal/label-studio,,28474,stars 28474 pass (app_user); release unverified
+NM19,N3,0,PENDING_RELEASE,PENDING_RELEASE,feast-dev/feast,https://github.com/feast-dev/feast,,7129,stars 7129 pass (app_user); release unverified
+NM19,N3,0,PENDING_RELEASE,PENDING_RELEASE,treeverse/dvc,https://github.com/treeverse/dvc,,15920,stars 15920 pass (app_user); release unverified
+NM21,N4,0,STUDY_POINTER,ADD_STUDY_EDU,MIT 18.06 Linear Algebra (OpenCourseWare),https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/,,,educational resource from a reliable source; 0 h pointer
+NM21,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,arrayfire/arrayfire,https://github.com/arrayfire/arrayfire,,,stars and release both unknown
+NM21,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,gonum/gonum,https://github.com/gonum/gonum,,,stars and release both unknown
+NM21,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,microsoft/AI-For-Beginners,https://github.com/microsoft/AI-For-Beginners,,,stars and release both unknown
+NM21,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,rust-ndarray/ndarray,https://github.com/rust-ndarray/ndarray,,,stars and release both unknown
+NM21,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,scikit-optimize/scikit-optimize,https://github.com/scikit-optimize/scikit-optimize,,,stars and release both unknown
+NM21,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,scipy/scipy,https://github.com/scipy/scipy,,,stars and release both unknown
+NM22,N4,0,STUDY_POINTER,ADD_STUDY_EDU,academic/awesome-datascience,https://github.com/academic/awesome-datascience,,30196,educational resource from a reliable source; 0 h pointer
+NM22,N4,0,STUDY_POINTER,ADD_STUDY_EDU,jakevdp/PythonDataScienceHandbook,https://github.com/jakevdp/PythonDataScienceHandbook,,50121,educational resource from a reliable source; 0 h pointer
+NM22,N4,0,STUDY_POINTER,ADD_STUDY_EDU,ossu/data-science,https://github.com/ossu/data-science,,22187,educational resource from a reliable source; 0 h pointer
+NM22,N4,0,STUDY_POINTER,ADD_STUDY_EDU,probml/pml-book,https://github.com/probml/pml-book,,5692,educational resource from a reliable source; 0 h pointer
+NM22,N4,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,data-edu/data-science-in-education,https://github.com/data-edu/data-science-in-education,,,educational but source not on reliable list; pending review
+NM22,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,DeepAnalyze,https://github.com/ruc-datalab/DeepAnalyze,,,stars and release both unknown
+NM22,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,pandas-ai/pandas-ai,https://github.com/pandas-ai/pandas-ai,,,stars and release both unknown
+NM23,N4,0,STUDY_POINTER,ADD_STUDY_EDU,DataTalksClub/machine-learning-zoomcamp,https://github.com/DataTalksClub/machine-learning-zoomcamp,,14718,educational resource from a reliable source; 0 h pointer
+NM23,N4,0,STUDY_POINTER,ADD_STUDY_EDU,"DeepLearning.AI courses (AI/ML, agents, AI coding)",https://www.deeplearning.ai/courses,,,educational resource from a reliable source; 0 h pointer
+NM23,N4,0,STUDY_POINTER,ADD_STUDY_EDU,Google Machine Learning Crash Course,https://developers.google.com/machine-learning/crash-course,,,educational resource from a reliable source; 0 h pointer
+NM23,N4,0,STUDY_POINTER,ADD_STUDY_EDU,ageron/handson-ml,https://github.com/ageron/handson-ml,,,educational resource from a reliable source; 0 h pointer
+NM23,N4,0,STUDY_POINTER,ADD_STUDY_EDU,ageron/handson-ml2,https://github.com/ageron/handson-ml2,,29931,educational resource from a reliable source; 0 h pointer
+NM23,N4,0,STUDY_POINTER,ADD_STUDY_EDU,ageron/handson-ml3,https://github.com/ageron/handson-ml3,,14324,educational resource from a reliable source; 0 h pointer
+NM23,N4,0,STUDY_POINTER,ADD_STUDY_EDU,ashishps1/learn-ai-engineering,https://github.com/ashishps1/learn-ai-engineering,,6104,educational resource from a reliable source; 0 h pointer
+NM23,N4,0,STUDY_POINTER,ADD_STUDY_EDU,christophM/interpretable-ml-book,https://github.com/christophM/interpretable-ml-book,,5388,educational resource from a reliable source; 0 h pointer
+NM23,N4,0,STUDY_POINTER,ADD_STUDY_EDU,harvard-edge/cs249r_book,https://github.com/harvard-edge/cs249r_book,,28946,educational resource from a reliable source; 0 h pointer
+NM23,N4,0,STUDY_POINTER,ADD_STUDY_EDU,mrdbourke/machine-learning-roadmap,https://github.com/mrdbourke/machine-learning-roadmap,,7875,educational resource from a reliable source; 0 h pointer
+NM23,N4,0,STUDY_POINTER,ADD_STUDY_EDU,probml/pyprobml,https://www.github.com/probml/pyprobml,,7106,educational resource from a reliable source; 0 h pointer
+NM23,N4,0,STUDY_POINTER,ADD_STUDY_EDU,rasbt/machine-learning-book,https://github.com/rasbt/machine-learning-book,,5431,educational resource from a reliable source; 0 h pointer
+NM23,N4,0,STUDY_POINTER,ADD_STUDY_EDU,scikit-learn User Guide,https://scikit-learn.org/stable/user_guide.html,,,educational resource from a reliable source; 0 h pointer
+NM23,N4,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,AMAI-GmbH/AI-Expert-Roadmap,https://github.com/AMAI-GmbH/AI-Expert-Roadmap,,31092,educational but source not on reliable list; pending review
+NM23,N4,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,FareedKhan-dev/train-llm-from-scratch,https://github.com/FareedKhan-dev/train-llm-from-scratch,,12131,educational but source not on reliable list; pending review
+NM23,N4,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,aglio-lab/ai-evaluation-tools,https://github.com/aglio-lab/ai-evaluation-tools,,,educational but source not on reliable list; pending review
+NM23,N4,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,awesome-mlops/awesome-ml-monitoring,https://github.com/awesome-mlops/awesome-ml-monitoring,,,educational but source not on reliable list; pending review
+NM23,N4,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,bishwaghimire/ai-learning-roadmaps,https://github.com/bishwaghimire/ai-learning-roadmaps,,,educational but source not on reliable list; pending review
+NM23,N4,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,cbamls/AI_Tutorial,https://github.com/cbamls/AI_Tutorial,,,educational but source not on reliable list; pending review
+NM23,N4,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,meetgandhi123/Machine-Learning-101,https://github.com/meetgandhi123/Machine-Learning-101,,,educational but source not on reliable list; pending review
+NM23,N4,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,rossant/awesome-scientific-python,https://github.com/rossant/awesome-scientific-python,,,educational but source not on reliable list; pending review
+NM23,N4,0,PENDING_RELEASE,PENDING_RELEASE,evidentlyai/evidently,https://github.com/evidentlyai/evidently,,7991,stars 7991 pass (app_user); release unverified
+NM23,N4,0,PENDING_RELEASE,PENDING_RELEASE,ggml-org/ggml,https://github.com/ggml-org/ggml,,15483,stars 15483 pass (app_user); release unverified
+NM23,N4,0,PENDING_STARS,PENDING_STARS,rohitg00/ai-engineering-from-scratch,https://github.com/rohitg00/ai-engineering-from-scratch,2026-10-15,,release in window (CSV) but stars unknown
+NM23,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,explosion/spaCy,https://github.com/explosion/spaCy,,,stars and release both unknown
+NM23,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,google-research/google-research,https://github.com/google-research/google-research,,,stars and release both unknown
+NM23,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,gradio-app/gradio,https://github.com/gradio-app/gradio,,,stars and release both unknown
+NM23,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,lukasmasuch/best-of-ml-python,https://github.com/lukasmasuch/best-of-ml-python,,,stars and release both unknown
+NM23,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,magnetron/magnetron,https://github.com/magnetron/magnetron,,,stars and release both unknown
+NM23,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,microsoft/ML-For-Beginners,https://github.com/microsoft/ML-For-Beginners,,,stars and release both unknown
+NM23,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,mlinfra-io/mlinfra,https://github.com/mlinfra-io/mlinfra,,,stars and release both unknown
+NM23,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,mlpack/mlpack,https://github.com/mlpack/mlpack,,,stars and release both unknown
+NM23,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,opik,https://github.com/comet-ml/opik,,,stars and release both unknown
+NM23,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,rasbt/LLMs-from-scratch,https://github.com/rasbt/LLMs-from-scratch,,,stars and release both unknown
+NM23,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,rust-ml/linfa,https://github.com/rust-ml/linfa,,,stars and release both unknown
+NM23,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,thu-ml/SageAttention,https://github.com/thu-ml/SageAttention,,,stars and release both unknown
+NM23,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,tukue/mlops-model-ci-cd,https://github.com/tukue/mlops-model-ci-cd,,,stars and release both unknown
+NM23,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,zachary-s-cacciatore/causal-dml-measurement,https://github.com/zachary-s-cacciatore/causal-dml-measurement,,,stars and release both unknown
+NM24,N4,0,STUDY_POINTER,ADD_STUDY_EDU,DeepLearning.AI Attention in Transformers: Concepts and Code in PyTorch,https://www.deeplearning.ai/courses/attention-in-transformers-concepts-and-code-in-pytorch,,,educational resource from a reliable source; 0 h pointer
+NM24,N4,0,STUDY_POINTER,ADD_STUDY_EDU,Dive into Deep Learning,https://d2l.ai/,,,educational resource from a reliable source; 0 h pointer
+NM24,N4,0,STUDY_POINTER,ADD_STUDY_EDU,Hugging Face Course,https://huggingface.co/docs/course/chapter1/1,,,educational resource from a reliable source; 0 h pointer
+NM24,N4,0,STUDY_POINTER,ADD_STUDY_EDU,MIT 6.S191 Introduction to Deep Learning,https://introtodeeplearning.com/,,,educational resource from a reliable source; 0 h pointer
+NM24,N4,0,STUDY_POINTER,ADD_STUDY_EDU,Practical Deep Learning for Coders,https://course.fast.ai/,,,educational resource from a reliable source; 0 h pointer
+NM24,N4,0,STUDY_POINTER,ADD_STUDY_EDU,PyTorch Tutorials,https://docs.pytorch.org/tutorials/,,,educational resource from a reliable source; 0 h pointer
+NM24,N4,0,STUDY_POINTER,ADD_STUDY_EDU,Stanford CS224N NLP with Deep Learning,https://web.stanford.edu/class/cs224n/index.html,,,educational resource from a reliable source; 0 h pointer
+NM24,N4,0,STUDY_POINTER,ADD_STUDY_EDU,janishar/mit-deep-learning-book-pdf,https://github.com/janishar/mit-deep-learning-book-pdf,,14249,educational resource from a reliable source; 0 h pointer
+NM24,N4,0,STUDY_POINTER,ADD_STUDY_EDU,lexfridman/mit-deep-learning,https://github.com/lexfridman/mit-deep-learning,,10456,educational resource from a reliable source; 0 h pointer
+NM24,N4,0,STUDY_POINTER,ADD_STUDY_EDU,lmoroney/dlaicourse,https://github.com/lmoroney/dlaicourse,,5637,educational resource from a reliable source; 0 h pointer
+NM24,N4,0,STUDY_POINTER,ADD_STUDY_EDU,yandexdataschool/Practical_RL,https://github.com/yandexdataschool/Practical_RL,,6589,educational resource from a reliable source; 0 h pointer
+NM24,N4,0,STUDY_ONLY,ADD_STUDY_ONLY,karpathy/minGPT,https://www.github.com/karpathy/minGPT,,24734,user rule: karpathy / nanobot added for study only
+NM24,N4,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,GANs-in-Action/gans-in-action,https://github.com/GANs-in-Action/gans-in-action,,,educational but source not on reliable list; pending review
+NM24,N4,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,christoschristofidis/awesome-deep-learning,https://github.com/christoschristofidis/awesome-deep-learning,,28458,educational but source not on reliable list; pending review
+NM24,N4,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,dragen1860/Deep-Learning-with-TensorFlow-book,https://github.com/dragen1860/Deep-Learning-with-TensorFlow-book,,,educational but source not on reliable list; pending review
+NM24,N4,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,fastai/fastbook,https://github.com/fastai/fastbook,,25385,educational but source not on reliable list; pending review
+NM24,N4,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,kmario23/deep-learning-drizzle,https://github.com/kmario23/deep-learning-drizzle,,,educational but source not on reliable list; pending review
+NM24,N4,0,PENDING_RELEASE,PENDING_RELEASE,harbor-framework/harbor,https://github.com/harbor-framework/harbor,,6185,stars 6185 pass (f1_user); release unverified
+NM24,N4,0,PENDING_RELEASE,PENDING_RELEASE,pytorch/executorch,https://github.com/pytorch/executorch,,5100,stars 5100 pass (app_user); release unverified
+NM24,N4,0,PENDING_RELEASE,PENDING_RELEASE,tensorflow/serving,https://github.com/tensorflow/serving,,6362,stars 6362 pass (app_user); release unverified
+NM24,N4,0,PENDING_STARS,PENDING_STARS,heygen-com/hyperframes,https://github.com/heygen-com/hyperframes,2026-10-16,,release in window (CSV) but stars unknown
+NM24,N4,0,PENDING_STARS,PENDING_STARS,ranxianglei/billion-context,https://github.com/ranxianglei/billion-context,2026-10-14,,release in window (CSV) but stars unknown
+NM24,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,AI4Finance-Foundation/FinGPT,https://github.com/AI4Finance-Foundation/FinGPT,,,stars and release both unknown
+NM24,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,PaddlePaddle/PaddleNLP,https://github.com/PaddlePaddle/PaddleNLP,,,stars and release both unknown
+NM24,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,TensorRT,https://github.com/pytorch/TensorRT,,,stars and release both unknown
+NM24,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,coqui-ai/TTS,https://github.com/coqui-ai/TTS,,,stars and release both unknown
+NM24,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,d2l-ai/d2l-zh,https://github.com/d2l-ai/d2l-zh,,,stars and release both unknown
+NM24,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,facebookresearch/fairseq,https://github.com/facebookresearch/fairseq,,,stars and release both unknown
+NM24,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,huggingface/pytorch-image-models,https://github.com/huggingface/pytorch-image-models,,,stars and release both unknown
+NM24,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,intel/unet,https://github.com/intel/unet,,,stars and release both unknown
+NM24,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,keras-team/keras,https://github.com/keras-team/keras,,,stars and release both unknown
+NM24,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,tracel-ai/burn,https://github.com/tracel-ai/burn,,,stars and release both unknown
+NM24,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,ultralytics/yolov5,https://github.com/ultralytics/yolov5,,,stars and release both unknown
+NM24,N4,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,tensorflow/examples,https://github.com/tensorflow/examples,,,no topic text in any source; tags must be read live
+NM24,N4,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,tensorflow/tensorboard,https://github.com/tensorflow/Tensorboard,,,no topic text in any source; tags must be read live
+NM25,N4,0,STUDY_POINTER,ADD_STUDY_EDU,DeepLearning.AI How Transformer LLMs Work,https://www.deeplearning.ai/courses/how-transformer-llms-work,,,educational resource from a reliable source; 0 h pointer
+NM25,N4,0,STUDY_POINTER,ADD_STUDY_EDU,DeepLearning.AI Transformers in Practice,https://www.deeplearning.ai/courses/transformers-in-practice,,,educational resource from a reliable source; 0 h pointer
+NM25,N4,0,STUDY_POINTER,ADD_STUDY_EDU,PacktPublishing/LLM-Engineers-Handbook,https://github.com/PacktPublishing/LLM-Engineers-Handbook,,5378,educational resource from a reliable source; 0 h pointer
+NM25,N4,0,STUDY_POINTER,ADD_STUDY_EDU,Stanford CS25 Transformers United V6,https://web.stanford.edu/class/cs25/,,,educational resource from a reliable source; 0 h pointer
+NM25,N4,0,STUDY_POINTER,ADD_STUDY_EDU,krishnaik06/Roadmap-To-Learn-Generative-AI-In-2025,https://github.com/krishnaik06/Roadmap-To-Learn-Generative-AI-In-2025,,5008,educational resource from a reliable source; 0 h pointer
+NM25,N4,0,STUDY_ONLY,ADD_STUDY_ONLY,karpathy/LLM101n,https://github.com/karpathy/LLM101n,,36664,user rule: karpathy / nanobot added for study only
+NM25,N4,0,STUDY_ONLY,ADD_STUDY_ONLY,karpathy/llm.c,https://github.com/karpathy/llm.c,,30397,user rule: karpathy / nanobot added for study only
+NM25,N4,0,STUDY_ONLY,ADD_STUDY_ONLY,karpathy/nanochat,https://www.github.com/karpathy/nanochat,,58614,user rule: karpathy / nanobot added for study only
+NM25,N4,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,HandsOnLLM/Hands-On-Large-Language-Models,https://github.com/HandsOnLLM/Hands-On-Large-Language-Models,,26440,educational but source not on reliable list; pending review
+NM25,N4,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,datawhalechina/happy-llm,https://github.com/datawhalechina/happy-llm,,34408,educational but source not on reliable list; pending review
+NM25,N4,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,jingyaogong/minimind,https://github.com/jingyaogong/minimind,,,educational but source not on reliable list; pending review
+NM25,N4,0,PENDING_RELEASE,PENDING_RELEASE,EricLBuehler/mistral.rs,https://github.com/EricLBuehler/mistral.rs,,7751,stars 7751 pass (app_user); release unverified
+NM25,N4,0,PENDING_RELEASE,PENDING_RELEASE,Lightning-AI/litgpt,https://github.com/Lightning-AI/litgpt/,,13710,stars 13710 pass (app_user); release unverified
+NM25,N4,0,PENDING_RELEASE,PENDING_RELEASE,TransformerOptimus/SuperAGI,https://github.com/TransformerOptimus/SuperAGI,,17701,stars 17701 pass (app_user); release unverified
+NM25,N4,0,PENDING_RELEASE,PENDING_RELEASE,artidoro/qlora,https://github.com/artidoro/qlora,,11036,stars 11036 pass (f1_user); release unverified
+NM25,N4,0,PENDING_RELEASE,PENDING_RELEASE,kvcache-ai/ktransformers,https://github.com/kvcache-ai/ktransformers,,19605,stars 19605 pass (app_user); release unverified
+NM25,N4,0,PENDING_RELEASE,PENDING_RELEASE,mistralai/mistral-inference,https://github.com/mistralai/mistral-inference,,10823,stars 10823 pass (app_user); release unverified
+NM25,N4,0,PENDING_STARS,PENDING_STARS,Axolotl,https://github.com/axolotl-ai-cloud/axolotl,2026-10-16,,release in window (CSV) but stars unknown
+NM25,N4,0,PENDING_STARS,PENDING_STARS,QwenPaw,https://github.com/agentscope-ai/QwenPaw,2026-10-15,,release in window (CSV) but stars unknown
+NM25,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,hiyouga/LlamaFactory,https://github.com/hiyouga/LlamaFactory,,,stars and release both unknown
+NM25,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,huggingface/tokenizers,https://github.com/huggingface/tokenizers,,,stars and release both unknown
+NM25,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,huggingface/transformers.js,https://github.com/huggingface/transformers.js,,,stars and release both unknown
+NM25,N4,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,mlrun/mlrun,https://github.com/mlrun/mlrun/,,,stars and release both unknown
+NM25,N4,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,facebookresearch/llama,https://github.com/facebookresearch/llama/,,,no topic text in any source; tags must be read live
+NM25,N4,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,huggingface/trl,https://github.com/huggingface/trl?tab=readme-ov-file,,,no topic text in any source; tags must be read live
+NM25,N4,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,inclusionai/areal,https://github.com/inclusionAI/AReAL,,,no topic text in any source; tags must be read live
+NM25,N4,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,kellerjordan/modded-nanogpt,https://github.com/kellerjordan/modded-nanogpt,,,no topic text in any source; tags must be read live
+NM25,N4,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,openai/tiktoken,https://github.com/openai/tiktoken/,,,no topic text in any source; tags must be read live
+NM25,N4,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,stability-ai/stablelm,https://github.com/stability-ai/stablelm,,,no topic text in any source; tags must be read live
+NM25,N4,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,thudm/slime,https://github.com/THUDM/slime/,,,no topic text in any source; tags must be read live
+NM25,N4,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,volcengine/verl,https://github.com/volcengine/verl/,,,no topic text in any source; tags must be read live
+NM26,N5,0,STUDY_POINTER,ADD_STUDY_EDU,huggingface/agents-course,https://github.com/huggingface/agents-course,,33627,educational resource from a reliable source; 0 h pointer
+NM26,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,Awesome-LLM-Inference-Engine,https://github.com/sihyeong/awesome-llm-inference-engine,,,educational but source not on reliable list; pending review
+NM26,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,Awesome-RAG,https://github.com/danielskry/awesome-rag/,,,educational but source not on reliable list; pending review
+NM26,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,Awesome-RAG-Evaluation,https://github.com/yhpeter/awesome-rag-evaluation,,,educational but source not on reliable list; pending review
+NM26,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,awesome-llm-apps,https://github.com/Shubhamsaboo/awesome-llm-apps,,,educational but source not on reliable list; pending review
+NM26,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,awesome-llm-tools,https://github.com/sam-blackfly/awesome-llm-tools,,,educational but source not on reliable list; pending review
+NM26,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,danielrosehill/Context-Engineering-Resources,https://github.com/danielrosehill/Context-Engineering-Resources,,,educational but source not on reliable list; pending review
+NM26,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,gkamradt/langchain-tutorials,https://github.com/gkamradt/langchain-tutorials,,7494,educational but source not on reliable list; pending review
+NM26,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,rag-retrieval-tools,https://github.com/aglio-lab/rag-retrieval-tools,,,educational but source not on reliable list; pending review
+NM26,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,sgl-project/mini-sglang,https://github.com/sgl-project/mini-sglang,,5236,educational but source not on reliable list; pending review
+NM26,N5,0,PENDING_RELEASE,PENDING_RELEASE,Tiiny-AI/PowerInfer,https://github.com/Tiiny-AI/PowerInfer,,9827,stars 9827 pass (app_user); release unverified
+NM26,N5,0,PENDING_RELEASE,PENDING_RELEASE,alibaba/MNN,https://github.com/alibaba/MNN,,16199,stars 16199 pass (app_user); release unverified
+NM26,N5,0,PENDING_RELEASE,PENDING_RELEASE,deepspeedai/DeepSpeedExamples,https://github.com/deepspeedai/DeepSpeedExamples,,6829,stars 6829 pass (f1_user); release unverified
+NM26,N5,0,PENDING_RELEASE,PENDING_RELEASE,hkuds/rag-anything,https://github.com/HKUDS/RAG-Anything,,23556,stars 23556 pass (app_user); release unverified
+NM26,N5,0,PENDING_RELEASE,PENDING_RELEASE,jina-ai/serve,https://github.com/jina-ai/serve,,21856,stars 21856 pass (app_user); release unverified
+NM26,N5,0,PENDING_RELEASE,PENDING_RELEASE,kvcache-ai/Mooncake,https://github.com/kvcache-ai/Mooncake,,6737,stars 6737 pass (app_user); release unverified
+NM26,N5,0,PENDING_RELEASE,PENDING_RELEASE,langchain-ai/open-swe,https://github.com/langchain-ai/open-swe,,11033,stars 11033 pass (f1_user); release unverified
+NM26,N5,0,PENDING_RELEASE,PENDING_RELEASE,microsoft/graphrag,https://github.com/microsoft/graphrag,,36359,stars 36359 pass (app_user); release unverified
+NM26,N5,0,PENDING_RELEASE,PENDING_RELEASE,modular/modular,https://github.com/modular/modular,,29948,stars 29948 pass (app_user); release unverified
+NM26,N5,0,PENDING_RELEASE,PENDING_RELEASE,nomic-ai/gpt4all,https://github.com/nomic-ai/gpt4all,,77363,stars 77363 pass (app_user); release unverified
+NM26,N5,0,PENDING_RELEASE,PENDING_RELEASE,openbmb/UltraRAG,https://github.com/OpenBMB/UltraRAG,,5727,stars 5727 pass (app_user); release unverified
+NM26,N5,0,PENDING_RELEASE,PENDING_RELEASE,traceloop/openllmetry,https://github.com/traceloop/openllmetry,,7502,stars 7502 pass (app_user); release unverified
+NM26,N5,0,PENDING_STARS,PENDING_STARS,Haystack,https://github.com/deepset-ai/haystack,2026-10-15,,release in window (CSV) but stars unknown
+NM26,N5,0,PENDING_STARS,PENDING_STARS,OneCompression,https://github.com/FujitsuResearch/OneCompression,2026-10-14,,release in window (CSV) but stars unknown
+NM26,N5,0,PENDING_STARS,PENDING_STARS,OpenVINO,https://github.com/openvinotoolkit/openvino,2026-10-01,,release in window (CSV) but stars unknown
+NM26,N5,0,PENDING_STARS,PENDING_STARS,Promptfoo,https://github.com/promptfoo/promptfoo,2026-10-08,,release in window (CSV) but stars unknown
+NM26,N5,0,PENDING_STARS,PENDING_STARS,anything-llm,https://github.com/Mintplex-Labs/anything-llm,2026-10-13,,release in window (CSV) but stars unknown
+NM26,N5,0,PENDING_STARS,PENDING_STARS,failproofai,https://github.com/FailproofAI/failproofai,2026-10-13,,release in window (CSV) but stars unknown
+NM26,N5,0,PENDING_STARS,PENDING_STARS,openlit,https://github.com/openlit/openlit,2026-10-13,,release in window (CSV) but stars unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,ARES,https://github.com/stanford-futuredata/ARES,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,EvalRag,https://github.com/mameen/EvalRag,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,InternLM/lmdeploy,https://github.com/InternLM/lmdeploy,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,LightRAG,https://github.com/HKUDS/LightRAG,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,PageIndex,https://github.com/VectifyAI/PageIndex,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,Q-CaRE-COLM-26,https://github.com/DISL-Lab/Q-CaRE-COLM-26,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,R-Eval,https://github.com/THU-KEG/R-Eval,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,RAG-evaluation-harnesses,https://github.com/RulinShao/RAG-evaluation-harnesses,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,RAGLAB,https://github.com/fate-ubw/raglab,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,cognee,https://github.com/topoteretes/cognee,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,google/langextract,https://github.com/google/langextract,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,langfuse,https://github.com/langfuse/langfuse,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,lean-ctx,https://github.com/yvgude/lean-ctx,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,openai-knowledge-retrieval,https://github.com/openai/openai-knowledge-retrieval,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,paroquant,https://github.com/z-lab/paroquant,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,rag-eval-pack,https://github.com/reaatech/rag-eval-pack,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,rag-forge,https://github.com/hallengray/rag-forge,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,stanford-oval/storm,https://github.com/stanford-oval/storm,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,trec-rag-26,https://github.com/rmit-ir/trec-rag-26,,,stars and release both unknown
+NM26,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,turboquant,https://github.com/0xSero/turboquant,,,stars and release both unknown
+NM26,N5,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,guidance-ai/guidance,https://github.com/guidance-ai/guidance/,,,no topic text in any source; tags must be read live
+NM26,N5,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,mlc-ai/web-llm,https://github.com/mlc-ai/web-llm/,,,no topic text in any source; tags must be read live
+NM26,N5,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,openai/openai-python,https://github.com/openai/openai-python/,,,no topic text in any source; tags must be read live
+NM26,N5,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,outlines-dev/outlines,https://github.com/outlines-dev/outlines?tab=readme-ov-file,,,no topic text in any source; tags must be read live
+NM26,N5,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,quic/ai-hub-models,https://github.com/quic/ai-hub-models,,,no topic text in any source; tags must be read live
+NM26,N5,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,triton-inference-server/server,https://github.com/triton-inference-server/server/,,,no topic text in any source; tags must be read live
+NM27,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,ant-research/awesome-mllm-guardrails,https://github.com/ant-research/awesome-mllm-guardrails,,,educational but source not on reliable list; pending review
+NM27,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,awesome-mlops/awesome-mlops-platforms,https://github.com/awesome-mlops/awesome-mlops-platforms,,,educational but source not on reliable list; pending review
+NM27,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,fuzzylabs/awesome-open-mlops,https://github.com/fuzzylabs/awesome-open-mlops,,,educational but source not on reliable list; pending review
+NM27,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,umitkacar/awesome-mlops,https://github.com/umitkacar/awesome-mlops/,,,educational but source not on reliable list; pending review
+NM27,N5,0,PENDING_RELEASE,PENDING_RELEASE,Arize-ai/phoenix,https://github.com/Arize-ai/phoenix,,11875,stars 11875 pass (app_user); release unverified
+NM27,N5,0,PENDING_RELEASE,PENDING_RELEASE,SWE-agent/SWE-agent,https://github.com/SWE-agent/SWE-agent,,20578,stars 20578 pass (f1_user); release unverified
+NM27,N5,0,PENDING_RELEASE,PENDING_RELEASE,confident-ai/deepeval,https://github.com/confident-ai/deepeval,,18916,stars 18916 pass (app_user); release unverified
+NM27,N5,0,PENDING_RELEASE,PENDING_RELEASE,microsoft/nni,https://github.com/microsoft/nni,,14367,stars 14367 pass (app_user); release unverified
+NM27,N5,0,PENDING_RELEASE,PENDING_RELEASE,openai/evals,https://github.com/openai/evals,,19613,stars 19613 pass (f1_user); release unverified
+NM27,N5,0,PENDING_RELEASE,PENDING_RELEASE,tensorzero/tensorzero,https://github.com/tensorzero/tensorzero,,11708,stars 11708 pass (app_user); release unverified
+NM27,N5,0,PENDING_RELEASE,PENDING_RELEASE,vibrantlabsai/ragas,https://github.com/vibrantlabsai/ragas,,16005,stars 16005 pass (app_user); release unverified
+NM27,N5,0,PENDING_STARS,PENDING_STARS,AgentOps,https://github.com/Azure/agentops,2026-10-15,,release in window (CSV) but stars unknown
+NM27,N5,0,PENDING_STARS,PENDING_STARS,lightseekorg/tokenspeed,https://github.com/lightseekorg/tokenspeed,2026-10-06,,release in window (CSV) but stars unknown
+NM27,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,AI45Lab/DeepSafe,https://github.com/AI45Lab/DeepSafe/,,,stars and release both unknown
+NM27,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,NVIDIA/SkillSpector,https://github.com/NVIDIA/SkillSpector,,,stars and release both unknown
+NM27,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,NeoLabHQ/context-engineering-kit,https://github.com/NeoLabHQ/context-engineering-kit/,,,stars and release both unknown
+NM27,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,OpenSpec,https://github.com/Fission-AI/OpenSpec,,,stars and release both unknown
+NM27,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,SOSBench/SOSBenchEval,https://github.com/SOSBench/SOSBenchEval,,,stars and release both unknown
+NM27,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,Shrinet82/MLOPS-Full-Data-Pipeline,https://github.com/Shrinet82/MLOPS-Full-Data-Pipeline,,,stars and release both unknown
+NM27,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,Virtue-Research/guard-eval-harness,https://github.com/Virtue-Research/guard-eval-harness,,,stars and release both unknown
+NM27,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,allenai/safety-eval,https://github.com/allenai/safety-eval,,,stars and release both unknown
+NM27,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,babelscape/ALERT,https://github.com/babelscape/ALERT,,,stars and release both unknown
+NM27,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,centerforaisafety/HarmBench,https://github.com/centerforaisafety/HarmBench,,,stars and release both unknown
+NM27,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,ed-donner/llm_engineering,https://github.com/ed-donner/llm_engineering,,,stars and release both unknown
+NM27,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,g-kornberg/BOA,https://github.com/g-kornberg/BOA,,,stars and release both unknown
+NM27,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,roboflow/supervision,https://github.com/roboflow/supervision,,,stars and release both unknown
+NM27,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,safety-research/impossiblebench,https://github.com/safety-research/impossiblebench,,,stars and release both unknown
+NM27,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,thu-coai/SafetyBench,https://github.com/thu-coai/SafetyBench,,,stars and release both unknown
+NM27,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,zjunlp/DataMind,https://github.com/zjunlp/datamind/,,,stars and release both unknown
+NM27,N5,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,eleutherai/lm-evaluation-harness,https://github.com/eleutherai/lm-evaluation-harness,,,no topic text in any source; tags must be read live
+NM27,N5,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,guardrails-ai/responsiveness_check,https://github.com/guardrails-ai/responsiveness_check/blob/main/README.md,,,no topic text in any source; tags must be read live
+NM27,N5,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,guardrails-ai/validator-template,https://github.com/guardrails-ai/validator-template,,,no topic text in any source; tags must be read live
+NM28,N5,0,STUDY_POINTER,ADD_STUDY_EDU,Prompt-Engineering-Guide,https://github.com/dair-ai/Prompt-Engineering-Guide,,,educational resource from a reliable source; 0 h pointer
+NM28,N5,0,STUDY_POINTER,ADD_STUDY_EDU,learn-claude-code,https://github.com/shareAI-lab/learn-claude-code,,,educational resource from a reliable source; 0 h pointer
+NM28,N5,0,STUDY_POINTER,ADD_STUDY_EDU,muratcankoylan/Agent-Skills-for-Context-Engineering,https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/,,,educational resource from a reliable source; 0 h pointer
+NM28,N5,0,STUDY_POINTER,ADD_STUDY_EDU,yzfly/awesome-context-engineering,https://github.com/yzfly/awesome-context-engineering,,,educational resource from a reliable source; 0 h pointer
+NM28,N5,0,STUDY_ONLY,ADD_STUDY_ONLY,nanobot,https://github.com/HKUDS/nanobot,,,user rule: karpathy / nanobot added for study only
+NM28,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,AgenticAiLabs/Ai-Engineering-Roadmap,https://github.com/AgenticAiLabs/Ai-Engineering-Roadmap,,,educational but source not on reliable list; pending review
+NM28,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,Awesome-Context-Engineering,https://github.com/Meirtz/Awesome-Context-Engineering,,,educational but source not on reliable list; pending review
+NM28,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,agent-rules-books,https://github.com/ciembor/agent-rules-books,,,educational but source not on reliable list; pending review
+NM28,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,agentic-awesome-skills,https://github.com/sickn33/agentic-awesome-skills,,,educational but source not on reliable list; pending review
+NM28,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,ai-agent-book,https://github.com/bojieli/ai-agent-book,,,educational but source not on reliable list; pending review
+NM28,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,awesome-agent-everything,https://github.com/greasebig/awesome-agent-everything,,,educational but source not on reliable list; pending review
+NM28,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,awesome-agent-harness,https://github.com/Picrew/awesome-agent-harness,,,educational but source not on reliable list; pending review
+NM28,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,awesome-agent-skills,https://github.com/VoltAgent/awesome-agent-skills,,,educational but source not on reliable list; pending review
+NM28,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,awesome-claude-code,https://github.com/hesreallyhim/awesome-claude-code,,,educational but source not on reliable list; pending review
+NM28,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,awesome-claude-skills,https://github.com/ComposioHQ/awesome-claude-skills,,,educational but source not on reliable list; pending review
+NM28,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,awesome-copilot,https://github.com/github/awesome-copilot,,,educational but source not on reliable list; pending review
+NM28,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,awesome-harness-engineering,https://github.com/ai-boost/awesome-harness-engineering,,,educational but source not on reliable list; pending review
+NM28,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,awesome-llm-agents,https://github.com/kaushikb11/awesome-llm-agents,,,educational but source not on reliable list; pending review
+NM28,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,best-of-Agent-Harnesses,https://github.com/ryanalberts/best-of-agent-harnesses,,,educational but source not on reliable list; pending review
+NM28,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,ed-donner/agents,https://github.com/ed-donner/agents,,6354,educational but source not on reliable list; pending review
+NM28,N5,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,mancano-tales/awesome-open-source-research-tools,https://github.com/mancano-tales/awesome-open-source-research-tools,,,educational but source not on reliable list; pending review
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,1jehuang/jcode,https://github.com/1jehuang/jcode,,20837,stars 20837 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,2FastLabs/agent-squad,https://github.com/2FastLabs/agent-squad,,7789,stars 7789 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,Gentleman-Programming/engram,https://github.com/Gentleman-Programming/engram,,7355,stars 7355 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,HKUDS/OpenHarness,https://github.com/HKUDS/OpenHarness,,15996,stars 15996 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,Kilo-Org/kilocode,https://github.com/Kilo-Org/kilocode,,27602,stars 27602 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,OrchestratorInc/agent-orchestrator,https://github.com/OrchestratorInc/agent-orchestrator,,13253,stars 13253 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,PawanOsman/OpenCursor,https://github.com/PawanOsman/OpenCursor,,6023,stars 6023 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,SWE-agent/mini-swe-agent,https://github.com/SWE-agent/mini-swe-agent,,8555,stars 8555 pass (f1_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,agentskills/agentskills,https://github.com/agentskills/agentskills,,26172,stars 26172 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,browser-use/browser-harness,https://github.com/browser-use/browser-harness,,18451,stars 18451 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,deepseek-ai/deepseek-harness,https://github.com/deepseek-ai/deepseek-harness,,251272,stars 251272 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,google/skills,https://github.com/google/skills,,21364,stars 21364 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,omnigent-ai/omnigent,https://github.com/omnigent-ai/omnigent,,10854,stars 10854 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,openai/skills,https://github.com/openai/skills,,28099,stars 28099 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,openinterpreter/open-interpreter,https://github.com/OpenInterpreter/open-interpreter,,68582,stars 68582 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,plandex-ai/plandex,https://github.com/plandex-ai/plandex,,15723,stars 15723 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,stablyai/orca,https://github.com/stablyai/orca,,94084,stars 94084 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,superset-sh/superset,https://github.com/superset-sh/superset,,15281,stars 15281 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,vercel-labs/agent-skills,https://github.com/vercel-labs/agent-skills,,32540,stars 32540 pass (app_user); release unverified
+NM28,N5,0,PENDING_RELEASE,PENDING_RELEASE,vercel-labs/skills,https://github.com/vercel-labs/skills,,35276,stars 35276 pass (app_user); release unverified
+NM28,N5,0,PENDING_STARS,PENDING_STARS,AutoGPT,https://github.com/Significant-Gravitas/AutoGPT,2026-10-14,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,ECC,https://github.com/affaan-m/ECC,2026-10-01,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,NVIDIA/OpenShell,https://github.com/NVIDIA/OpenShell,2026-10-13,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,Research Agent Skills,https://github.com/KalarisLabs/research-agent-skills,2026-10-04,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,Scientific Agent Skills,https://github.com/K-Dense-AI/scientific-agent-skills,2026-10-01,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,addyosmani/agent-skills,https://github.com/addyosmani/agent-skills,2026-10-13,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,agent-substrate/substrate,https://github.com/agent-substrate/substrate,2026-10-14,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,agno,https://github.com/agno-agi/agno,2026-10-16,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,autogen,https://github.com/microsoft/autogen,2026-09-30,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,context-mode,https://github.com/mksglu/context-mode,2026-10-16,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,ifixai-ai/iFixAi,https://github.com/ifixai-ai/iFixAi,2026-10-15,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,langflow,https://github.com/langflow-ai/langflow,2026-10-13,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,mattpocock/skills,https://github.com/mattpocock/skills,2026-10-04,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,morluto/rea,https://github.com/morluto/rea,2026-10-14,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,obra/superpowers,https://github.com/obra/superpowers,2026-10-10,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,openrig,https://github.com/mvschwarz/openrig,2026-10-12,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,ruflo,https://github.com/ruvnet/ruflo,2026-10-14,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,thedotmack/claude-mem,https://github.com/thedotmack/claude-mem,2026-10-16,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS,PENDING_STARS,xerj-org/xerj,https://github.com/xerj-org/xerj,2026-10-16,,release in window (CSV) but stars unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,12-factor-agents,https://github.com/humanlayer/12-factor-agents,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,Codewhale,https://github.com/codewhale-hq/Codewhale,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,CowAgent,https://github.com/zhayujie/CowAgent,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,DeepCode,https://github.com/HKUDS/DeepCode,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,DeepSeek-Reasonix,https://github.com/esengine/DeepSeek-Reasonix,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,FAROS,https://github.com/OpenNSWM-Lab/FAROS,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,Flowise,https://github.com/FlowiseAI/Flowise,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,HKUDS/CLI-Anything,https://github.com/HKUDS/CLI-Anything,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,Harness²,https://github.com/google-research/harness2,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,MetaGPT,https://github.com/FoundationAgents/MetaGPT,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,OpenHands/OpenHands,https://github.com/OpenHands/OpenHands,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,PKU-YuanGroup/OpenAI4S,https://github.com/PKU-YuanGroup/OpenAI4S,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,PraisonAI,https://github.com/MervinPraison/PraisonAI,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,RasaHQ/rasa,https://github.com/RasaHQ/rasa,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,SciAgent-Skills,https://github.com/jaechang-hits/SciAgent-Skills,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,Trellis,https://github.com/mindfold-ai/Trellis,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,a2aproject/A2A,https://github.com/a2aproject/A2A,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,ace,https://github.com/cs3b/ace,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,adk-python,https://github.com/google/adk-python,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,ag2,https://github.com/ag2ai/ag2,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,agent-actions,https://github.com/Muizzkolapo/agent-actions,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,agent-harness-generator,https://github.com/Daffiburrlike452/agent-harness-generator,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,agents,https://github.com/wshobson/agents,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,agents-md,https://github.com/Austin1serb/agents-md,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,agentscope,https://github.com/agentscope-ai/agentscope,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,ai-research-preflight,https://github.com/ProfesseurHaipeng/ai-research-preflight,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,anthropic skills,https://github.com/anthropics/skills,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,anthropics/claude-plugins-official,https://github.com/anthropics/claude-plugins-official,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,anthropics/knowledge-work-plugins,https://github.com/anthropics/knowledge-work-plugins,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,argi,https://github.com/agentic-ai-java/argi,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,assafelovic/gpt-researcher,https://github.com/assafelovic/gpt-researcher,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,caveman,https://github.com/JuliusBrussee/caveman,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,cc-switch,https://github.com/farion1231/cc-switch,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,claude-skills,https://github.com/alirezarezvani/claude-skills,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,crewcode,https://github.com/OnPoint-Dev-Tools/crewcode,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,cursor/plugins,https://github.com/cursor/plugins,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,deer-flow,https://github.com/bytedance/deer-flow,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,everything-claude-code,https://github.com/affaan-m/everything-claude-code,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,get-shit-done,https://github.com/gsd-build/get-shit-done,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,graphify,https://github.com/Graphify-Labs/graphify,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,harness-sdk,https://github.com/strands-agents/harness-sdk/,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,hive,https://github.com/aden-hive/hive,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,humanizer,https://github.com/blader/humanizer,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,intentkit,https://github.com/crestalnetwork/intentkit,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,itsnavee/claude-forge,https://github.com/itsnavee/claude-forge,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,mem0,https://github.com/mem0ai/mem0,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,metaharness,https://github.com/ruvnet/metaharness,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,microsoft/RD-Agent,https://github.com/microsoft/RD-Agent,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,microsoft/ai-agents-for-beginners,https://github.com/microsoft/ai-agents-for-beginners,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,mvanhorn/last30days-skill,https://github.com/mvanhorn/last30days-skill,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,nanobrowser,https://github.com/nanobrowser/nanobrowser,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,nanoclaw,https://github.com/qwibitai/nanoclaw,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,obsidian-skills,https://github.com/kepano/obsidian-skills,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,oh-my-claudecode,https://github.com/Yeachan-Heo/oh-my-claudecode,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,oh-my-openagent,https://github.com/code-yeongyu/oh-my-openagent,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,planning-with-files,https://github.com/OthmanAdi/planning-with-files,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,prompt-optimizer,https://github.com/linshenkx/prompt-optimizer,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,prompts.chat,https://github.com/f/prompts.chat,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,rtk,https://github.com/rtk-ai/rtk,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,sciagent-ai/sciagent-cli,https://github.com/sciagent-ai/sciagent-cli,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,secondsky/claude-skills,https://github.com/secondsky/claude-skills/,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,serena,https://github.com/oraios/serena,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,stbenjam/skillsaw,https://github.com/stbenjam/skillsaw,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,strands-agents,https://github.com/strands-agents/sdk-python,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,system_prompts_leaks,https://github.com/asgeirtj/system_prompts_leaks,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,tdd-guard,https://github.com/nizos/tdd-guard,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,tmusser/ai-engineering-skills,https://github.com/tmusser/ai-engineering-skills,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,ui-ux-pro-max-skill,https://github.com/nextlevelbuilder/ui-ux-pro-max-skill,,,stars and release both unknown
+NM28,N5,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,vadimcomanescu/agents-skills,https://github.com/vadimcomanescu/agents-skills,,,stars and release both unknown
+NM28,N5,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,modelcontextprotocol/go-sdk,https://github.com/modelcontextprotocol/go-sdk/,,,no topic text in any source; tags must be read live
+NM28,N5,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,modelcontextprotocol/python-sdk,https://github.com/modelcontextprotocol/python-sdk/,,,no topic text in any source; tags must be read live
+NM28,N5,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,modelcontextprotocol/registry,https://github.com/modelcontextprotocol/registry,,,no topic text in any source; tags must be read live
+NM28,N5,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,modelcontextprotocol/typescript-sdk,https://github.com/modelcontextprotocol/typescript-sdk,,,no topic text in any source; tags must be read live
+NM28,N5,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,nousresearch/hermes-agent,https://github.com/NousResearch/hermes-agent,,,no topic text in any source; tags must be read live
+NM28,N5,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,openai/openai-agents-python,https://github.com/openai/openai-agents-python/,,,no topic text in any source; tags must be read live
+NM32,N6,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,ProjectPhysX/FluidX3D,https://github.com/ProjectPhysX/FluidX3D,,,stars and release both unknown
+NM34,N6,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,facebookresearch/xformers,https://github.com/facebookresearch/xformers?tab=readme-ov-file,,,no topic text in any source; tags must be read live
+NM36,N7,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,GEAR,https://github.com/opengear-project/GEAR,,,stars and release both unknown
+NM37,N7,0,PENDING_STARS,PENDING_STARS,LiteLLM,https://github.com/BerriAI/litellm,2026-10-16,,release in window (CSV) but stars unknown
+NM37,N7,0,PENDING_STARS,PENDING_STARS,oMLX,https://github.com/jundot/omlx,2026-10-15,,release in window (CSV) but stars unknown
+NM37,N7,0,PENDING_STARS,PENDING_STARS,tashfeenahmed/freellmapi,https://github.com/tashfeenahmed/freellmapi,2026-10-15,,release in window (CSV) but stars unknown
+NM37,N7,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,AutoGPTQ/AutoGPTQ,https://github.com/AutoGPTQ/AutoGPTQ,,,stars and release both unknown
+NM37,N7,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,GPTQModel,https://github.com/ModelCloud/gptqmodel,,,stars and release both unknown
+NM37,N7,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,Model-Optimizer,https://github.com/NVIDIA/Model-Optimizer,,,stars and release both unknown
+NM37,N7,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,OpenNMT/CTranslate2,https://github.com/OpenNMT/CTranslate2,,,stars and release both unknown
+NM37,N7,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,bitsandbytes-foundation/bitsandbytes,https://github.com/bitsandbytes-foundation/bitsandbytes,,,stars and release both unknown
+NM37,N7,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,headroom,https://github.com/headroomlabs-ai/headroom,,,stars and release both unknown
+NM37,N7,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,intel/neural-compressor,https://github.com/intel/neural-compressor,,,stars and release both unknown
+NM37,N7,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,lcc,https://github.com/lucasmartins-ai/lcc,,,stars and release both unknown
+NM37,N7,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,mit-han-lab/llm-awq,https://github.com/mit-han-lab/llm-awq/,,,stars and release both unknown
+NM37,N7,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,neuralmagic/deepsparse,https://github.com/neuralmagic/deepsparse,,,stars and release both unknown
+NM37,N7,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,nunchaku-ai/nunchaku,https://github.com/nunchaku-ai/nunchaku,,,stars and release both unknown
+NM37,N7,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,vllm-project/llm-compressor,https://github.com/vllm-project/llm-compressor,,,stars and release both unknown
+NM40,N7,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,ai-dynamo/dynamo,https://github.com/ai-dynamo/dynamo,,,no topic text in any source; tags must be read live
+NM43,N8,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,NVIDIA/Megatron-LM,https://github.com/NVIDIA/Megatron-LM,,,stars and release both unknown
+NM43,N8,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,deepspeedai/DeepSpeed,https://github.com/deepspeedai/DeepSpeed,,,stars and release both unknown
+NM48,N9,0,PENDING_TOPIC_UNKNOWN,PENDING_TOPIC_UNKNOWN,apache/tvm,https://github.com/apache/tvm/,,,no topic text in any source; tags must be read live
+NM54,N10,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,AUTOMATIC1111/stable-diffusion-webui,https://github.com/AUTOMATIC1111/stable-diffusion-webui,,,stars and release both unknown
+NM56,N11,0,STUDY_POINTER,ADD_STUDY_EDU,owainlewis/awesome-artificial-intelligence,https://github.com/owainlewis/awesome-artificial-intelligence,,16680,educational resource from a reliable source; 0 h pointer
+NM56,N11,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,ahmedbahaaeldin/From-0-to-Research-Scientist-resources-guide,https://github.com/ahmedbahaaeldin/From-0-to-Research-Scientist-resources-guide,,,educational but source not on reliable list; pending review
+NM56,N11,0,PENDING_STARS,PENDING_STARS,earthtojake/text-to-cad,https://github.com/earthtojake/text-to-cad,2026-10-11,,release in window (CSV) but stars unknown
+NM56,N11,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,aipoch/open-science,https://github.com/aipoch/open-science,,,stars and release both unknown
+NM56,N11,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,dzhng/deep-research,https://github.com/dzhng/deep-research,,,stars and release both unknown
+NM56,N11,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,google-deepmind/alphafold,https://github.com/google-deepmind/alphafold,,,stars and release both unknown
+NM56,N11,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,google-research/bert,https://github.com/google-research/bert,,,stars and release both unknown
+NM56,N11,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,google/artemis,https://github.com/google/artemis,,,stars and release both unknown
+NM56,N11,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,labmlai/annotated_deep_learning_paper_implementations,https://github.com/labmlai/annotated_deep_learning_paper_implementations,,,stars and release both unknown
+NM56,N11,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,microsoft/qlib,https://github.com/microsoft/qlib,,,stars and release both unknown
+NM56,N11,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,nearai/program_synthesis,https://github.com/nearai/program_synthesis,,,stars and release both unknown
+NM56,N11,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,spack/spack,https://github.com/spack/spack,,,stars and release both unknown
+NM56,N11,0,PENDING_STARS_AND_RELEASE,PENDING_STARS_AND_RELEASE,synthetic-sciences/openscience,https://github.com/synthetic-sciences/openscience,,,stars and release both unknown
+NM60,N11,0,STUDY_POINTER,ADD_STUDY_EDU,chiphuyen/aie-book,https://github.com/chiphuyen/aie-book,,,educational resource from a reliable source; 0 h pointer
+NM60,N11,0,STUDY_POINTER,ADD_STUDY_EDU,donnemartin/system-design-primer,http://www.github.com/donnemartin/system-design-primer,,354455,educational resource from a reliable source; 0 h pointer
+NM60,N11,0,STUDY_POINTER,ADD_STUDY_EDU,jwasham/coding-interview-university,https://www.github.com/jwasham/coding-interview-university,,357248,educational resource from a reliable source; 0 h pointer
+NM60,N11,0,STUDY_POINTER,ADD_STUDY_EDU,kamranahmedse/developer-roadmap,https://www.github.com/kamranahmedse/developer-roadmap,,369523,educational resource from a reliable source; 0 h pointer
+NM60,N11,0,STUDY_POINTER,ADD_STUDY_EDU,louisfb01/start-ai-engineering,https://github.com/louisfb01/start-ai-engineering,,,educational resource from a reliable source; 0 h pointer
+NM60,N11,0,STUDY_POINTER,ADD_STUDY_EDU,ossu/computer-science,http://www.github.com/ossu/computer-science,,207316,educational resource from a reliable source; 0 h pointer
+NM60,N11,0,STUDY_POINTER,ADD_STUDY_EDU,udlbook/udlbook,https://github.com/udlbook/udlbook,,10023,educational resource from a reliable source; 0 h pointer
+NM60,N11,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,Guidely-org/awesome-ai-engineering,https://github.com/Guidely-org/awesome-ai-engineering,,,educational but source not on reliable list; pending review
+NM60,N11,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,alirezadir/Machine-Learning-Interviews,https://github.com/alirezadir/Machine-Learning-Interviews,,9864,educational but source not on reliable list; pending review
+NM60,N11,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,dave-nachman/awesome-ai-engineering,https://github.com/dave-nachman/awesome-ai-engineering,,,educational but source not on reliable list; pending review
+NM60,N11,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,khangich/machine-learning-interview,https://github.com/khangich/machine-learning-interview,,12843,educational but source not on reliable list; pending review
+NM60,N11,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,samuelvinay91/awesome-ai-engineer,https://github.com/samuelvinay91/awesome-ai-engineer,,,educational but source not on reliable list; pending review
+NM60,N11,0,PENDING_EDU_REVIEW,PENDING_EDU_REVIEW,w512/AI-Vault,https://github.com/w512/AI-Vault,,,educational but source not on reliable list; pending review

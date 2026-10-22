@@ -1,0 +1,45 @@
+persona,tier,tier_weight,domains,score_y10_B61,score_y10_O3x,delta,B61 spine modules,B62 H3X modules
+Fei-Fei Li,1,5,D02 computer vision / spatial AI x1.0,5.73,5.73,0.0,H3-FFL-A H3-FFL-B H3-FFL-C,-
+Quoc V. Le,1,5,D03 LLM scaling / pre-training / MoE x0.7; D01 deep-learning foundations / representation x0.3,3.06,3.63,0.57,H3-LE H3-LE-B,H3X-DLF H3X-EFF
+Edsger Dijkstra,1,5,D05 algorithms / theory / rigour x0.6; D06 OS / kernel / open source x0.4,9.84,9.83,-0.01,H3-KNUTH-A,H3X-YAO
+Michael Stonebraker,1,5,D07 databases / data systems x1.0,3.91,5.34,1.43,registry,H3X-DB
+Yoshua Bengio,1,5,D01 deep-learning foundations / representation x1.0,2.5,3.65,1.15,registry,H3X-DLF
+Linus Torvalds,1,5,D06 OS / kernel / open source x1.0,9.9,9.9,0.0,H3-TORV,-
+Donald Knuth,1,5,D05 algorithms / theory / rigour x1.0,9.8,9.78,-0.02,H3-KNUTH-A H3-KNUTH-B H3-KNUTH-C,-
+Moustapha Cisse,1,5,D01 deep-learning foundations / representation x0.6; D02 computer vision / spatial AI x0.4,3.79,4.48,0.69,registry,H3X-DLF
+Steve Wozniak,1,5,D09 digital hardware from scratch x1.0,5.04,5.04,0.0,H3-WOZ-A,-
+Yann LeCun,1,5,D01 deep-learning foundations / representation x0.6; D02 computer vision / spatial AI x0.4,3.79,4.48,0.69,registry,H3X-DLF
+Andrew Chi-Chih Yao,1,5,D05 algorithms / theory / rigour x0.7; D15 quantum hardware x0.3,6.86,7.16,0.3,registry,H3X-YAO H3X-QHW-A
+Lynn Conway,1,5,D11 VLSI / physical design / neuromorphic x0.7; D10 computer architecture / CPU / multicore / accelerators x0.3,6.82,7.25,0.43,H3-CHIP,H3X-VLSI
+Bill Dally,1,5,D12 interconnect / RDMA / GPU fabric x0.6; D10 computer architecture / CPU / multicore / accelerators x0.4,8.94,9.02,0.08,registry,H3X-NET
+Marc Raibert,1,5,"D14 robotics: legged, whole-body, behaviour-based x1.0",4.11,5.13,1.02,H3-SEEDS,H3X-ROB
+Norman Jouppi,1,5,D10 computer architecture / CPU / multicore / accelerators x0.7; D08 distributed + ML systems x0.3,8.37,8.57,0.2,H3-DEAN,H3X-ARCH
+David Wineland,1,5,D15 quantum hardware x0.7; D16 optics / photonics x0.3,0.0,1.15,1.15,registry,H3X-QHW-A H3X-QHW-B H3X-OPT
+Charles K. Kao,1,5,D16 optics / photonics x1.0,0.0,1.39,1.39,registry,H3X-OPT
+John Martinis,1,5,D15 quantum hardware x1.0,0.0,1.04,1.04,H3-SEEDS,H3X-QHW-A H3X-QHW-B
+John Hennessy,1,5,D10 computer architecture / CPU / multicore / accelerators x1.0,8.29,8.6,0.31,registry,H3X-ARCH
+Robert Schoelkopf,1,5,D15 quantum hardware x1.0,0.0,1.04,1.04,registry,H3X-QHW-A H3X-QHW-B
+David Patterson,1,5,D10 computer architecture / CPU / multicore / accelerators x1.0,8.29,8.6,0.31,registry,H3X-ARCH
+Jeff Dean,1,5,D08 distributed + ML systems x1.0,8.54,8.51,-0.03,H3-DEAN,-
+Rodney Brooks,1,5,"D14 robotics: legged, whole-body, behaviour-based x1.0",4.11,5.13,1.02,registry,H3X-ROB
+Oussama Khatib,1,5,"D14 robotics: legged, whole-body, behaviour-based x1.0",4.11,5.13,1.02,registry,H3X-ROB
+Jim Keller,1,5,D10 computer architecture / CPU / multicore / accelerators x1.0,8.29,8.6,0.31,registry,H3X-ARCH
+Johny Srouji,1,5,D10 computer architecture / CPU / multicore / accelerators x0.6; D11 VLSI / physical design / neuromorphic x0.4,7.45,7.83,0.38,registry,H3X-ARCH H3X-VLSI
+Carver Mead,1,5,D11 VLSI / physical design / neuromorphic x1.0,6.19,6.67,0.48,H3-CHIP,H3X-VLSI
+Chris Lattner,1,5,D13 compilers / ML compilers x1.0,2.56,4.21,1.65,registry,H3X-COMP
+Michel Devoret,1,5,D15 quantum hardware x1.0,0.0,1.04,1.04,registry,H3X-QHW-A H3X-QHW-B
+Tim Dettmers,2-3,3,D04 efficient ML / quantization / kernels x1.0,4.6,5.73,1.13,registry,H3X-EFF
+Gerard Williams III,2-3,3,D10 computer architecture / CPU / multicore / accelerators x1.0,8.29,8.6,0.31,registry,H3X-ARCH
+Zhi-Hua Zhou,2-3,3,D18 classical ML / ensembles / learning theory x1.0,9.46,9.15,-0.31,registry,H3X-ML
+Yunji Chen,2-3,3,D10 computer architecture / CPU / multicore / accelerators x0.6; D04 efficient ML / quantization / kernels x0.4,6.82,7.45,0.63,registry,H3X-ARCH H3X-EFF
+Kunle Olukotun,2-3,3,D10 computer architecture / CPU / multicore / accelerators x0.7; D13 compilers / ML compilers x0.3,6.58,7.28,0.7,registry,H3X-ARCH H3X-COMP
+Damai Dai,4,2,D03 LLM scaling / pre-training / MoE x0.5; D04 efficient ML / quantization / kernels x0.5,3.95,4.67,0.72,registry,H3X-EFF
+Tri Dao,4,2,D04 efficient ML / quantization / kernels x1.0,4.6,5.73,1.13,registry,H3X-EFF
+Tianqi Chen,4,2,D13 compilers / ML compilers x0.5; D04 efficient ML / quantization / kernels x0.5,3.58,4.97,1.39,registry,H3X-COMP
+Song Han,4,2,D04 efficient ML / quantization / kernels x1.0,4.6,5.73,1.13,registry,H3X-EFF
+Weiwu Hu,4,2,D10 computer architecture / CPU / multicore / accelerators x1.0,8.29,8.6,0.31,registry,H3X-ARCH
+Michael Kagan,5,1,D12 interconnect / RDMA / GPU fabric x1.0,9.36,9.31,-0.05,registry,H3X-NET
+Dharmendra Modha,5,1,D11 VLSI / physical design / neuromorphic x1.0,6.19,6.67,0.48,H3-SEEDS,H3X-VLSI
+Mark Horowitz,5,1,D11 VLSI / physical design / neuromorphic x0.5; D10 computer architecture / CPU / multicore / accelerators x0.5,7.24,7.63,0.39,registry,H3X-VLSI
+Tianshi Chen,5,1,D10 computer architecture / CPU / multicore / accelerators x0.5; D04 efficient ML / quantization / kernels x0.5,6.45,7.16,0.71,registry,H3X-ARCH H3X-EFF
+Eyal Waldman,5,1,D12 interconnect / RDMA / GPU fabric x1.0,9.36,9.31,-0.05,registry,H3X-NET

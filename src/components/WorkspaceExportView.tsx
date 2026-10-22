@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { User } from 'firebase/auth';
 import { CURRICULUM_MODULES } from '../data/curriculumData.ts';
-import { REPOSITORY_DATABASE, RepositoryItem } from '../data/repoCatalog.ts';
+import { REPOSITORY_DATABASE } from '../data/repoCatalog.ts';
 import {
   exportToGoogleSheets,
   exportToGoogleDocs,
@@ -11,6 +11,7 @@ import {
   downloadJSON,
   WorkspaceExportResult,
 } from '../lib/workspaceExport.ts';
+import { openGooglePicker, listGoogleDriveFiles, PickedFile } from '../lib/googlePicker.ts';
 import { ConfirmationModal } from './ConfirmationModal.tsx';
 import {
   FileSpreadsheet,
@@ -23,21 +24,32 @@ import {
   CheckCircle,
   AlertCircle,
   ShieldAlert,
+  Search,
+  Sparkles,
+  RefreshCw,
+  FolderOpen,
+  FileCode,
+  HardDrive,
+  FileDown,
 } from 'lucide-react';
+import { downloadCurriculumDocx } from '../lib/docxExport.ts';
 
 interface WorkspaceExportViewProps {
   user: User | null;
   accessToken: string | null;
   onSignIn: () => void;
+  onAnalyzeFileInGemini?: (file: PickedFile) => void;
 }
 
 export const WorkspaceExportView: React.FC<WorkspaceExportViewProps> = ({
   user,
   accessToken,
   onSignIn,
+  onAnalyzeFileInGemini,
 }) => {
   const [activeExporting, setActiveExporting] = useState<string | null>(null);
   const [exportResults, setExportResults] = useState<Record<string, WorkspaceExportResult>>({});
+  const [notification, setNotification] = useState<{ type: 'success' | 'error' | 'info'; message: string } | null>(null);
 
   // Confirmation modal state
   const [modalConfig, setModalConfig] = useState<{
@@ -55,8 +67,94 @@ export const WorkspaceExportView: React.FC<WorkspaceExportViewProps> = ({
 
   // Calendar configuration state
   const [calendarTitle, setCalendarTitle] = useState('B69 Checkpoint: NM28 Higher Harness Stack');
-  const [calendarDesc, setCalendarDesc] = useState('Study milestone review for MCP tool schemas and agent sandbox verification.');
   const [calendarDate, setCalendarDate] = useState('2026-11-01T10:00:00');
+
+  // Google Picker & Drive Files state
+  const [pickedFiles, setPickedFiles] = useState<PickedFile[]>([]);
+  const [isPickerLoading, setIsPickerLoading] = useState(false);
+  const [isDriveListing, setIsDriveListing] = useState(false);
+
+  // Auto-dismiss notifications after 6 seconds
+  useEffect(() => {
+    if (notification) {
+      const timer = setTimeout(() => setNotification(null), 6000);
+      return () => clearTimeout(timer);
+    }
+  }, [notification]);
+
+  // Open Google Picker modal
+  const handleOpenPicker = async () => {
+    if (!accessToken) {
+      setNotification({
+        type: 'info',
+        message: 'Please connect your Google account first to open your Drive files with Google Picker.',
+      });
+      return;
+    }
+
+    setIsPickerLoading(true);
+    try {
+      await openGooglePicker(
+        accessToken,
+        (file) => {
+          setPickedFiles((prev) => {
+            const exists = prev.some((f) => f.id === file.id);
+            if (exists) return prev;
+            return [file, ...prev];
+          });
+          setNotification({
+            type: 'success',
+            message: `Selected "${file.name}" via Google Picker.`,
+          });
+        },
+        () => {
+          // User cancelled picker
+        },
+      );
+    } catch (err: any) {
+      console.error('Google Picker error:', err);
+      setNotification({
+        type: 'error',
+        message: `Google Picker: ${err?.message || 'Could not open picker in this window.'}`,
+      });
+    } finally {
+      setIsPickerLoading(false);
+    }
+  };
+
+  // Direct fetch files from Google Drive REST API
+  const handleFetchDriveFiles = async () => {
+    if (!accessToken) {
+      setNotification({
+        type: 'info',
+        message: 'Please connect your Google account first to list Google Drive files.',
+      });
+      return;
+    }
+
+    setIsDriveListing(true);
+    try {
+      const files = await listGoogleDriveFiles(accessToken);
+      setPickedFiles((prev) => {
+        const map = new Map<string, PickedFile>();
+        files.forEach((f) => map.set(f.id, f));
+        prev.forEach((f) => map.set(f.id, f));
+        return Array.from(map.values());
+      });
+      setNotification({
+        type: 'success',
+        message: `Retrieved ${files.length} recent files from your Google Drive account.`,
+      });
+    } catch (err: any) {
+      console.error('Fetch Drive files error:', err);
+      setNotification({
+        type: 'error',
+        message: `Google Drive API: ${err?.message || 'Failed to list drive files'}`,
+      });
+    } finally {
+      setIsDriveListing(false);
+    }
+  };
 
   // Trigger Confirmation Modals (Mandatory User Consent)
   const requestExportSheets = () => {
@@ -105,7 +203,10 @@ export const WorkspaceExportView: React.FC<WorkspaceExportViewProps> = ({
     setModalConfig((prev) => ({ ...prev, isOpen: false }));
 
     if (!accessToken) {
-      alert('Please connect your Google account first using Sign in with Google.');
+      setNotification({
+        type: 'info',
+        message: 'Please connect your Google account first using Sign in with Google.',
+      });
       return;
     }
 
@@ -114,27 +215,60 @@ export const WorkspaceExportView: React.FC<WorkspaceExportViewProps> = ({
       const res = await exportToGoogleSheets(accessToken, REPOSITORY_DATABASE, CURRICULUM_MODULES);
       setExportResults((prev) => ({ ...prev, sheets: res }));
       setActiveExporting(null);
+      if (res.success) {
+        setNotification({
+          type: 'success',
+          message: 'Google Spreadsheet successfully created and populated in Drive.',
+        });
+      } else {
+        setNotification({ type: 'error', message: res.error || 'Failed to export to Sheets' });
+      }
     } else if (action === 'docs') {
       setActiveExporting('docs');
       const res = await exportToGoogleDocs(accessToken, REPOSITORY_DATABASE, CURRICULUM_MODULES);
       setExportResults((prev) => ({ ...prev, docs: res }));
       setActiveExporting(null);
+      if (res.success) {
+        setNotification({
+          type: 'success',
+          message: 'Google Docs Study Syllabus successfully generated.',
+        });
+      } else {
+        setNotification({ type: 'error', message: res.error || 'Failed to generate Google Doc' });
+      }
     } else if (action === 'drive') {
       setActiveExporting('drive');
       const res = await createGoogleDriveFolder(accessToken, 'B69 AI Engineering Curriculum');
       setExportResults((prev) => ({ ...prev, drive: res }));
       setActiveExporting(null);
+      if (res.success) {
+        setNotification({
+          type: 'success',
+          message: 'Google Drive folder "B69 AI Engineering Curriculum" created.',
+        });
+      } else {
+        setNotification({ type: 'error', message: res.error || 'Failed to create Drive folder' });
+      }
     } else if (action === 'calendar') {
       setActiveExporting('calendar');
-      const endIso = new Date(new Date(calendarDate).getTime() + 60 * 60 * 1000).toISOString();
+      const startDate = new Date(calendarDate);
+      const endDate = new Date(startDate.getTime() + 60 * 60 * 1000); // 1 hour duration
       const res = await scheduleCalendarMilestone(accessToken, {
         title: calendarTitle,
-        description: calendarDesc,
-        startIso: new Date(calendarDate).toISOString(),
-        endIso,
+        description: 'Study milestone review for B69 engineering curriculum.',
+        startIso: startDate.toISOString(),
+        endIso: endDate.toISOString(),
       });
       setExportResults((prev) => ({ ...prev, calendar: res }));
       setActiveExporting(null);
+      if (res.success) {
+        setNotification({
+          type: 'success',
+          message: 'Milestone scheduled in your Google Calendar.',
+        });
+      } else {
+        setNotification({ type: 'error', message: res.error || 'Failed to schedule calendar event' });
+      }
     }
   };
 
@@ -152,17 +286,43 @@ export const WorkspaceExportView: React.FC<WorkspaceExportViewProps> = ({
         onCancel={() => setModalConfig((prev) => ({ ...prev, isOpen: false }))}
       />
 
+      {/* Inline Notification Banner */}
+      {notification && (
+        <div
+          className={`p-3.5 rounded-lg border text-xs font-mono flex items-center justify-between animate-in fade-in duration-150 ${
+            notification.type === 'success'
+              ? 'bg-emerald-950/60 border-emerald-500/40 text-emerald-300'
+              : notification.type === 'error'
+              ? 'bg-rose-950/60 border-rose-500/40 text-rose-300'
+              : 'bg-sky-950/60 border-sky-500/40 text-sky-300'
+          }`}
+        >
+          <div className="flex items-center space-x-2">
+            {notification.type === 'success' && <CheckCircle className="w-4 h-4 text-emerald-400" />}
+            {notification.type === 'error' && <AlertCircle className="w-4 h-4 text-rose-400" />}
+            {notification.type === 'info' && <HardDrive className="w-4 h-4 text-sky-400" />}
+            <span>{notification.message}</span>
+          </div>
+          <button
+            onClick={() => setNotification(null)}
+            className="text-slate-400 hover:text-white text-xs underline ml-4"
+          >
+            Dismiss
+          </button>
+        </div>
+      )}
+
       {/* Header */}
       <div className="p-5 bg-slate-900/70 border border-slate-800 rounded-lg space-y-2">
         <div className="flex items-center space-x-2 text-xs font-mono text-sky-400">
           <FileSpreadsheet className="w-4 h-4" />
-          <span>GOOGLE WORKSPACE CLIENT-SIDE EXPORT SUITE</span>
+          <span>GOOGLE WORKSPACE &amp; GOOGLE PICKER INTEGRATION</span>
         </div>
         <h2 className="text-lg font-bold text-white">
-          Export to Google Sheets, Docs, Drive &amp; Calendar
+          Google Drive Picker, Sheets, Docs &amp; Calendar Export Suite
         </h2>
         <p className="text-xs text-slate-300 leading-relaxed max-w-3xl">
-          Directly synchronize the 7,200-hour engineering curriculum, &gt;=70% correlated repository matrix, and Higher Harness Stack into your Google Workspace account with full user consent and explicit confirmation.
+          Browse and select your Google Drive files with Google Picker, or export the 7,200-hour engineering curriculum, &gt;=70% correlated repository matrix, and Higher Harness Stack into your Google Workspace account with explicit user confirmation.
         </p>
       </div>
 
@@ -184,7 +344,7 @@ export const WorkspaceExportView: React.FC<WorkspaceExportViewProps> = ({
             )}
           </div>
           <div className="text-[11px] font-mono text-slate-500 mt-1">
-            Scopes: drive.file · spreadsheets · documents · calendar.events
+            Scopes: drive.file · drive.metadata.readonly · spreadsheets · documents · calendar.events
           </div>
         </div>
 
@@ -201,6 +361,130 @@ export const WorkspaceExportView: React.FC<WorkspaceExportViewProps> = ({
             </svg>
             <span>Sign in with Google</span>
           </button>
+        )}
+      </div>
+
+      {/* SECTION: Google Picker & Drive Files Explorer */}
+      <div className="p-5 bg-gradient-to-br from-slate-900 to-slate-950 border border-sky-500/30 rounded-xl space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="space-y-1">
+            <div className="flex items-center space-x-2 text-xs font-mono text-sky-400 font-bold uppercase">
+              <FolderOpen className="w-4 h-4" />
+              <span>Google Picker &amp; Drive File Explorer</span>
+            </div>
+            <h3 className="text-base font-bold text-white">
+              Select or Attach Files from Google Drive
+            </h3>
+            <p className="text-xs text-slate-300">
+              Launch the official Google Picker modal to browse your Google Drive spreadsheets, syllabus notes, and code artifacts, or view recent files below.
+            </p>
+          </div>
+
+          <div className="flex items-center space-x-2 shrink-0">
+            <button
+              onClick={handleOpenPicker}
+              disabled={isPickerLoading || !user}
+              className="flex items-center space-x-2 bg-sky-600 hover:bg-sky-500 disabled:opacity-50 text-white px-4 py-2 rounded text-xs font-semibold shadow-md transition"
+            >
+              {isPickerLoading ? (
+                <>
+                  <Loader2 className="w-4 h-4 animate-spin" />
+                  <span>Opening Picker...</span>
+                </>
+              ) : (
+                <>
+                  <FolderOpen className="w-4 h-4" />
+                  <span>Launch Google Picker</span>
+                </>
+              )}
+            </button>
+
+            <button
+              onClick={handleFetchDriveFiles}
+              disabled={isDriveListing || !user}
+              className="flex items-center space-x-1.5 bg-slate-800 hover:bg-slate-700 disabled:opacity-50 text-slate-200 px-3 py-2 rounded text-xs font-mono border border-slate-700 transition"
+              title="Sync recent files directly from Google Drive"
+            >
+              <RefreshCw className={`w-3.5 h-3.5 text-sky-400 ${isDriveListing ? 'animate-spin' : ''}`} />
+              <span className="hidden sm:inline">Sync Drive</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Picked Files Table / List */}
+        {pickedFiles.length > 0 ? (
+          <div className="space-y-2 pt-2">
+            <div className="text-xs font-mono text-slate-400 flex items-center justify-between">
+              <span>Drive Artifacts &amp; Picked Files ({pickedFiles.length})</span>
+              <button
+                onClick={() => setPickedFiles([])}
+                className="text-[11px] text-slate-500 hover:text-slate-300 underline"
+              >
+                Clear List
+              </button>
+            </div>
+
+            <div className="bg-slate-950 border border-slate-800 rounded-lg divide-y divide-slate-850 overflow-hidden">
+              {pickedFiles.map((f) => (
+                <div key={f.id} className="p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:bg-slate-900/50 transition">
+                  <div className="flex items-center space-x-3 overflow-hidden">
+                    <div className="p-2 rounded bg-slate-900 text-sky-400 shrink-0">
+                      {f.mimeType.includes('spreadsheet') ? (
+                        <FileSpreadsheet className="w-4 h-4 text-emerald-400" />
+                      ) : f.mimeType.includes('document') ? (
+                        <FileText className="w-4 h-4 text-sky-400" />
+                      ) : f.mimeType.includes('folder') ? (
+                        <FolderPlus className="w-4 h-4 text-amber-400" />
+                      ) : (
+                        <FileCode className="w-4 h-4 text-purple-400" />
+                      )}
+                    </div>
+                    <div className="overflow-hidden">
+                      <div className="text-xs font-bold text-white truncate max-w-sm sm:max-w-md">
+                        {f.name}
+                      </div>
+                      <div className="text-[11px] font-mono text-slate-500 truncate flex items-center space-x-2">
+                        <span>ID: {f.id.slice(0, 12)}...</span>
+                        <span>·</span>
+                        <span className="truncate max-w-[150px]">{f.mimeType.replace('application/vnd.google-apps.', '')}</span>
+                        {f.sizeBytes && <span>· {(f.sizeBytes / 1024).toFixed(1)} KB</span>}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center space-x-2 shrink-0">
+                    <a
+                      href={f.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-1 text-xs text-sky-400 hover:text-sky-300 bg-slate-900 px-2.5 py-1 rounded border border-slate-800 transition"
+                    >
+                      <span>Open in Drive</span>
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+
+                    {onAnalyzeFileInGemini && (
+                      <button
+                        onClick={() => onAnalyzeFileInGemini(f)}
+                        className="flex items-center space-x-1 text-xs text-purple-300 hover:text-purple-200 bg-purple-950/40 hover:bg-purple-900/60 px-2.5 py-1 rounded border border-purple-800/40 transition"
+                        title="Analyze with Gemini Lab"
+                      >
+                        <Sparkles className="w-3 h-3 text-purple-400" />
+                        <span>Analyze</span>
+                      </button>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div className="p-4 bg-slate-950/60 border border-dashed border-slate-800 rounded-lg text-center space-y-1">
+            <div className="text-xs text-slate-400">No Google Drive files picked yet.</div>
+            <div className="text-[11px] text-slate-500">
+              Click &quot;Launch Google Picker&quot; above to select your spreadsheets, docs, or upload learning materials from Google Drive.
+            </div>
+          </div>
         )}
       </div>
 
@@ -425,7 +709,14 @@ export const WorkspaceExportView: React.FC<WorkspaceExportViewProps> = ({
           </div>
         </div>
 
-        <div className="flex items-center space-x-2">
+        <div className="flex flex-wrap items-center gap-2">
+          <button
+            onClick={() => downloadCurriculumDocx(CURRICULUM_MODULES, REPOSITORY_DATABASE)}
+            className="flex items-center space-x-1.5 bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1.5 rounded transition shadow-sm font-semibold"
+          >
+            <FileDown className="w-3.5 h-3.5" />
+            <span>Download Word (.docx) Syllabus</span>
+          </button>
           <button
             onClick={() => downloadCSV(REPOSITORY_DATABASE)}
             className="flex items-center space-x-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded transition border border-slate-700"

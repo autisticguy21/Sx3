@@ -27,12 +27,14 @@ interface ChatMessage {
 interface GeminiLabViewProps {
   initialModule?: CurriculumModule | null;
   initialVerifyRepo?: RepositoryItem | null;
+  initialPrompt?: string | null;
   onClearInitialVerify?: () => void;
 }
 
 export const GeminiLabView: React.FC<GeminiLabViewProps> = ({
   initialModule,
   initialVerifyRepo,
+  initialPrompt,
   onClearInitialVerify,
 }) => {
   const [activeMode, setActiveMode] = useState<'chat' | 'synthesis' | 'verify'>('chat');
@@ -47,7 +49,7 @@ export const GeminiLabView: React.FC<GeminiLabViewProps> = ({
       timestamp: new Date().toLocaleTimeString(),
     },
   ]);
-  const [chatInput, setChatInput] = useState('');
+  const [chatInput, setChatInput] = useState(initialPrompt || '');
   const [selectedModel, setSelectedModel] = useState<'gemini-4-argon' | 'gemini-3.8-flash' | 'gemini-3.1-flash-lite'>('gemini-3.8-flash');
   const [selectedPersona, setSelectedPersona] = useState<string>('architect');
   const [isChatLoading, setIsChatLoading] = useState(false);
@@ -65,6 +67,13 @@ export const GeminiLabView: React.FC<GeminiLabViewProps> = ({
   const [verifyResult, setVerifyResult] = useState<string>('');
   const [groundingMetadata, setGroundingMetadata] = useState<any>(null);
   const [isVerifying, setIsVerifying] = useState(false);
+
+  useEffect(() => {
+    if (initialPrompt) {
+      setChatInput(initialPrompt);
+      setActiveMode('chat');
+    }
+  }, [initialPrompt]);
 
   useEffect(() => {
     if (initialVerifyRepo) {

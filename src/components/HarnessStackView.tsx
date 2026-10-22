@@ -1,20 +1,33 @@
 import React, { useState } from 'react';
 import { HIGHER_HARNESS_STACK, HarnessLayer } from '../data/harnessStack.ts';
-import { REPOSITORY_DATABASE } from '../data/repoCatalog.ts';
-import { Layers, ShieldCheck, Cpu, Code2, Database, Terminal, ArrowRight, Sparkles, Check, ExternalLink } from 'lucide-react';
+import { REPOSITORY_DATABASE, RepositoryItem } from '../data/repoCatalog.ts';
+import {
+  Layers,
+  ShieldCheck,
+  Cpu,
+  Code2,
+  Database,
+  Terminal,
+  ArrowRight,
+  Sparkles,
+  Check,
+  ExternalLink,
+  BookOpen,
+} from 'lucide-react';
 
 interface HarnessStackViewProps {
   onSynthesizeStack: (stackSummary: string) => void;
+  onInspectRepo?: (repo: RepositoryItem) => void;
 }
 
-export const HarnessStackView: React.FC<HarnessStackViewProps> = ({ onSynthesizeStack }) => {
+export const HarnessStackView: React.FC<HarnessStackViewProps> = ({ onSynthesizeStack, onInspectRepo }) => {
   const [selectedLayerIndex, setSelectedLayerIndex] = useState(1); // Default to Layer 2 MCP contracts
   const activeLayer = HIGHER_HARNESS_STACK[selectedLayerIndex];
 
   // Configured interactive stack state
   const [selectedHost, setSelectedHost] = useState('swe-bench/SWE-bench');
   const [selectedProtocol, setSelectedProtocol] = useState('modelcontextprotocol/typescript-sdk');
-  const [selectedMemory, setSelectedMemory] = useState('mem0ai/mem0');
+  const [selectedMemory, setSelectedMemory] = useState('deepset-ai/haystack');
   const [selectedOrchestrator, setSelectedOrchestrator] = useState('HKUDS/OpenHarness');
   const [selectedGuardrail, setSelectedGuardrail] = useState('centerforaisafety/HarmBench');
 
@@ -128,7 +141,9 @@ export const HarnessStackView: React.FC<HarnessStackViewProps> = ({ onSynthesize
           </h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {activeLayer.primaryRepos.map((repoName) => {
-              const repoData = REPOSITORY_DATABASE.find((r) => r.name.toLowerCase() === repoName.toLowerCase());
+              const repoData = REPOSITORY_DATABASE.find(
+                (r) => r.name.toLowerCase() === repoName.toLowerCase()
+              );
               const stars = repoData?.stars || 15000;
               const url = repoData?.url || `https://github.com/${repoName}`;
               const desc = repoData?.description || 'Core repository in the modern higher harness stack.';
@@ -136,25 +151,39 @@ export const HarnessStackView: React.FC<HarnessStackViewProps> = ({ onSynthesize
               return (
                 <div
                   key={repoName}
-                  className="p-3 bg-slate-950 rounded border border-slate-800/80 hover:border-slate-700 transition space-y-1.5"
+                  className="p-3 bg-slate-950 rounded border border-slate-800/80 hover:border-slate-700 transition flex flex-col justify-between space-y-2"
                 >
-                  <div className="flex items-start justify-between">
-                    <a
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs font-semibold text-slate-100 hover:text-sky-400 flex items-center space-x-1"
-                    >
-                      <span className="truncate max-w-[190px]">{repoName}</span>
-                      <ExternalLink className="w-3 h-3 text-slate-500 shrink-0" />
-                    </a>
+                  <div className="space-y-1.5">
+                    <div className="flex items-start justify-between">
+                      <a
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs font-semibold text-slate-100 hover:text-sky-400 flex items-center space-x-1"
+                      >
+                        <span className="truncate max-w-[190px]">{repoName}</span>
+                        <ExternalLink className="w-3 h-3 text-slate-500 shrink-0" />
+                      </a>
+                    </div>
+                    <div className="text-[11px] font-mono text-slate-400">
+                      {stars.toLocaleString()} stars · &gt;=70% match
+                    </div>
+                    <p className="text-[11px] text-slate-400 line-clamp-2 leading-relaxed">
+                      {desc}
+                    </p>
                   </div>
-                  <div className="text-[11px] font-mono text-slate-400">
-                    {stars.toLocaleString()} stars · &gt;=70% match
-                  </div>
-                  <p className="text-[11px] text-slate-400 line-clamp-2 leading-relaxed">
-                    {desc}
-                  </p>
+
+                  {onInspectRepo && repoData && (
+                    <div className="pt-2 border-t border-slate-900 flex justify-end">
+                      <button
+                        onClick={() => onInspectRepo(repoData)}
+                        className="flex items-center space-x-1 text-[11px] font-mono text-amber-400 hover:text-amber-300 transition"
+                      >
+                        <BookOpen className="w-3 h-3" />
+                        <span>Study Guide &amp; Books</span>
+                      </button>
+                    </div>
+                  )}
                 </div>
               );
             })}
@@ -183,7 +212,9 @@ export const HarnessStackView: React.FC<HarnessStackViewProps> = ({ onSynthesize
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 text-xs font-mono">
           {/* L1 Host */}
           <div className="space-y-1">
-            <label htmlFor="harness-l1-select" className="text-slate-400 text-[11px] block">L1 Sandbox / Host</label>
+            <label htmlFor="harness-l1-select" className="text-slate-400 text-[11px] block">
+              L1 Sandbox / Host
+            </label>
             <select
               id="harness-l1-select"
               value={selectedHost}
@@ -191,6 +222,7 @@ export const HarnessStackView: React.FC<HarnessStackViewProps> = ({ onSynthesize
               className="w-full bg-slate-950 border border-slate-800 rounded p-2 text-slate-200 focus:outline-none focus:border-sky-500"
             >
               <option value="swe-bench/SWE-bench">swe-bench/SWE-bench</option>
+              <option value="robustadev/robusta">robustadev/robusta (Kubernetes SRE)</option>
               <option value="browser-use/browser-harness">browser-use/browser-harness</option>
               <option value="openinterpreter/open-interpreter">openinterpreter</option>
               <option value="kubeflow/kubeflow">kubeflow/kubeflow</option>
@@ -199,7 +231,9 @@ export const HarnessStackView: React.FC<HarnessStackViewProps> = ({ onSynthesize
 
           {/* L2 Protocol */}
           <div className="space-y-1">
-            <label htmlFor="harness-l2-select" className="text-slate-400 text-[11px] block">L2 MCP Tool Schema</label>
+            <label htmlFor="harness-l2-select" className="text-slate-400 text-[11px] block">
+              L2 MCP Tool Schema
+            </label>
             <select
               id="harness-l2-select"
               value={selectedProtocol}
@@ -216,13 +250,16 @@ export const HarnessStackView: React.FC<HarnessStackViewProps> = ({ onSynthesize
 
           {/* L3 Memory */}
           <div className="space-y-1">
-            <label htmlFor="harness-l3-select" className="text-slate-400 text-[11px] block">L3 Context &amp; Memory</label>
+            <label htmlFor="harness-l3-select" className="text-slate-400 text-[11px] block">
+              L3 Context &amp; Memory
+            </label>
             <select
               id="harness-l3-select"
               value={selectedMemory}
               onChange={(e) => setSelectedMemory(e.target.value)}
               className="w-full bg-slate-950 border border-slate-800 rounded p-2 text-slate-200 focus:outline-none focus:border-sky-500"
             >
+              <option value="deepset-ai/haystack">deepset-ai/haystack (RAG Pipelines)</option>
               <option value="mem0ai/mem0">mem0ai/mem0</option>
               <option value="Gentleman-Programming/engram">Gentleman/engram</option>
               <option value="microsoft/graphrag">microsoft/graphrag</option>
@@ -232,7 +269,9 @@ export const HarnessStackView: React.FC<HarnessStackViewProps> = ({ onSynthesize
 
           {/* L4 Orchestrator */}
           <div className="space-y-1">
-            <label htmlFor="harness-l4-select" className="text-slate-400 text-[11px] block">L4 Orchestrator</label>
+            <label htmlFor="harness-l4-select" className="text-slate-400 text-[11px] block">
+              L4 Orchestrator
+            </label>
             <select
               id="harness-l4-select"
               value={selectedOrchestrator}
@@ -250,7 +289,9 @@ export const HarnessStackView: React.FC<HarnessStackViewProps> = ({ onSynthesize
 
           {/* L5 Safety */}
           <div className="space-y-1">
-            <label htmlFor="harness-l5-select" className="text-slate-400 text-[11px] block">L5 Safety / Evals</label>
+            <label htmlFor="harness-l5-select" className="text-slate-400 text-[11px] block">
+              L5 Safety / Evals
+            </label>
             <select
               id="harness-l5-select"
               value={selectedGuardrail}

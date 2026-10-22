@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { REPOSITORY_DATABASE, RepositoryItem, filterRepositories } from '../data/repoCatalog.ts';
 import { CURRICULUM_MODULES } from '../data/curriculumData.ts';
+import { RepoStudyGuideModal } from './RepoStudyGuideModal.tsx';
 import {
   Search,
   ExternalLink,
@@ -12,16 +13,20 @@ import {
   Layers,
   Globe,
   Loader2,
+  BookOpen,
+  Code2,
 } from 'lucide-react';
 
 interface RepoMatrixViewProps {
   initialModuleId?: string;
   onVerifyRepo: (repo: RepositoryItem) => void;
+  onTriggerGeminiAnalysis?: (repo: RepositoryItem) => void;
 }
 
 export const RepoMatrixView: React.FC<RepoMatrixViewProps> = ({
   initialModuleId = 'ALL',
   onVerifyRepo,
+  onTriggerGeminiAnalysis,
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [minCorrelation, setMinCorrelation] = useState(70);
@@ -31,6 +36,9 @@ export const RepoMatrixView: React.FC<RepoMatrixViewProps> = ({
   const [selectedHarnessLayer, setSelectedHarnessLayer] = useState('ALL');
   const [harnessOnly, setHarnessOnly] = useState(false);
   const [sortBy, setSortBy] = useState<'stars-desc' | 'stars-asc' | 'corr-desc' | 'name'>('stars-desc');
+
+  // Selected repo for deep study guide modal
+  const [inspectedRepo, setInspectedRepo] = useState<RepositoryItem | null>(null);
 
   const filteredRepos = useMemo(() => {
     let list = filterRepositories({
@@ -54,6 +62,14 @@ export const RepoMatrixView: React.FC<RepoMatrixViewProps> = ({
 
   return (
     <div className="space-y-6">
+      {/* Modal for 2 Books, Lectures, Seminal Papers, and Reproduction */}
+      <RepoStudyGuideModal
+        repo={inspectedRepo}
+        isOpen={Boolean(inspectedRepo)}
+        onClose={() => setInspectedRepo(null)}
+        onTriggerGeminiAnalysis={onTriggerGeminiAnalysis}
+      />
+
       {/* Top Filter and Controls Bar */}
       <div className="bg-slate-900/70 border border-slate-800 rounded-lg p-4 space-y-4">
         {/* Row 1: Search & Toggles */}
@@ -99,104 +115,114 @@ export const RepoMatrixView: React.FC<RepoMatrixViewProps> = ({
           </div>
         </div>
 
-        {/* Row 2: Sliders & Dropdown Filters */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pt-2 border-t border-slate-800/80 text-xs font-mono">
-          {/* Correlation Slider */}
-          <div className="space-y-1.5">
+        {/* Row 2: Sliders & Selectors */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2 border-t border-slate-800/80 text-xs font-mono">
+          {/* Minimum Correlation Slider (Rule >= 70%) */}
+          <div className="space-y-1">
             <div className="flex justify-between text-slate-400">
               <span>Min Correlation:</span>
-              <span className="text-sky-400 font-bold">{minCorrelation}%</span>
+              <span className="text-sky-400 font-semibold">{minCorrelation}%</span>
             </div>
             <input
               type="range"
-              min={50}
-              max={95}
-              step={5}
+              min="50"
+              max="95"
+              step="1"
               value={minCorrelation}
-              onChange={(e) => setMinCorrelation(Number(e.target.value))}
-              aria-label="Minimum correlation threshold percentage"
-              className="w-full h-1.5 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-sky-500"
+              onChange={(e) => setMinCorrelation(parseInt(e.target.value, 10))}
+              aria-label="Minimum correlation percentage"
+              className="w-full accent-sky-500 cursor-pointer"
             />
-            <div className="flex justify-between text-[10px] text-slate-600">
+            <div className="flex justify-between text-[10px] text-slate-500">
               <span>50%</span>
-              <span className="text-sky-500 font-semibold">70% (Default)</span>
+              <span className="text-sky-400">Rule Threshold: 70%</span>
               <span>95%</span>
             </div>
           </div>
 
-          {/* Min Stars Filter */}
-          <div className="space-y-1.5">
-            <label htmlFor="min-stars-select" className="text-slate-400 block">Min Stars Filter:</label>
-            <select
-              id="min-stars-select"
+          {/* Minimum Stars Slider (Rule >= 4,000) */}
+          <div className="space-y-1">
+            <div className="flex justify-between text-slate-400">
+              <span>Min Stars:</span>
+              <span className="text-emerald-400 font-semibold">{minStars.toLocaleString()}</span>
+            </div>
+            <input
+              type="range"
+              min="0"
+              max="100000"
+              step="1000"
               value={minStars}
-              onChange={(e) => setMinStars(Number(e.target.value))}
-              className="w-full bg-slate-950 border border-slate-800 rounded px-2.5 py-1.5 text-slate-200 focus:outline-none focus:border-sky-500 cursor-pointer"
-            >
-              <option value={0}>All Repos (0+ stars)</option>
-              <option value={4000}>4,000+ stars (B69 Rule)</option>
-              <option value={10000}>10,000+ stars</option>
-              <option value={25000}>25,000+ stars</option>
-              <option value={50000}>50,000+ stars</option>
-              <option value={100000}>100,000+ stars</option>
-            </select>
+              onChange={(e) => setMinStars(parseInt(e.target.value, 10))}
+              aria-label="Minimum stars count"
+              className="w-full accent-emerald-500 cursor-pointer"
+            />
+            <div className="flex justify-between text-[10px] text-slate-500">
+              <span>0 (Edu exempt)</span>
+              <span className="text-emerald-400">Rule: 4,000</span>
+              <span>100k+</span>
+            </div>
           </div>
 
-          {/* Module Filter */}
-          <div className="space-y-1.5">
-            <label htmlFor="module-filter-select" className="text-slate-400 block">Curriculum Module:</label>
+          {/* Module Selector */}
+          <div className="space-y-1">
+            <label htmlFor="repo-filter-module-select" className="text-slate-400 block">Filter Module:</label>
             <select
-              id="module-filter-select"
+              id="repo-filter-module-select"
               value={selectedModule}
               onChange={(e) => setSelectedModule(e.target.value)}
-              className="w-full bg-slate-950 border border-slate-800 rounded px-2.5 py-1.5 text-slate-200 focus:outline-none focus:border-sky-500 cursor-pointer"
+              className="w-full bg-slate-950 border border-slate-800 rounded p-1.5 text-slate-200 focus:outline-none focus:border-sky-500 truncate"
             >
-              <option value="ALL">All Modules (NM01 - NM60)</option>
+              <option value="ALL">All 25 Modules (7,200h)</option>
               {CURRICULUM_MODULES.map((m) => (
                 <option key={m.id} value={m.id}>
-                  {m.id}: {m.title.slice(0, 32)}...
+                  {m.id} ({m.stage}) - {m.title.slice(0, 36)}...
                 </option>
               ))}
             </select>
           </div>
 
-          {/* Status Filter */}
-          <div className="space-y-1.5">
-            <label htmlFor="status-filter-select" className="text-slate-400 block">Intake Status:</label>
+          {/* Harness Layer Selector */}
+          <div className="space-y-1">
+            <label htmlFor="repo-filter-layer-select" className="text-slate-400 block">Harness Layer:</label>
             <select
-              id="status-filter-select"
-              value={selectedStatus}
-              onChange={(e) => setSelectedStatus(e.target.value)}
-              className="w-full bg-slate-950 border border-slate-800 rounded px-2.5 py-1.5 text-slate-200 focus:outline-none focus:border-sky-500 cursor-pointer"
+              id="repo-filter-layer-select"
+              value={selectedHarnessLayer}
+              onChange={(e) => setSelectedHarnessLayer(e.target.value)}
+              className="w-full bg-slate-950 border border-slate-800 rounded p-1.5 text-slate-200 focus:outline-none focus:border-sky-500 truncate"
             >
-              <option value="ALL">All Statuses</option>
-              <option value="STUDY_ONLY">STUDY_ONLY (Karpathy / Nanobot)</option>
-              <option value="ADD_STUDY_EDU">ADD_STUDY_EDU (Reliable Sources)</option>
-              <option value="PENDING_RELEASE">PENDING_RELEASE (Stars &gt;= 4k)</option>
-              <option value="PENDING_STARS">PENDING_STARS (Release Verified)</option>
-              <option value="PENDING_EDU_REVIEW">PENDING_EDU_REVIEW</option>
-              <option value="PENDING_STARS_AND_RELEASE">PENDING_STARS_AND_RELEASE</option>
-              <option value="PENDING_TOPIC_UNKNOWN">PENDING_TOPIC_UNKNOWN</option>
+              <option value="ALL">All Harness Layers</option>
+              <option value="Layer 1: Host Sandbox & Execution">Layer 1: Host Sandbox</option>
+              <option value="Layer 2: MCP Tool Contracts & Schema">Layer 2: MCP Contracts</option>
+              <option value="Layer 3: Memory & Context Windows">Layer 3: Memory & Context</option>
+              <option value="Layer 4: Agent Orchestrator & Planner">Layer 4: Agent Orchestrator</option>
+              <option value="Layer 5: Safety, Guardrails & Evaluation">Layer 5: Guardrails & Eval</option>
+              <option value="Serving & Inference Engine">Serving & Inference</option>
+              <option value="Core Model & Training">Core Model & Training</option>
             </select>
           </div>
         </div>
       </div>
 
-      {/* Results Header */}
-      <div className="flex items-center justify-between text-xs font-mono text-slate-400 px-1">
-        <div>
-          Showing <span className="text-white font-bold">{filteredRepos.length}</span> repositories matching criteria (Threshold: &gt;={minCorrelation}%, Stars: &gt;={minStars.toLocaleString()})
+      {/* Metrics Banner */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between text-xs font-mono text-slate-400 px-1 gap-2">
+        <div className="flex items-center space-x-2">
+          <span>Showing <strong className="text-white font-bold">{filteredRepos.length}</strong> repositories</span>
+          <span>·</span>
+          <span>Filtered from 544 intake candidates</span>
+          <span>·</span>
+          <span className="text-amber-400">Click any card to inspect 2 Complementary Books &amp; Reproduction</span>
         </div>
-        <div className="text-slate-500 hidden sm:block">
-          Zero-pill typography · Verified Provenance
+        <div className="text-slate-500">
+          Max Stars: {filteredRepos[0]?.stars.toLocaleString() || 'N/A'} (
+          {filteredRepos[0]?.name || 'N/A'})
         </div>
       </div>
 
-      {/* Repositories Matrix List */}
+      {/* Repository Cards List */}
       <div className="space-y-3">
         {filteredRepos.length === 0 ? (
-          <div className="p-12 text-center bg-slate-900/40 border border-slate-800 rounded-lg">
-            <AlertTriangle className="w-8 h-8 text-amber-500/80 mx-auto mb-2" />
+          <div className="p-8 text-center bg-slate-900/40 border border-slate-800 rounded-lg">
+            <AlertTriangle className="w-8 h-8 text-amber-400 mx-auto mb-2 opacity-80" />
             <h3 className="text-sm font-semibold text-slate-200">No repositories found</h3>
             <p className="text-xs text-slate-400 mt-1">
               Try adjusting the minimum correlation slider or lowering the star count filter.
@@ -206,7 +232,8 @@ export const RepoMatrixView: React.FC<RepoMatrixViewProps> = ({
           filteredRepos.map((repo) => (
             <div
               key={repo.id}
-              className="p-4 bg-slate-900/70 border border-slate-800 rounded-lg hover:border-slate-700 transition space-y-2.5"
+              className="p-4 bg-slate-900/70 border border-slate-800 rounded-lg hover:border-sky-500/50 transition space-y-2.5 cursor-pointer group"
+              onClick={() => setInspectedRepo(repo)}
             >
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2">
                 <div className="space-y-1">
@@ -214,18 +241,22 @@ export const RepoMatrixView: React.FC<RepoMatrixViewProps> = ({
                     <span className="font-mono text-xs font-bold text-sky-400">
                       [{repo.module}]
                     </span>
+                    <span className="text-sm font-bold text-white group-hover:text-sky-300 transition inline-flex items-center space-x-1">
+                      <span>{repo.name}</span>
+                    </span>
                     <a
                       href={repo.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm font-bold text-white hover:text-sky-400 transition inline-flex items-center space-x-1"
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-slate-500 hover:text-sky-400 transition"
+                      title="Open GitHub"
                     >
-                      <span>{repo.name}</span>
-                      <ExternalLink className="w-3.5 h-3.5 text-slate-500" />
+                      <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   </div>
 
-                  {/* Zero-pill metadata text separated by middots */}
+                  {/* Metadata text separated by middots */}
                   <div className="text-xs font-mono text-slate-400 flex items-center flex-wrap gap-y-1">
                     <span className="text-white font-semibold">{repo.stars.toLocaleString()} stars</span>
                     <span className="text-slate-600 mx-1.5">/</span>
@@ -237,7 +268,7 @@ export const RepoMatrixView: React.FC<RepoMatrixViewProps> = ({
                     {repo.releaseDate && (
                       <>
                         <span className="text-slate-600 mx-1.5">·</span>
-                        <span className="text-slate-400">Release: {repo.releaseDate} ({repo.releaseSource})</span>
+                        <span className="text-slate-400">Release: {repo.releaseDate}</span>
                       </>
                     )}
                     <span className="text-slate-600 mx-1.5">·</span>
@@ -245,8 +276,17 @@ export const RepoMatrixView: React.FC<RepoMatrixViewProps> = ({
                   </div>
                 </div>
 
-                {/* Live verification button */}
-                <div className="shrink-0 flex items-center space-x-2">
+                {/* Action buttons */}
+                <div className="shrink-0 flex items-center space-x-2" onClick={(e) => e.stopPropagation()}>
+                  <button
+                    onClick={() => setInspectedRepo(repo)}
+                    className="flex items-center space-x-1.5 bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 px-3 py-1.5 rounded text-xs font-mono transition border border-amber-500/30"
+                    title="View 2 complementary books, lectures, and reproduction guide"
+                  >
+                    <BookOpen className="w-3.5 h-3.5 text-amber-400" />
+                    <span>Study Guide &amp; Reproduction</span>
+                  </button>
+
                   <button
                     onClick={() => onVerifyRepo(repo)}
                     className="flex items-center space-x-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded text-xs font-mono transition border border-slate-700"
@@ -271,7 +311,7 @@ export const RepoMatrixView: React.FC<RepoMatrixViewProps> = ({
               {/* Goal Keywords token overlap */}
               <div className="pt-2 border-t border-slate-800/60 flex items-center justify-between text-[11px] font-mono text-slate-500">
                 <span className="truncate max-w-[500px]">
-                  Matching Tokens: {repo.keywords.join(', ')}
+                  Goal Overlap Tokens: {repo.keywords.join(', ')}
                 </span>
                 {repo.isHarnessStack && (
                   <span className="text-sky-400 font-semibold shrink-0">

@@ -1,0 +1,3012 @@
+{
+  "metadata": {
+    "title": "AI stack and frontier curriculum targeted audit",
+    "date": "2026-10-15",
+    "schema_version": "1.0.0",
+    "status": "EVIDENCE_BASED_DESK_AUDIT_NO_MODEL_TRIALS_OR_LEARNER_GATES",
+    "source_files": [
+      {
+        "filename": "final_ai_stack_frontier_curriculum_master_prompt.json",
+        "sha256": "308a426c5ae505103b4a10478bd57b5ecd5b1fdc42ad5c9e86030403f71f10d1",
+        "bytes": 32605
+      },
+      {
+        "filename": "frontier_v53_narrow_weekly_curriculum.json",
+        "sha256": "684b41a7c564ae54fa58351dc4fb392c72031c2077988e4e7ec57f353f661492",
+        "bytes": 3139091
+      },
+      {
+        "filename": "frontier-v53-unified-curriculum(3).json",
+        "sha256": "edee657bfd3a9d37bae0b30bff5dba8861780af7479fecabe2417ec1910b64b4",
+        "bytes": 43429639
+      },
+      {
+        "filename": "01-senior_career_skill_atlas_brazil_germany_v2.json",
+        "sha256": "fd089b6affa4eaf31999e42d647452fbde06a8d00d3db6bb1d3fca8ac88e76dd",
+        "bytes": 775547
+      },
+      {
+        "filename": "ai_stack_v16_A_B.json",
+        "sha256": "a87760941f6820d0308dc0ebf683dab70932de273f0c228f7ccaf0cbf28afc72",
+        "bytes": 25654
+      },
+      {
+        "filename": "ai_stack_v14_five_plans_with_muse_spark_wonder(1).json",
+        "sha256": "69c254dfde7cdf7a6fc76ac5835e773d918f73c665ba9f7df786780776458372",
+        "bytes": 37554
+      },
+      {
+        "filename": "career_capital_relocation_master_directive(1).json",
+        "sha256": "080ee84db02c26d9dff2693fd098a0da0bde64e6bc8faf669a9cca853ddeae3c",
+        "bytes": 15046
+      },
+      {
+        "filename": "ai_workload_budget.xlsx",
+        "sha256": "ab1de88b649a657bc80425213485fcefab7dbca015684d6c03557c281ac50f33",
+        "bytes": 34457
+      }
+    ],
+    "curriculum_revision": {
+      "broad": "v53.2",
+      "narrow": "frontier-v53-narrow-weekly-1.0",
+      "github_private_sx_access": "not_connected_or_exposed"
+    },
+    "scope": "This is a targeted JSON audit and proposed patch set. Broad S0-S17 competency stages and 12-stage N0-N11 job route are different alternatives; S7X/S16R/S18 remain conditional or beyond the requested S0-S17 boundary."
+  },
+  "executive_summary": {
+    "decision": "Keep direct API routing and the paid-entry narrow path; pilot Gemini 3.8 Flash only for visual/video gaps and defer OpenCode Go until metered eligible coding spend justifies $10/month. Reallocate existing late-stage module time to six bounded patches if prerequisites pass.",
+    "largest_defensible_improvement": "Transcript-first lecture indexing plus selective Gemini 3.8 visual review, independent correctness gates and lower overlap in frontier modules.",
+    "measurement_status": "No model API benchmark, human time-saving study, curriculum gate or quality-per-dollar field trial was run.",
+    "curriculum_coverage_counts": {
+      "COVERED": 0,
+      "PARTIAL": 21,
+      "MISSING": 24,
+      "RESEARCH_WATCHLIST": 7,
+      "CANNOT_VERIFY": 1
+    },
+    "new_required_human_hours": 0,
+    "estimated_monthly_inference_no_job_100k_tokens_per_agent_hour_usd": 27.9701,
+    "estimated_monthly_inference_with_job_100k_tokens_per_agent_hour_usd": 31.7499,
+    "important_constraint": "360 active weeks at 20 human study hours each is the narrow 7200-hour route; 37/42 scheduled AI hours do not certify human mastery or compress gates."
+  },
+  "highlighted_goals": [
+    {
+      "priority": "CRITICAL",
+      "goal": "Cost per accepted deliverable",
+      "finding": "Unmeasured; model costs alone cannot rank accepted quality."
+    },
+    {
+      "priority": "CRITICAL",
+      "goal": "Video fidelity per dollar",
+      "finding": "Gemini is technically capable, but full daily raw video processing exceeds the low budget in static mode."
+    },
+    {
+      "priority": "HIGH",
+      "goal": "Paid-entry curriculum",
+      "finding": "Retain a deployable service and independent programming evidence before optional frontier work."
+    },
+    {
+      "priority": "HIGH",
+      "goal": "Skill transfer",
+      "finding": "Reuse existing RF/world-model/control/precision modules and their artifacts; no mandatory hour expansion."
+    },
+    {
+      "priority": "HIGH",
+      "goal": "Original reproducible research",
+      "finding": "Only promote a watchlist item after a baseline, held-out task, compute plan and falsifiable gate."
+    },
+    {
+      "priority": "HIGH",
+      "goal": "Financial safety",
+      "finding": "Keep Proton Mail/VPN, GitHub and Contabo allowances, 10% reserve and direct API caps."
+    }
+  ],
+  "sources_and_conflicts": {
+    "priority": [
+      "Latest explicit weekly human/AI tables of 15 October 2026",
+      "Narrow v53 weekly route for human scheduling",
+      "Broad v53.2 for topic inventory and stage ordering",
+      "Atlas for vocabulary, not mastery",
+      "v16/v14 for prior AI stack, not observed quality"
+    ],
+    "conflicts": [
+      {
+        "id": "C1",
+        "sources": [
+          {
+            "file": "frontier_v53_narrow_weekly_curriculum.json",
+            "json_path": "schedule_contract.weekly_profiles"
+          },
+          "latest user weekly workload"
+        ],
+        "issue": "Narrow reference has 20 human curriculum hours at 40-hour work or 15 at 45-hour work; latest employed state has 18 human core hours plus 42 AI agent-hours at 45-hour work.",
+        "resolution": "Model 18 human hours/week for employed progression; retain 20-hour week units as content, not elapsed calendar weeks. AI hours remain separate. 7200/18/46≈8.70 active-year equivalents before pauses and failed gates."
+      },
+      {
+        "id": "C2",
+        "sources": [
+          {
+            "file": "frontier-v53-unified-curriculum(3).json",
+            "json_path": "workload.core_structured_hours"
+          },
+          {
+            "file": "frontier_v53_narrow_weekly_curriculum.json",
+            "json_path": "executive_summary.total_planned_hours"
+          }
+        ],
+        "issue": "Broad 58452 hours and narrow 7200 hours describe different paths; summing them double-counts shared competencies.",
+        "resolution": "Keep narrow paid-entry path primary; broad serves as optional reference inventory and stage taxonomy."
+      },
+      {
+        "id": "C3",
+        "sources": [
+          {
+            "file": "frontier-v53-unified-curriculum(3).json",
+            "json_path": "stages"
+          },
+          "latest user stage instruction"
+        ],
+        "issue": "Broad source also contains S7X, S16R and S18, while requested default stage range is S0-S17.",
+        "resolution": "Patch S0-S17 only; list special stages as optional conditional context, never an additional required semester."
+      },
+      {
+        "id": "C4",
+        "sources": [
+          {
+            "file": "ai_stack_v16_A_B.json",
+            "json_path": "selected_routing"
+          },
+          "latest user 40% additional cheap tokens"
+        ],
+        "issue": "v16 routes 70/30 of calls while the latest token budget specifies 70/30 baseline tokens plus 40% cheap extra.",
+        "resolution": "Use latest token accounting; do not convert call percentages into token shares or observed quality."
+      },
+      {
+        "id": "C5",
+        "sources": [
+          {
+            "file": "frontier_v53_narrow_weekly_curriculum.json",
+            "json_path": "executive_summary.reference_scope"
+          },
+          "prior user checkpoint v55 + A2"
+        ],
+        "issue": "Earlier 67517-hour candidate and recovery patch ledger are not among currently inspected source files.",
+        "resolution": "Do not claim reconciliation to v55/A2 or count recovery hours from a checkpoint alone."
+      }
+    ],
+    "source_limitations": [
+      "GitHub sx inaccessible through current connector; no repo writes or code inspection claimed.",
+      "Only primary entry pages for new educational links checked, not every lecture subtitle/chapter.",
+      "Provider account access, regional availability, invoiced VPS and tax/FX not confirmed."
+    ]
+  },
+  "verified_model_registry": [
+    {
+      "model": "Claude Haiku 5.5",
+      "route_alias": "Haiku 5.5",
+      "input_usd_per_million": 0.1,
+      "output_usd_per_million": 0.5,
+      "provider": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "checked": "2026-10-15",
+      "qualification": "Standard, no automatic caching/batch discount assumed."
+    },
+    {
+      "model": "GPT-6 Luna",
+      "route_alias": "Luna 6",
+      "input_usd_per_million": 0.1,
+      "output_usd_per_million": 0.5,
+      "provider": "OpenAI",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+      "checked": "2026-10-15",
+      "qualification": "Standard, no automatic caching/batch discount assumed."
+    },
+    {
+      "model": "DeepSeek V4.1 Flash",
+      "route_alias": "DeepSeek V4.1 Flash off-peak",
+      "input_usd_per_million": 0.15,
+      "output_usd_per_million": 0.6,
+      "provider": "DeepSeek",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "checked": "2026-10-15",
+      "qualification": "Off-peak; peak prices double in published windows."
+    },
+    {
+      "model": "Gemini 3.8 Flash",
+      "route_alias": "Gemini 3.8 Flash introductory",
+      "input_usd_per_million": 0.75,
+      "output_usd_per_million": 3.75,
+      "provider": "Google",
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "checked": "2026-10-15",
+      "qualification": "Promotional price through 31 Dec 2026; $1.50/$7.50 starting 1 Jan 2027."
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "route_alias": "Sol 6.1",
+      "input_usd_per_million": 2,
+      "output_usd_per_million": 10,
+      "provider": "OpenAI",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "checked": "2026-10-15",
+      "qualification": "Standard, no automatic caching/batch discount assumed."
+    },
+    {
+      "model": "Claude Sonnet 5.5",
+      "route_alias": "Sonnet 5.5",
+      "input_usd_per_million": 2,
+      "output_usd_per_million": 10,
+      "provider": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "checked": "2026-10-15",
+      "qualification": "Standard, no automatic caching/batch discount assumed."
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "route_alias": "Gemini 4 Argon introductory",
+      "input_usd_per_million": 2,
+      "output_usd_per_million": 10,
+      "provider": "Google",
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "checked": "2026-10-15",
+      "qualification": "Introductory $2/$10 through 30 Nov 2026, then $4/$20."
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "route_alias": "Opus 5.5",
+      "input_usd_per_million": 4,
+      "output_usd_per_million": 20,
+      "provider": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "checked": "2026-10-15",
+      "qualification": "Standard, no automatic caching/batch discount assumed."
+    },
+    {
+      "model": "Muse Spark 1.3",
+      "route_alias": "Muse Spark 1.3 Standard",
+      "input_usd_per_million": 1.25,
+      "output_usd_per_million": 4.25,
+      "provider": "Meta",
+      "url": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "checked": "2026-10-15",
+      "qualification": "Standard, no automatic caching/batch discount assumed."
+    },
+    {
+      "model": "Muse Wonder 1.0",
+      "route_alias": "Muse Wonder 1.0",
+      "input_usd_per_million": 4,
+      "output_usd_per_million": 20,
+      "provider": "Meta",
+      "url": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "checked": "2026-10-15",
+      "qualification": "Standard, no automatic caching/batch discount assumed."
+    },
+    {
+      "model": "OpenCode Go",
+      "type": "subscription",
+      "monthly_usd": 10,
+      "url": "https://opencode.ai/go",
+      "checked": "2026-10-15",
+      "limits": "Per-model estimated requests/five-hour and monthly usage; not fungible guaranteed API tokens. No purchase made."
+    }
+  ],
+  "baseline_stack": {
+    "source_v16": {
+      "file": "ai_stack_v16_A_B.json",
+      "json_path": "selected_routing"
+    },
+    "source_v14": {
+      "file": "ai_stack_v14_five_plans_with_muse_spark_wonder(1).json",
+      "json_path": "model_pool_execution"
+    },
+    "name_corrections_from_prior_candidates": {
+      "GPT Luna": "GPT-6 Luna",
+      "Claude Haiku": "Claude Haiku 5.5",
+      "OpenCode Go": "subscription, not an API model"
+    },
+    "latest_budget_workbook": "ai_workload_budget.xlsx created in the preceding Codex turn; scenario assumptions reproduced here and not observed billing.",
+    "mandatory_fixed_allowances_usd": {
+      "Proton_Mail_VPN": 12.99,
+      "GitHub": 4,
+      "Contabo_VPS_unverified": 16.8
+    },
+    "search_tools_allowance_usd": 3,
+    "cash_reserve_fraction": 0.1,
+    "human_weekly_hours": {
+      "without_job": 66,
+      "with_job": 70,
+      "core_human_no_job": 56,
+      "core_human_with_job": 18
+    },
+    "ai_agent_hours_weekly": {
+      "without_job": 37,
+      "with_job": 42
+    },
+    "output_share_assumption": 0.2,
+    "base_token_share": {
+      "cheap": 0.7,
+      "specialist": 0.3
+    },
+    "extra_tokens_fraction_baseline": {
+      "curriculum_research_review_debt": 0.2,
+      "open_source": 0.1,
+      "hackathon_improvement": 0.1
+    },
+    "extra_pool_cheap_only": true,
+    "retry_supervision_fraction": 0.25,
+    "weeks_per_month": 4.333333333333333,
+    "routine_mix_by_tokens": {
+      "Haiku 5.5": 0.4,
+      "Luna 6": 0.3,
+      "DeepSeek V4.1 Flash off-peak": 0.3
+    },
+    "premium_mix_by_tokens": {
+      "Sol 6.1": 0.45,
+      "Sonnet 5.5": 0.25,
+      "Gemini 4 Argon introductory": 0.15,
+      "Opus 5.5": 0.1,
+      "Muse Spark 1.3 Standard": 0.04,
+      "Muse Wonder 1.0": 0.01
+    },
+    "cost_usd_per_million_baseline_tokens": {
+      "cheap": 0.198,
+      "premium": 3.926,
+      "base_blended": 1.3164,
+      "including_extra_and_retry": 1.7445
+    },
+    "monthly_budgets": {
+      "unemployed": {
+        "70": {
+          "baseline_tokens_million": 16.0333,
+          "total_tokens_with_extra_and_retries_million": 28.0583,
+          "api_cost_usd": 27.9701,
+          "api_allowance_usd": 26.21,
+          "headroom_usd": -1.7602,
+          "minimum_total_ceiling_usd": 71.9557
+        },
+        "75": {
+          "baseline_tokens_million": 16.0333,
+          "total_tokens_with_extra_and_retries_million": 28.0583,
+          "api_cost_usd": 27.9701,
+          "api_allowance_usd": 30.71,
+          "headroom_usd": 2.7398,
+          "minimum_total_ceiling_usd": 71.9557
+        },
+        "80": {
+          "baseline_tokens_million": 16.0333,
+          "total_tokens_with_extra_and_retries_million": 28.0583,
+          "api_cost_usd": 27.9701,
+          "api_allowance_usd": 35.21,
+          "headroom_usd": 7.2398,
+          "minimum_total_ceiling_usd": 71.9557
+        },
+        "110": {
+          "baseline_tokens_million": 16.0333,
+          "total_tokens_with_extra_and_retries_million": 28.0583,
+          "api_cost_usd": 27.9701,
+          "api_allowance_usd": 62.21,
+          "headroom_usd": 34.2398,
+          "minimum_total_ceiling_usd": 71.9557
+        },
+        "130": {
+          "baseline_tokens_million": 16.0333,
+          "total_tokens_with_extra_and_retries_million": 28.0583,
+          "api_cost_usd": 27.9701,
+          "api_allowance_usd": 80.21,
+          "headroom_usd": 52.2398,
+          "minimum_total_ceiling_usd": 71.9557
+        }
+      },
+      "employed": {
+        "70": {
+          "baseline_tokens_million": 18.2,
+          "total_tokens_with_extra_and_retries_million": 31.85,
+          "api_cost_usd": 31.7499,
+          "api_allowance_usd": 26.21,
+          "headroom_usd": -5.5399,
+          "minimum_total_ceiling_usd": 76.1554
+        },
+        "75": {
+          "baseline_tokens_million": 18.2,
+          "total_tokens_with_extra_and_retries_million": 31.85,
+          "api_cost_usd": 31.7499,
+          "api_allowance_usd": 30.71,
+          "headroom_usd": -1.0399,
+          "minimum_total_ceiling_usd": 76.1554
+        },
+        "80": {
+          "baseline_tokens_million": 18.2,
+          "total_tokens_with_extra_and_retries_million": 31.85,
+          "api_cost_usd": 31.7499,
+          "api_allowance_usd": 35.21,
+          "headroom_usd": 3.4601,
+          "minimum_total_ceiling_usd": 76.1554
+        },
+        "110": {
+          "baseline_tokens_million": 18.2,
+          "total_tokens_with_extra_and_retries_million": 31.85,
+          "api_cost_usd": 31.7499,
+          "api_allowance_usd": 62.21,
+          "headroom_usd": 30.4601,
+          "minimum_total_ceiling_usd": 76.1554
+        },
+        "130": {
+          "baseline_tokens_million": 18.2,
+          "total_tokens_with_extra_and_retries_million": 31.85,
+          "api_cost_usd": 31.7499,
+          "api_allowance_usd": 80.21,
+          "headroom_usd": 48.4601,
+          "minimum_total_ceiling_usd": 76.1554
+        }
+      }
+    },
+    "token_intensity_sensitivity": {
+      "unemployed": {
+        "50000": {
+          "baseline_tokens_million": 8.0167,
+          "total_tokens_with_extra_and_retries_million": 14.0292,
+          "api_cost_usd": 13.9851,
+          "api_allowance_usd": 30.71,
+          "headroom_usd": 16.7249,
+          "minimum_total_ceiling_usd": 56.4168
+        },
+        "100000": {
+          "baseline_tokens_million": 16.0333,
+          "total_tokens_with_extra_and_retries_million": 28.0583,
+          "api_cost_usd": 27.9701,
+          "api_allowance_usd": 30.71,
+          "headroom_usd": 2.7398,
+          "minimum_total_ceiling_usd": 71.9557
+        },
+        "250000": {
+          "baseline_tokens_million": 40.0833,
+          "total_tokens_with_extra_and_retries_million": 70.1458,
+          "api_cost_usd": 69.9254,
+          "api_allowance_usd": 30.71,
+          "headroom_usd": -39.2154,
+          "minimum_total_ceiling_usd": 118.5726
+        }
+      },
+      "employed": {
+        "50000": {
+          "baseline_tokens_million": 9.1,
+          "total_tokens_with_extra_and_retries_million": 15.925,
+          "api_cost_usd": 15.8749,
+          "api_allowance_usd": 35.21,
+          "headroom_usd": 19.335,
+          "minimum_total_ceiling_usd": 58.5166
+        },
+        "100000": {
+          "baseline_tokens_million": 18.2,
+          "total_tokens_with_extra_and_retries_million": 31.85,
+          "api_cost_usd": 31.7499,
+          "api_allowance_usd": 35.21,
+          "headroom_usd": 3.4601,
+          "minimum_total_ceiling_usd": 76.1554
+        },
+        "250000": {
+          "baseline_tokens_million": 45.5,
+          "total_tokens_with_extra_and_retries_million": 79.625,
+          "api_cost_usd": 79.3747,
+          "api_allowance_usd": 35.21,
+          "headroom_usd": -44.1647,
+          "minimum_total_ceiling_usd": 129.0719
+        }
+      }
+    },
+    "raw_video_stress": {
+      "assumed_lecture_hours_per_day": 10,
+      "days_per_month": 30,
+      "low_resolution_static_approx_input_tokens_per_second": 100,
+      "monthly_input_tokens_million": 108.0,
+      "introductory_gemini_input_only_cost_usd": 81.0,
+      "batch_input_only_cost_usd": 40.5,
+      "excludes": "output, thought/tool tokens, retries and auxiliary expenses",
+      "source": "https://ai.google.dev/gemini-api/docs/video-understanding"
+    },
+    "cheap_pool_spend_if_all_routine_and_extra_tokens_at_modeled_prices_usd": {
+      "unemployed": 4.3651,
+      "employed": 4.955
+    }
+  },
+  "model_benchmark_method_and_results": {
+    "run_status": "NOT_RUN",
+    "sample_size": 0,
+    "observed_success": null,
+    "task_strata": [
+      "source-linked lecture/PDF extraction",
+      "bounded coding+tests",
+      "architecture and adversarial review",
+      "RF/physical simulation plan"
+    ],
+    "protocol": "Freeze 30-60 representative tasks after collecting consent/licensing; stratify easy/medium/adversarial, compare incumbent A and alternatives B/C at equal budget and identical tool access, with held-out tasks and blinded human review.",
+    "metrics": [
+      "accepted_tasks_per_usd_including_repair",
+      "critical_defects_per_100",
+      "hallucinations_per_100_claims",
+      "lecture_omission_rate",
+      "timestamp_and_equation_fidelity",
+      "repair_minutes",
+      "tokens_in_out_cache_thought",
+      "p50_p95_latency"
+    ],
+    "analysis": "Paired task differences and task/week bootstrap CIs once actual observations exist. Report residuals by difficulty/domain, ablations for model versus retrieval/tool effects and out-of-sample calibration. No meaningful 1-3% accuracy claim is available.",
+    "benchmark_leakage_control": "Freeze task inputs and scorers; agent cannot edit hidden tests or grading criteria."
+  },
+  "alternative_stacks": [
+    {
+      "id": "A",
+      "name": "Direct APIs with established text routing",
+      "cost_basis": "Baseline $75 no-job or $80 employed, 100k baseline tokens per agent-hour; no extra subscription",
+      "model_change": "none; source-linked captions with cheap extraction",
+      "status": "RECOMMENDED_BASELINE",
+      "evidence_class": "MODELED_COST_UNOBSERVED_QUALITY"
+    },
+    {
+      "id": "B",
+      "name": "Bounded Gemini multimodal pilot",
+      "cost_basis": "Replace 25% of curriculum-extra cheap tokens with Gemini 3.8 Flash, no added subscription; within current ceiling in the model",
+      "model_change": "Gemini on genuinely visual/video tasks only, keep Haiku/Luna on text and DeepSeek on code",
+      "status": "CONDITIONAL_TRIAL",
+      "evidence_class": "VERIFIED_MODALITY_MODELED_COST_UNOBSERVED_QUALITY"
+    },
+    {
+      "id": "C",
+      "name": "OpenCode Go coding quota",
+      "cost_basis": "Additional $10/month reduces available direct API pool by $10 unless comparable paid coding calls are displaced",
+      "model_change": "Replace eligible coding calls only; verify quota, data terms, quality and actual displaced spend",
+      "status": "DEFER_UNTIL_USAGE",
+      "evidence_class": "VERIFIED_SUBSCRIPTION_UNOBSERVED_DISPLACEMENT_AND_QUALITY"
+    }
+  ],
+  "cost_per_accepted_deliverable": {
+    "observed": null,
+    "reason": "No task acceptance and human repair log exists; provider prices and scheduled agent-hours do not identify denominator.",
+    "modeled_costs_no_job": {
+      "baseline_tokens_million": 16.0333,
+      "total_tokens_with_extra_and_retries_million": 28.0583,
+      "api_cost_usd": 27.9701,
+      "api_allowance_usd": 30.71,
+      "headroom_usd": 2.7398,
+      "minimum_total_ceiling_usd": 71.9557
+    },
+    "modeled_costs_employed": {
+      "baseline_tokens_million": 18.2,
+      "total_tokens_with_extra_and_retries_million": 31.85,
+      "api_cost_usd": 31.7499,
+      "api_allowance_usd": 35.21,
+      "headroom_usd": 3.4601,
+      "minimum_total_ceiling_usd": 76.1554
+    },
+    "gemini_pilot_25_percent_of_curriculum_extra": {
+      "unemployed_75": {
+        "baseline_tokens_million": 16.0333,
+        "total_tokens_with_extra_and_retries_million": 28.0583,
+        "api_cost_usd": 29.1245,
+        "api_allowance_usd": 30.71,
+        "headroom_usd": 1.5854,
+        "minimum_total_ceiling_usd": 73.2384
+      },
+      "employed_80": {
+        "baseline_tokens_million": 18.2,
+        "total_tokens_with_extra_and_retries_million": 31.85,
+        "api_cost_usd": 33.0603,
+        "api_allowance_usd": 35.21,
+        "headroom_usd": 2.1497,
+        "minimum_total_ceiling_usd": 77.6114
+      }
+    },
+    "gemini_pilot_extra_human_time_saved": null,
+    "opencode_go_break_even": "Requires at least $10/month in actually displaced eligible direct API coding spend at no worse accepted quality. Entire modeled cheap pool is only about $4.37 no-job or $4.95 employed; Go does not pay for itself from that pool alone.",
+    "gemini_vs_haiku_text_per_million_at_80_20": {
+      "gemini_intro": 1.35,
+      "haiku_short_context": 0.18,
+      "ratio": 7.5
+    },
+    "note": "A video-capable modality can still be worth its cost when a text-only route omits crucial visual information; fidelity is unmeasured."
+  },
+  "routing_escalation_and_fallbacks": {
+    "T0": "Existing licensed captions/transcripts, timestamp index, retrieval and cheap source extraction; require source-linked claims.",
+    "T1": "DeepSeek V4.1 Flash for bounded coding during published off-peak hours; Haiku/Luna for cheap text transforms. Use isolated worktree, tests and per-task budget.",
+    "T1_multimodal_trial": "Gemini 3.8 Flash direct API for a small set of visual lecture segments, diagrams or audio/video claims that captions miss. Compare against captions-only; count tokens before and after, use agentic video only when targeted queries justify it.",
+    "T2": "Sol/Sonnet/Argon/Spark for architecture, numerical reasoning, independent review and counterexamples; escalations by error/consequence.",
+    "T3": "Distinct verifier plus deterministic oracle for security-critical code, scientific claims and irreversibility; Opus/Wonder under a dollar cap when cheaper review fails.",
+    "fallbacks": [
+      "When DeepSeek is peak, queue nonurgent coding or use pre-capped alternative; do not represent peak as off-peak.",
+      "When Gemini unavailable, use source captions and human-selected visual clips; no automatic substitution of TTS model.",
+      "When provider/model price or output reasoning changes, recompute before running long loops."
+    ],
+    "security": "No Contributor-mode submission of private sx repository content, private mail or unpublished product material without explicit compatible terms; sandbox untrusted snippets and isolate credentials."
+  },
+  "curriculum_coverage_matrix": [
+    {
+      "topic_id": "WORLD_MODELS_SPATIAL_AI-01",
+      "domain_id": "WORLD_MODELS_SPATIAL_AI",
+      "topic": "spatial memory and persistent geometric representations",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "HIGH_FOR_EMBODIED_AI",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P01",
+      "transfer_lanes": [
+        "AI systems",
+        "robotics"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "WORLD_MODELS_SPATIAL_AI-02",
+      "domain_id": "WORLD_MODELS_SPATIAL_AI",
+      "topic": "long-horizon memory grounded in world videos",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "HIGH_FOR_EMBODIED_AI",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P01",
+      "transfer_lanes": [
+        "AI systems",
+        "robotics"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "WORLD_MODELS_SPATIAL_AI-03",
+      "domain_id": "WORLD_MODELS_SPATIAL_AI",
+      "topic": "scene graphs, SLAM and learned 3D/4D world representations",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S15-B.topics",
+          "scope": "SLAM concepts"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_EMBODIED_AI",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P01",
+      "transfer_lanes": [
+        "AI systems",
+        "robotics"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "WORLD_MODELS_SPATIAL_AI-04",
+      "domain_id": "WORLD_MODELS_SPATIAL_AI",
+      "topic": "generative policy learning and physical world models",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S11-C.topics",
+          "scope": "World models and RL"
+        },
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S15-C.topics",
+          "scope": "World models and imitation"
+        },
+        {
+          "file": "frontier_v53_narrow_weekly_curriculum.json",
+          "json_path": "modules[53].artifact",
+          "scope": "Small world-model experiment"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_EMBODIED_AI",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P01",
+      "transfer_lanes": [
+        "AI systems",
+        "robotics"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "WORLD_MODELS_SPATIAL_AI-05",
+      "domain_id": "WORLD_MODELS_SPATIAL_AI",
+      "topic": "action-conditioned autoregressive video prediction",
+      "status": "RESEARCH_WATCHLIST",
+      "coverage_depth": "unsettled_or_low_priority",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Research direction requires stable reproducible task and career relevance.",
+      "recommendation": "defer_to_quarterly_watchlist",
+      "priority": "HIGH_FOR_EMBODIED_AI",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P01",
+      "transfer_lanes": [
+        "AI systems",
+        "robotics"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "WORLD_MODELS_SPATIAL_AI-06",
+      "domain_id": "WORLD_MODELS_SPATIAL_AI",
+      "topic": "action-conditioned diffusion and diffusion policies",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "HIGH_FOR_EMBODIED_AI",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P01",
+      "transfer_lanes": [
+        "AI systems",
+        "robotics"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "WORLD_MODELS_SPATIAL_AI-07",
+      "domain_id": "WORLD_MODELS_SPATIAL_AI",
+      "topic": "JEPA / hierarchical joint-embedding predictive architectures",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "HIGH_FOR_EMBODIED_AI",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P01",
+      "transfer_lanes": [
+        "AI systems",
+        "robotics"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "WORLD_MODELS_SPATIAL_AI-08",
+      "domain_id": "WORLD_MODELS_SPATIAL_AI",
+      "topic": "disambiguate the user term HEPA before mapping it to an actual architecture",
+      "status": "CANNOT_VERIFY",
+      "coverage_depth": "term_ambiguous",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Ambiguous HEPA term; no architecture assigned.",
+      "recommendation": "clarify_term_before_mapping",
+      "priority": "HIGH_FOR_EMBODIED_AI",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P01",
+      "transfer_lanes": [
+        "AI systems",
+        "robotics"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "WORLD_MODELS_SPATIAL_AI-09",
+      "domain_id": "WORLD_MODELS_SPATIAL_AI",
+      "topic": "emergent spatial representations in language and multimodal transformers",
+      "status": "RESEARCH_WATCHLIST",
+      "coverage_depth": "unsettled_or_low_priority",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Research direction requires stable reproducible task and career relevance.",
+      "recommendation": "defer_to_quarterly_watchlist",
+      "priority": "HIGH_FOR_EMBODIED_AI",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P01",
+      "transfer_lanes": [
+        "AI systems",
+        "robotics"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "WORLD_MODELS_SPATIAL_AI-10",
+      "domain_id": "WORLD_MODELS_SPATIAL_AI",
+      "topic": "probing internal topological maps and reasoning circuits",
+      "status": "RESEARCH_WATCHLIST",
+      "coverage_depth": "unsettled_or_low_priority",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Research direction requires stable reproducible task and career relevance.",
+      "recommendation": "defer_to_quarterly_watchlist",
+      "priority": "HIGH_FOR_EMBODIED_AI",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P01",
+      "transfer_lanes": [
+        "AI systems",
+        "robotics"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "WORLD_MODELS_SPATIAL_AI-11",
+      "domain_id": "WORLD_MODELS_SPATIAL_AI",
+      "topic": "multi-agent generative simulations and social dynamics",
+      "status": "RESEARCH_WATCHLIST",
+      "coverage_depth": "unsettled_or_low_priority",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Research direction requires stable reproducible task and career relevance.",
+      "recommendation": "defer_to_quarterly_watchlist",
+      "priority": "HIGH_FOR_EMBODIED_AI",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P01",
+      "transfer_lanes": [
+        "AI systems",
+        "robotics"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "WORLD_MODELS_SPATIAL_AI-12",
+      "domain_id": "WORLD_MODELS_SPATIAL_AI",
+      "topic": "multiplayer interactive world models",
+      "status": "RESEARCH_WATCHLIST",
+      "coverage_depth": "unsettled_or_low_priority",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Research direction requires stable reproducible task and career relevance.",
+      "recommendation": "defer_to_quarterly_watchlist",
+      "priority": "HIGH_FOR_EMBODIED_AI",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P01",
+      "transfer_lanes": [
+        "AI systems",
+        "robotics"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "WORLD_MODELS_SPATIAL_AI-13",
+      "domain_id": "WORLD_MODELS_SPATIAL_AI",
+      "topic": "persistent state, object permanence, causal dynamics, counterfactual prediction",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S11-C.topics",
+          "scope": "World models, but no explicit object-permanence gate"
+        },
+        {
+          "file": "frontier_v53_narrow_weekly_curriculum.json",
+          "json_path": "modules[53].artifact",
+          "scope": "World-model/estimator experiment"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_EMBODIED_AI",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P01",
+      "transfer_lanes": [
+        "AI systems",
+        "robotics"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "WORLD_MODELS_SPATIAL_AI-14",
+      "domain_id": "WORLD_MODELS_SPATIAL_AI",
+      "topic": "VLA models, planning, closed-loop control and simulation-to-reality generalization",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S15-C.topics",
+          "scope": "VLA exposure, MPC and sim-to-real limits"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_EMBODIED_AI",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P01",
+      "transfer_lanes": [
+        "AI systems",
+        "robotics"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "SEMICONDUCTORS_AI_ACCELERATORS-01",
+      "domain_id": "SEMICONDUCTORS_AI_ACCELERATORS",
+      "topic": "backside power delivery and power distribution modeling",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "HIGH_FOR_AI_HARDWARE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S13",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P02",
+      "transfer_lanes": [
+        "hardware",
+        "HPC"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "SEMICONDUCTORS_AI_ACCELERATORS-02",
+      "domain_id": "SEMICONDUCTORS_AI_ACCELERATORS",
+      "topic": "FinFET, gate-all-around nanosheet and CFET scaling",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "HIGH_FOR_AI_HARDWARE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S13",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P02",
+      "transfer_lanes": [
+        "hardware",
+        "HPC"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "SEMICONDUCTORS_AI_ACCELERATORS-03",
+      "domain_id": "SEMICONDUCTORS_AI_ACCELERATORS",
+      "topic": "transistor electrostatics, variability, leakage and process integration",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "HIGH_FOR_AI_HARDWARE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S13",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P02",
+      "transfer_lanes": [
+        "hardware",
+        "HPC"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "SEMICONDUCTORS_AI_ACCELERATORS-04",
+      "domain_id": "SEMICONDUCTORS_AI_ACCELERATORS",
+      "topic": "chiplet design, die-to-die interfaces and UCIe ecosystem",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S14-B.topics",
+          "scope": "Chiplets and interconnect"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_AI_HARDWARE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S13",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P02",
+      "transfer_lanes": [
+        "hardware",
+        "HPC"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "SEMICONDUCTORS_AI_ACCELERATORS-05",
+      "domain_id": "SEMICONDUCTORS_AI_ACCELERATORS",
+      "topic": "heterogeneous interconnect fabrics and package topology",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S14-B.topics",
+          "scope": "Chiplets and interconnect"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_AI_HARDWARE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S13",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P02",
+      "transfer_lanes": [
+        "hardware",
+        "HPC"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "SEMICONDUCTORS_AI_ACCELERATORS-06",
+      "domain_id": "SEMICONDUCTORS_AI_ACCELERATORS",
+      "topic": "2.5D/3D packaging, HBM, thermals, yield and reliability",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S14-B.topics",
+          "scope": "Chiplets"
+        },
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S14-D.topics",
+          "scope": "Power and thermal limits"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_AI_HARDWARE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S13",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P02",
+      "transfer_lanes": [
+        "hardware",
+        "HPC"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "SEMICONDUCTORS_AI_ACCELERATORS-07",
+      "domain_id": "SEMICONDUCTORS_AI_ACCELERATORS",
+      "topic": "domain-specific NPUs and APUs and memory-compute partitioning",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S14-B.topics",
+          "scope": "Accelerator dataflow"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_AI_HARDWARE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S13",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P02",
+      "transfer_lanes": [
+        "hardware",
+        "HPC"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "SEMICONDUCTORS_AI_ACCELERATORS-08",
+      "domain_id": "SEMICONDUCTORS_AI_ACCELERATORS",
+      "topic": "low-bit and mixed-precision accelerator kernels",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S10-C.topics",
+          "scope": "Quantization"
+        },
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S14-B.topics",
+          "scope": "Accelerator dataflow"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_AI_HARDWARE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S13",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P02",
+      "transfer_lanes": [
+        "hardware",
+        "HPC"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "SEMICONDUCTORS_AI_ACCELERATORS-09",
+      "domain_id": "SEMICONDUCTORS_AI_ACCELERATORS",
+      "topic": "FP8, FP4, INT8/INT4 and microscaling MX formats with numerical error analysis",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S10-C.topics",
+          "scope": "Quantization; MX specifics absent"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_AI_HARDWARE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S13",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P02",
+      "transfer_lanes": [
+        "hardware",
+        "HPC"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "SEMICONDUCTORS_AI_ACCELERATORS-10",
+      "domain_id": "SEMICONDUCTORS_AI_ACCELERATORS",
+      "topic": "microarchitecture/compiler/runtime co-design and roofline modeling",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S8-C.topics",
+          "scope": "Compiler scheduling/autotuning"
+        },
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S14-B.topics",
+          "scope": "Accelerator dataflow"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_AI_HARDWARE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S13",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P02",
+      "transfer_lanes": [
+        "hardware",
+        "HPC"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "SEMICONDUCTORS_AI_ACCELERATORS-11",
+      "domain_id": "SEMICONDUCTORS_AI_ACCELERATORS",
+      "topic": "energy, bandwidth and area efficiency under realistic workload mixes",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S14-D.topics",
+          "scope": "Power/thermal limits and workload models"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_AI_HARDWARE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S13",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P02",
+      "transfer_lanes": [
+        "hardware",
+        "HPC"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "QUANTUM_ERROR_CORRECTION_NETWORKING-01",
+      "domain_id": "QUANTUM_ERROR_CORRECTION_NETWORKING",
+      "topic": "high-rate quantum LDPC codes and decoding",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "SPECIALIST_LATE_STAGE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S13",
+        "S16",
+        "S16R",
+        "S17"
+      ],
+      "intended_stage_patch": "P03",
+      "transfer_lanes": [
+        "quantum",
+        "HPC"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "QUANTUM_ERROR_CORRECTION_NETWORKING-02",
+      "domain_id": "QUANTUM_ERROR_CORRECTION_NETWORKING",
+      "topic": "stabilizer formalism and fault-tolerant quantum computing",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S16-C.topics",
+          "scope": "Optional error correction; stabilizer formalism not explicit"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "SPECIALIST_LATE_STAGE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S13",
+        "S16",
+        "S16R",
+        "S17"
+      ],
+      "intended_stage_patch": "P03",
+      "transfer_lanes": [
+        "quantum",
+        "HPC"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "QUANTUM_ERROR_CORRECTION_NETWORKING-03",
+      "domain_id": "QUANTUM_ERROR_CORRECTION_NETWORKING",
+      "topic": "ultra-low-latency QEC decoder algorithm design",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "SPECIALIST_LATE_STAGE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S13",
+        "S16",
+        "S16R",
+        "S17"
+      ],
+      "intended_stage_patch": "P03",
+      "transfer_lanes": [
+        "quantum",
+        "HPC"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "QUANTUM_ERROR_CORRECTION_NETWORKING-04",
+      "domain_id": "QUANTUM_ERROR_CORRECTION_NETWORKING",
+      "topic": "streaming syndrome processing and hardware-aware decoder scheduling",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "SPECIALIST_LATE_STAGE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S13",
+        "S16",
+        "S16R",
+        "S17"
+      ],
+      "intended_stage_patch": "P03",
+      "transfer_lanes": [
+        "quantum",
+        "HPC"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "QUANTUM_ERROR_CORRECTION_NETWORKING-05",
+      "domain_id": "QUANTUM_ERROR_CORRECTION_NETWORKING",
+      "topic": "real-time quantum-classical control latency budgets",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "SPECIALIST_LATE_STAGE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S13",
+        "S16",
+        "S16R",
+        "S17"
+      ],
+      "intended_stage_patch": "P03",
+      "transfer_lanes": [
+        "quantum",
+        "HPC"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "QUANTUM_ERROR_CORRECTION_NETWORKING-06",
+      "domain_id": "QUANTUM_ERROR_CORRECTION_NETWORKING",
+      "topic": "modular quantum processors and entanglement distribution",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "SPECIALIST_LATE_STAGE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S13",
+        "S16",
+        "S16R",
+        "S17"
+      ],
+      "intended_stage_patch": "P03",
+      "transfer_lanes": [
+        "quantum",
+        "HPC"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "QUANTUM_ERROR_CORRECTION_NETWORKING-07",
+      "domain_id": "QUANTUM_ERROR_CORRECTION_NETWORKING",
+      "topic": "quantum LANs and network topologies",
+      "status": "RESEARCH_WATCHLIST",
+      "coverage_depth": "unsettled_or_low_priority",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Research direction requires stable reproducible task and career relevance.",
+      "recommendation": "defer_to_quarterly_watchlist",
+      "priority": "SPECIALIST_LATE_STAGE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S13",
+        "S16",
+        "S16R",
+        "S17"
+      ],
+      "intended_stage_patch": "P03",
+      "transfer_lanes": [
+        "quantum",
+        "HPC"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "QUANTUM_ERROR_CORRECTION_NETWORKING-08",
+      "domain_id": "QUANTUM_ERROR_CORRECTION_NETWORKING",
+      "topic": "distributed fault-tolerant quantum computation and inter-module error budgets",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "SPECIALIST_LATE_STAGE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S13",
+        "S16",
+        "S16R",
+        "S17"
+      ],
+      "intended_stage_patch": "P03",
+      "transfer_lanes": [
+        "quantum",
+        "HPC"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "QUANTUM_ERROR_CORRECTION_NETWORKING-09",
+      "domain_id": "QUANTUM_ERROR_CORRECTION_NETWORKING",
+      "topic": "logical performance, decoder throughput, resource overhead and failure-rate estimation",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "SPECIALIST_LATE_STAGE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S13",
+        "S16",
+        "S16R",
+        "S17"
+      ],
+      "intended_stage_patch": "P03",
+      "transfer_lanes": [
+        "quantum",
+        "HPC"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-01",
+      "domain_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL",
+      "topic": "physics-aligned generative simulation",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S16-A.topics",
+          "scope": "Simulation; generative physics alignment absent"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_ROBOTICS_SYSTEMS",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P04/P05",
+      "transfer_lanes": [
+        "robotics",
+        "AI systems"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-02",
+      "domain_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL",
+      "topic": "differentiable physics, neural operators and physics-informed ML",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "HIGH_FOR_ROBOTICS_SYSTEMS",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P04/P05",
+      "transfer_lanes": [
+        "robotics",
+        "AI systems"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-03",
+      "domain_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL",
+      "topic": "uncertainty calibration and conservation-law constraints",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S16-B.topics",
+          "scope": "Uncertainty quantification"
+        },
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S16-A.topics",
+          "scope": "Numerical simulation"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_ROBOTICS_SYSTEMS",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P04/P05",
+      "transfer_lanes": [
+        "robotics",
+        "AI systems"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-04",
+      "domain_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL",
+      "topic": "edge digital twins and real-time sensor ingestion",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "HIGH_FOR_ROBOTICS_SYSTEMS",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P04/P05",
+      "transfer_lanes": [
+        "robotics",
+        "AI systems"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-05",
+      "domain_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL",
+      "topic": "distributed field-service coordination and telemetry",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "HIGH_FOR_ROBOTICS_SYSTEMS",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P04/P05",
+      "transfer_lanes": [
+        "robotics",
+        "AI systems"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-06",
+      "domain_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL",
+      "topic": "decentralized swarm autonomy and consensus",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "HIGH_FOR_ROBOTICS_SYSTEMS",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P04/P05",
+      "transfer_lanes": [
+        "robotics",
+        "AI systems"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-07",
+      "domain_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL",
+      "topic": "heterogeneous robotic fleet orchestration",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "HIGH_FOR_ROBOTICS_SYSTEMS",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P04/P05",
+      "transfer_lanes": [
+        "robotics",
+        "AI systems"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-08",
+      "domain_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL",
+      "topic": "multi-agent coordination and task allocation",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "HIGH_FOR_ROBOTICS_SYSTEMS",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P04/P05",
+      "transfer_lanes": [
+        "robotics",
+        "AI systems"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-09",
+      "domain_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL",
+      "topic": "network partitions, safety policies, observability, replay and failure recovery",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S15-D.topics",
+          "scope": "Failure analysis and deployment constraints"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_ROBOTICS_SYSTEMS",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P04/P05",
+      "transfer_lanes": [
+        "robotics",
+        "AI systems"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-10",
+      "domain_id": "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL",
+      "topic": "power, edge compute and latency-aware autonomy",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S14-C.topics",
+          "scope": "MCU and RTOS"
+        },
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S14-D.topics",
+          "scope": "Power/thermal limits"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_ROBOTICS_SYSTEMS",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S6",
+        "S10",
+        "S11",
+        "S12",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P04/P05",
+      "transfer_lanes": [
+        "robotics",
+        "AI systems"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "RF_ISAC_AND_ADVANCED_WIRELESS-01",
+      "domain_id": "RF_ISAC_AND_ADVANCED_WIRELESS",
+      "topic": "FR3 candidate frequencies, propagation and regulatory status",
+      "status": "RESEARCH_WATCHLIST",
+      "coverage_depth": "unsettled_or_low_priority",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Research direction requires stable reproducible task and career relevance.",
+      "recommendation": "defer_to_quarterly_watchlist",
+      "priority": "HIGH_FOR_RF_RESEARCH_LANE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P06",
+      "transfer_lanes": [
+        "RF",
+        "AI systems"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "RF_ISAC_AND_ADVANCED_WIRELESS-02",
+      "domain_id": "RF_ISAC_AND_ADVANCED_WIRELESS",
+      "topic": "channel modeling and spectrum coexistence",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier_v53_narrow_weekly_curriculum.json",
+          "json_path": "modules[54].book_assignments[0].chapter_or_section_titles",
+          "scope": "Channel Effects"
+        },
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S14-C.topics",
+          "scope": "Signals and sampling"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_RF_RESEARCH_LANE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P06",
+      "transfer_lanes": [
+        "RF",
+        "AI systems"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "RF_ISAC_AND_ADVANCED_WIRELESS-03",
+      "domain_id": "RF_ISAC_AND_ADVANCED_WIRELESS",
+      "topic": "integrated sensing and communications (ISAC)",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "HIGH_FOR_RF_RESEARCH_LANE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P06",
+      "transfer_lanes": [
+        "RF",
+        "AI systems"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "RF_ISAC_AND_ADVANCED_WIRELESS-04",
+      "domain_id": "RF_ISAC_AND_ADVANCED_WIRELESS",
+      "topic": "unified sensing/communications waveform optimization",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "HIGH_FOR_RF_RESEARCH_LANE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P06",
+      "transfer_lanes": [
+        "RF",
+        "AI systems"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "RF_ISAC_AND_ADVANCED_WIRELESS-05",
+      "domain_id": "RF_ISAC_AND_ADVANCED_WIRELESS",
+      "topic": "reconfigurable intelligent surfaces and realistic link budgets",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "HIGH_FOR_RF_RESEARCH_LANE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P06",
+      "transfer_lanes": [
+        "RF",
+        "AI systems"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "RF_ISAC_AND_ADVANCED_WIRELESS-06",
+      "domain_id": "RF_ISAC_AND_ADVANCED_WIRELESS",
+      "topic": "RF neural networks and learned signal processing",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier_v53_narrow_weekly_curriculum.json",
+          "json_path": "modules[52].artifact",
+          "scope": "Bounded RF-CNN method report"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_RF_RESEARCH_LANE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P06",
+      "transfer_lanes": [
+        "RF",
+        "AI systems"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "RF_ISAC_AND_ADVANCED_WIRELESS-07",
+      "domain_id": "RF_ISAC_AND_ADVANCED_WIRELESS",
+      "topic": "MIMO, beamforming and radar sensing",
+      "status": "MISSING",
+      "coverage_depth": "not_scheduled_in_reviewed_modules",
+      "evidence_locations": [],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "No explicit scheduled competency or quantitative assessment was located in the reviewed module fields.",
+      "recommendation": "append_or_substitute_if_gate_passes",
+      "priority": "HIGH_FOR_RF_RESEARCH_LANE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P06",
+      "transfer_lanes": [
+        "RF",
+        "AI systems"
+      ],
+      "confidence": "low"
+    },
+    {
+      "topic_id": "RF_ISAC_AND_ADVANCED_WIRELESS-08",
+      "domain_id": "RF_ISAC_AND_ADVANCED_WIRELESS",
+      "topic": "SDR simulation and reproducible digital signal processing",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier_v53_narrow_weekly_curriculum.json",
+          "json_path": "modules[52].artifact",
+          "scope": "RF impairment simulator and calibrated baseline"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_RF_RESEARCH_LANE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P06",
+      "transfer_lanes": [
+        "RF",
+        "AI systems"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic_id": "RF_ISAC_AND_ADVANCED_WIRELESS-09",
+      "domain_id": "RF_ISAC_AND_ADVANCED_WIRELESS",
+      "topic": "model robustness to hardware nonidealities and channel shift",
+      "status": "PARTIAL",
+      "coverage_depth": "introductory_or_partial",
+      "evidence_locations": [
+        {
+          "file": "frontier_v53_narrow_weekly_curriculum.json",
+          "json_path": "modules[52].artifact",
+          "scope": "RF impairment simulator; channel-shift robustness gate unspecified"
+        }
+      ],
+      "scope_of_negative_finding": "Scheduled module titles/topics and narrow module titles/artifacts were inspected; references, large catalogs and optional research entries do not establish mastery.",
+      "deficiency": "Named at broad level but specific method/gate is not explicit.",
+      "recommendation": "enrich",
+      "priority": "HIGH_FOR_RF_RESEARCH_LANE",
+      "estimated_incremental_human_hours_if_substituted_within_existing_modules": 0,
+      "prerequisite_stage_skills": [
+        "S8",
+        "S9",
+        "S14",
+        "S15",
+        "S17"
+      ],
+      "intended_stage_patch": "P06",
+      "transfer_lanes": [
+        "RF",
+        "AI systems"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "curriculum_hour_and_collision_audit": {
+    "broad_route_proposed_substitution_hours": 82,
+    "narrow_route_proposed_substitution_hours": 40,
+    "route_rule": "These are disjoint alternative routes; do not sum them as required workload and do not apply any patch without host-module lesson displacement.",
+    "narrow_nm54_shared_host": {
+      "P01_hours": 8,
+      "P04_hours": 8,
+      "combined_if_both_accepted": 16,
+      "host_hours": 120,
+      "remaining_host_hours": 104,
+      "condition": "Separate exercises and previously scheduled lessons displaced; these are proposals rather than time already recovered."
+    },
+    "human_schedule": {
+      "unemployed_core": 56,
+      "employed_core": 18,
+      "employed_narrow_7200_hours_active_weeks": 400,
+      "calendar_assumption": "46 active weeks/year yields 8.70 active-year equivalents before pauses, repetitions, and failed gates; other work and gym hours are distinct."
+    }
+  },
+  "missing_or_partial_skills": [
+    "WORLD_MODELS_SPATIAL_AI-01",
+    "WORLD_MODELS_SPATIAL_AI-02",
+    "WORLD_MODELS_SPATIAL_AI-03",
+    "WORLD_MODELS_SPATIAL_AI-04",
+    "WORLD_MODELS_SPATIAL_AI-06",
+    "WORLD_MODELS_SPATIAL_AI-07",
+    "WORLD_MODELS_SPATIAL_AI-13",
+    "WORLD_MODELS_SPATIAL_AI-14",
+    "SEMICONDUCTORS_AI_ACCELERATORS-01",
+    "SEMICONDUCTORS_AI_ACCELERATORS-02",
+    "SEMICONDUCTORS_AI_ACCELERATORS-03",
+    "SEMICONDUCTORS_AI_ACCELERATORS-04",
+    "SEMICONDUCTORS_AI_ACCELERATORS-05",
+    "SEMICONDUCTORS_AI_ACCELERATORS-06",
+    "SEMICONDUCTORS_AI_ACCELERATORS-07",
+    "SEMICONDUCTORS_AI_ACCELERATORS-08",
+    "SEMICONDUCTORS_AI_ACCELERATORS-09",
+    "SEMICONDUCTORS_AI_ACCELERATORS-10",
+    "SEMICONDUCTORS_AI_ACCELERATORS-11",
+    "QUANTUM_ERROR_CORRECTION_NETWORKING-01",
+    "QUANTUM_ERROR_CORRECTION_NETWORKING-02",
+    "QUANTUM_ERROR_CORRECTION_NETWORKING-03",
+    "QUANTUM_ERROR_CORRECTION_NETWORKING-04",
+    "QUANTUM_ERROR_CORRECTION_NETWORKING-05",
+    "QUANTUM_ERROR_CORRECTION_NETWORKING-06",
+    "QUANTUM_ERROR_CORRECTION_NETWORKING-08",
+    "QUANTUM_ERROR_CORRECTION_NETWORKING-09",
+    "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-01",
+    "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-02",
+    "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-03",
+    "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-04",
+    "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-05",
+    "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-06",
+    "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-07",
+    "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-08",
+    "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-09",
+    "PHYSICS_AWARE_SIMULATION_CYBERPHYSICAL-10",
+    "RF_ISAC_AND_ADVANCED_WIRELESS-02",
+    "RF_ISAC_AND_ADVANCED_WIRELESS-03",
+    "RF_ISAC_AND_ADVANCED_WIRELESS-04",
+    "RF_ISAC_AND_ADVANCED_WIRELESS-05",
+    "RF_ISAC_AND_ADVANCED_WIRELESS-06",
+    "RF_ISAC_AND_ADVANCED_WIRELESS-07",
+    "RF_ISAC_AND_ADVANCED_WIRELESS-08",
+    "RF_ISAC_AND_ADVANCED_WIRELESS-09"
+  ],
+  "semester_patch_operations": [
+    {
+      "patch_id": "P01",
+      "status": "PROPOSED_NOT_APPLIED",
+      "source_stage_id": "S11",
+      "target_stage_ids": [
+        "S11",
+        "S15"
+      ],
+      "target_module_ids": [
+        "S11-C",
+        "S15-C"
+      ],
+      "narrow_route_target_ids": [
+        "NM54"
+      ],
+      "reason_for_placement": "S11 develops model-based RL; S15 applies learned dynamics to control. Narrow route NM54 has a direct world-model experiment.",
+      "topic_and_competency": "World model state, JEPA and action-conditioned control",
+      "prerequisite_chain": [
+        "S4 probability and geometry",
+        "S11 Bellman/control",
+        "S15 state estimation"
+      ],
+      "estimated_hours_new": 0,
+      "hours_recovered_by_consolidation": 0,
+      "within_existing_module_substitution_hours": {
+        "broad_route": 16,
+        "narrow_route_alternative": 8,
+        "do_not_add_routes_together": true
+      },
+      "proposed_displacement_not_yet_approved": "Replace a portion of generic self-play/world-model survey and repeated policy overview with one controlled dynamics experiment; exact lesson displacement requires review.",
+      "source_hour_basis": "Existing broad module hours from unified v53.2; narrow module hours from v53.1. Reallocations preserve each route's total if approved. No recovered-hour claim.",
+      "lecture_or_course_resource_with_verified_url": "https://rail.eecs.berkeley.edu/deeprlcourse-fa21/",
+      "primary_readings": [
+        "https://arxiv.org/abs/2301.04104",
+        "https://arxiv.org/abs/2303.04137",
+        "https://arxiv.org/abs/2301.08243"
+      ],
+      "official_documentation": [
+        "https://docs.ros.org/en/jazzy/"
+      ],
+      "reproducible_implementation": "Small seeded simulator with classical state estimator, dynamics learner and policy; machine-readable trajectories and manifest.",
+      "evaluation_protocol": "Freeze action traces, randomized seeds and train/test worlds; compare open-loop prediction with closed-loop task success and object-state retention over 3 horizons; report failure types.",
+      "quantitative_pass_fail_gate": "Run all fixed-seed tests and a distinct held-out world; only claim an improvement when a paired confidence interval for task success excludes zero and no hard safety invariant fails. Otherwise mark exploratory.",
+      "artifact_to_ship": "Small seeded simulator with classical state estimator, dynamics learner and policy; machine-readable trajectories and manifest.",
+      "career_transfer_justification": "Dynamics evaluation transfers to serving reliability, robotics simulation and research reproducibility.",
+      "availability_and_hardware_constraints": "Simulation only; no requirement to train large video models or operate a robot.",
+      "source_paths": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S11-C",
+          "allocated_human_hours": 8
+        },
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S15-C",
+          "allocated_human_hours": 8
+        },
+        {
+          "file": "frontier_v53_narrow_weekly_curriculum.json",
+          "json_path": "modules[53]",
+          "allocated_human_hours": 8
+        }
+      ],
+      "counting_rule": "The same build/reproduction counts once inside the host module, not again as a separate capstone, product or AI-agent hour.",
+      "nonoverlap_note": "NM54 reserves a distinct eight-hour world-model dynamics exercise; P04 may use another eight hours in the 120-hour host module, with separate assessment and no shared clock time."
+    },
+    {
+      "patch_id": "P02",
+      "status": "PROPOSED_NOT_APPLIED",
+      "source_stage_id": "S14",
+      "target_stage_ids": [
+        "S14"
+      ],
+      "target_module_ids": [
+        "S14-B"
+      ],
+      "narrow_route_target_ids": [
+        "NM52"
+      ],
+      "reason_for_placement": "S14-B already schedules chiplets and accelerator dataflow; N10 addresses architecture co-design.",
+      "topic_and_competency": "MX precision, chiplet link, backside power and transistor scaling",
+      "prerequisite_chain": [
+        "S7 GPU memory/precision",
+        "S8 lowering and numeric correctness",
+        "S14 digital logic/timing"
+      ],
+      "estimated_hours_new": 0,
+      "hours_recovered_by_consolidation": 0,
+      "within_existing_module_substitution_hours": {
+        "broad_route": 12,
+        "narrow_route_alternative": 8,
+        "do_not_add_routes_together": true
+      },
+      "proposed_displacement_not_yet_approved": "Substitute generic survey time inside chiplet/interconnect topics with a traceable numeric-kernel and link-model exercise; do not remove ISA or cache prerequisites.",
+      "source_hour_basis": "Existing broad module hours from unified v53.2; narrow module hours from v53.1. Reallocations preserve each route's total if approved. No recovered-hour claim.",
+      "lecture_or_course_resource_with_verified_url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/",
+      "primary_readings": [
+        "https://www.opencompute.org/documents/ocp-microscaling-formats-mx-v1-0-spec-final-pdf"
+      ],
+      "official_documentation": [
+        "https://www.uciexpress.org/specifications",
+        "https://www.imec-int.com/en/articles/backside-power-delivery-options-dtco-study"
+      ],
+      "reproducible_implementation": "Parameterized low-bit GEMM and chiplet-link model; optional bounded backside IR-drop spreadsheet with stated simplifications.",
+      "evaluation_protocol": "Compare FP32 reference, MX quantization error, latency and bytes transferred on fixed matrices; sweep link width/latency and report sensitivity; check power model dimensions against imec examples.",
+      "quantitative_pass_fail_gate": "All specified MX encodings round-trip according to the OCP reference; unit and randomized shape tests pass; publish throughput/error Pareto and p95 transfer estimate. No silicon PPA claim.",
+      "artifact_to_ship": "Parameterized low-bit GEMM and chiplet-link model; optional bounded backside IR-drop spreadsheet with stated simplifications.",
+      "career_transfer_justification": "Numerics, memory systems and performance modeling support AI serving and architecture work.",
+      "availability_and_hardware_constraints": "CPU/simulator path first; GPU/board/fab optional only after funded access.",
+      "source_paths": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S14-B",
+          "allocated_human_hours": 12
+        },
+        {
+          "file": "frontier_v53_narrow_weekly_curriculum.json",
+          "json_path": "modules[51]",
+          "allocated_human_hours": 8
+        }
+      ],
+      "counting_rule": "The same build/reproduction counts once inside the host module, not again as a separate capstone, product or AI-agent hour."
+    },
+    {
+      "patch_id": "P03",
+      "status": "PROPOSED_NOT_APPLIED",
+      "source_stage_id": "S16",
+      "target_stage_ids": [
+        "S16"
+      ],
+      "target_module_ids": [
+        "S16-C"
+      ],
+      "narrow_route_target_ids": [],
+      "reason_for_placement": "S16-C explicitly offers a quantum substitution. This is an elective replacement within its 73 hours, not a new mandatory quantum track.",
+      "topic_and_competency": "Optional stabilizer QEC decoder and modular networking critique",
+      "prerequisite_chain": [
+        "linear algebra over finite fields",
+        "probability and graph matching",
+        "S16 optional quantum circuit diagnostic"
+      ],
+      "estimated_hours_new": 0,
+      "hours_recovered_by_consolidation": 0,
+      "within_existing_module_substitution_hours": {
+        "broad_route": 16,
+        "narrow_route_alternative": 0,
+        "do_not_add_routes_together": true
+      },
+      "proposed_displacement_not_yet_approved": "Replace introductory Shor survey time inside the optional quantum branch only after stabilizer and probability diagnostic; retain default HPC for the career route.",
+      "source_hour_basis": "Existing broad module hours from unified v53.2; narrow module hours from v53.1. Reallocations preserve each route's total if approved. No recovered-hour claim.",
+      "lecture_or_course_resource_with_verified_url": "https://ocw.mit.edu/courses/18-435j-quantum-computation-fall-2003/pages/lecture-notes/",
+      "primary_readings": [
+        "https://arxiv.org/abs/2406.19151",
+        "https://arxiv.org/abs/2102.13596"
+      ],
+      "official_documentation": [
+        "https://github.com/quantumlib/Stim"
+      ],
+      "reproducible_implementation": "Small-code syndrome stream with reference matching decoder; modular link budget as a documented paper calculation.",
+      "evaluation_protocol": "Compare one simple decoder with PyMatching on identical Stim noise models; sweep physical error and code size, report latency p50/p95 and logical error binomial intervals.",
+      "quantitative_pass_fail_gate": "Pass exhaustive syndromes for a toy code and reproducibility from clean environment; no latency-superiority claim unless uncertainty excludes no difference. Network figures labeled simulation.",
+      "artifact_to_ship": "Small-code syndrome stream with reference matching decoder; modular link budget as a documented paper calculation.",
+      "career_transfer_justification": "Decoder implementation reuses streaming, performance and verification skills.",
+      "availability_and_hardware_constraints": "Optional and simulation only. No QLAN hardware or fault-tolerant logical-qubit claim.",
+      "source_paths": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S16-C",
+          "allocated_human_hours": 16
+        }
+      ],
+      "counting_rule": "The same build/reproduction counts once inside the host module, not again as a separate capstone, product or AI-agent hour.",
+      "lecture_note_limit": "MIT lecture 16 notes on Quantum Error Correction are linked. Public video/subtitles for that item are not verified; this is an optional elective."
+    },
+    {
+      "patch_id": "P04",
+      "status": "PROPOSED_NOT_APPLIED",
+      "source_stage_id": "S15",
+      "target_stage_ids": [
+        "S15",
+        "S16"
+      ],
+      "target_module_ids": [
+        "S15-A",
+        "S16-A"
+      ],
+      "narrow_route_target_ids": [
+        "NM54"
+      ],
+      "reason_for_placement": "Control/state estimation and numerical methods are explicit before a learned physics surrogate; narrow NM54 already tracks timing.",
+      "topic_and_competency": "Physics-aligned surrogate and constrained digital twin",
+      "prerequisite_chain": [
+        "S4 calculus/probability",
+        "S15 dynamics/observability",
+        "S16 numerical discretization"
+      ],
+      "estimated_hours_new": 0,
+      "hours_recovered_by_consolidation": 0,
+      "within_existing_module_substitution_hours": {
+        "broad_route": 18,
+        "narrow_route_alternative": 8,
+        "do_not_add_routes_together": true
+      },
+      "proposed_displacement_not_yet_approved": "Replace repeated unconstrained simulator survey with one baseline solver-versus-surrogate case; keep numerical derivations.",
+      "source_hour_basis": "Existing broad module hours from unified v53.2; narrow module hours from v53.1. Reallocations preserve each route's total if approved. No recovered-hour claim.",
+      "lecture_or_course_resource_with_verified_url": "https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2022/",
+      "primary_readings": [
+        "https://arxiv.org/abs/2010.08895"
+      ],
+      "official_documentation": [
+        "https://docs.ros.org/en/jazzy/"
+      ],
+      "reproducible_implementation": "Seeded low-dimensional physical simulator, baseline numerical solver, learned surrogate and replayable sensor stream.",
+      "evaluation_protocol": "Hold out parameter ranges and perturb sensor timing; assess conservation residual, calibrated intervals, task error and p99 latency versus declared deadline.",
+      "quantitative_pass_fail_gate": "A zero-hard-deadline-miss acceptance suite and explicit fallback on unsafe residual; publish interval coverage and failure counterexamples. A surrogate improvement needs paired held-out evidence.",
+      "artifact_to_ship": "Seeded low-dimensional physical simulator, baseline numerical solver, learned surrogate and replayable sensor stream.",
+      "career_transfer_justification": "Combines numerical methods, control, distributed telemetry and reproducible AI.",
+      "availability_and_hardware_constraints": "Simulation and public data; no unsafe actuation or real-time guarantee on general hardware.",
+      "source_paths": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S15-A",
+          "allocated_human_hours": 6
+        },
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S16-A",
+          "allocated_human_hours": 12
+        },
+        {
+          "file": "frontier_v53_narrow_weekly_curriculum.json",
+          "json_path": "modules[53]",
+          "allocated_human_hours": 8
+        }
+      ],
+      "counting_rule": "The same build/reproduction counts once inside the host module, not again as a separate capstone, product or AI-agent hour.",
+      "nonoverlap_note": "NM54 reserves a distinct eight-hour timing/physics-surrogate exercise after P01's eight hours; both fit inside 120 hours only if their proposed displacements are accepted."
+    },
+    {
+      "patch_id": "P05",
+      "status": "PROPOSED_NOT_APPLIED",
+      "source_stage_id": "S15",
+      "target_stage_ids": [
+        "S15"
+      ],
+      "target_module_ids": [
+        "S15-B",
+        "S15-D"
+      ],
+      "narrow_route_target_ids": [],
+      "reason_for_placement": "S15 has real-time integration and deployment/failure analysis; adding a separate early robotics course would duplicate prerequisites.",
+      "topic_and_competency": "Heterogeneous fleet and partition-tolerant field-service simulation",
+      "prerequisite_chain": [
+        "S3 distributed failure/backpressure",
+        "S15 perception/control",
+        "S15 safety and rollback"
+      ],
+      "estimated_hours_new": 0,
+      "hours_recovered_by_consolidation": 0,
+      "within_existing_module_substitution_hours": {
+        "broad_route": 14,
+        "narrow_route_alternative": 0,
+        "do_not_add_routes_together": true
+      },
+      "proposed_displacement_not_yet_approved": "Substitute a portion of optional integration survey with an isolated fleet simulator; preserve SLAM, geometry and single-robot control gates.",
+      "source_hour_basis": "Existing broad module hours from unified v53.2; narrow module hours from v53.1. Reallocations preserve each route's total if approved. No recovered-hour claim.",
+      "lecture_or_course_resource_with_verified_url": "https://ocw.mit.edu/courses/6-4210-robotic-manipulation-fall-2022/",
+      "primary_readings": [],
+      "official_documentation": [
+        "https://docs.ros.org/en/jazzy/"
+      ],
+      "reproducible_implementation": "Two-agent task scheduler with event trace, QoS settings, lease expiry and partition recovery.",
+      "evaluation_protocol": "Compare centralized and decentralized dispatch under identical task arrivals, partitions and sensor delays; score deadline misses, task completion and unsafe conflicts.",
+      "quantitative_pass_fail_gate": "No unsafe conflict in frozen fault suite; report p95 latency, success by failure class and at least one documented counterexample. Claims restricted to simulation.",
+      "artifact_to_ship": "Two-agent task scheduler with event trace, QoS settings, lease expiry and partition recovery.",
+      "career_transfer_justification": "Transfers distributed systems and incident recovery into embodied fleet products.",
+      "availability_and_hardware_constraints": "No robot hardware requirement. Keep permissions and network simulator isolated.",
+      "source_paths": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S15-B",
+          "allocated_human_hours": 8
+        },
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S15-D",
+          "allocated_human_hours": 6
+        }
+      ],
+      "counting_rule": "The same build/reproduction counts once inside the host module, not again as a separate capstone, product or AI-agent hour."
+    },
+    {
+      "patch_id": "P06",
+      "status": "PROPOSED_NOT_APPLIED",
+      "source_stage_id": "S14",
+      "target_stage_ids": [
+        "S14"
+      ],
+      "target_module_ids": [
+        "S14-C"
+      ],
+      "narrow_route_target_ids": [
+        "NM53",
+        "NM55"
+      ],
+      "reason_for_placement": "Signals and fixed point precede RF; the narrow N10 route already owns RF impairment simulation and scheduling.",
+      "topic_and_competency": "RF neural robustness with ISAC/RIS/FR3 watchlist",
+      "prerequisite_chain": [
+        "S4 probability/statistics",
+        "S14 signals and sampling",
+        "NM53 I/Q calibration before NM55 network experiment"
+      ],
+      "estimated_hours_new": 0,
+      "hours_recovered_by_consolidation": 0,
+      "within_existing_module_substitution_hours": {
+        "broad_route": 6,
+        "narrow_route_alternative": 16,
+        "do_not_add_routes_together": true
+      },
+      "proposed_displacement_not_yet_approved": "Within existing RF work, replace a redundant overview with one classical-versus-learned channel test; FR3/RIS/ISAC remain elective simulation cases.",
+      "source_hour_basis": "Existing broad module hours from unified v53.2; narrow module hours from v53.1. Reallocations preserve each route's total if approved. No recovered-hour claim.",
+      "lecture_or_course_resource_with_verified_url": "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/video_galleries/lecture-videos/",
+      "primary_readings": [
+        "https://ieeexplore.ieee.org/document/11273187/"
+      ],
+      "official_documentation": [
+        "https://developer.nvidia.com/sionna"
+      ],
+      "reproducible_implementation": "Licensed or synthetic I/Q dataset, reproducible baseline DSP detector and small neural comparator; optional RIS phase-quantization scenario.",
+      "evaluation_protocol": "Split by device/session/channel, not random frames; sweep SNR and frequency offset. Report classification/calibration, sensing-vs-throughput frontier and realistic path-loss sensitivity.",
+      "quantitative_pass_fail_gate": "No leakage across device/session/channel; publish paired held-out uncertainty, seed variance, OOD failures and a falsifiable next hypothesis. Never assert FR3 allocation or hardware gain from simulation.",
+      "artifact_to_ship": "Licensed or synthetic I/Q dataset, reproducible baseline DSP detector and small neural comparator; optional RIS phase-quantization scenario.",
+      "career_transfer_justification": "RF channel shift is a transferable test of ML robustness, DSP and edge deployment.",
+      "availability_and_hardware_constraints": "Simulation first. Check local spectrum law and equipment access before SDR/RF experiments.",
+      "source_paths": [
+        {
+          "file": "frontier-v53-unified-curriculum(3).json",
+          "json_path": "modules.S14-C",
+          "allocated_human_hours": 6
+        },
+        {
+          "file": "frontier_v53_narrow_weekly_curriculum.json",
+          "json_path": "modules[52]",
+          "allocated_human_hours": 8
+        },
+        {
+          "file": "frontier_v53_narrow_weekly_curriculum.json",
+          "json_path": "modules[54]",
+          "allocated_human_hours": 8
+        }
+      ],
+      "counting_rule": "The same build/reproduction counts once inside the host module, not again as a separate capstone, product or AI-agent hour."
+    }
+  ],
+  "verified_educational_resources": [
+    {
+      "id": "MIT_CONTROL",
+      "url": "https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2022/",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "MIT_ROBOT",
+      "url": "https://ocw.mit.edu/courses/6-4210-robotic-manipulation-fall-2022/",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "BERKELEY_RL",
+      "url": "https://rail.eecs.berkeley.edu/deeprlcourse-fa21/",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "MIT_SIGNALS",
+      "url": "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/video_galleries/lecture-videos/",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "MIT_ARCH",
+      "url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "DREAMER",
+      "url": "https://arxiv.org/abs/2301.04104",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "DIFFUSION",
+      "url": "https://arxiv.org/abs/2303.04137",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "IJEPA",
+      "url": "https://arxiv.org/abs/2301.08243",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "UCIe",
+      "url": "https://www.uciexpress.org/specifications",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "OCP_MX",
+      "url": "https://www.opencompute.org/documents/ocp-microscaling-formats-mx-v1-0-spec-final-pdf",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "IMEC_BPDN",
+      "url": "https://www.imec-int.com/en/articles/backside-power-delivery-options-dtco-study",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "QUANTUM_STIM",
+      "url": "https://github.com/quantumlib/Stim",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "QUANTUM_MATCH",
+      "url": "https://quantum-journal.org/papers/q-2025-01-20-1600/",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "QUANTUM_LDPC",
+      "url": "https://arxiv.org/abs/2406.19151",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "QUANTUM_LAN",
+      "url": "https://arxiv.org/abs/2102.13596",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "MIT_QEC_NOTES",
+      "url": "https://ocw.mit.edu/courses/18-435j-quantum-computation-fall-2003/pages/lecture-notes/",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "FNO",
+      "url": "https://arxiv.org/abs/2010.08895",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "ROS",
+      "url": "https://docs.ros.org/en/jazzy/",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "SIONNA",
+      "url": "https://developer.nvidia.com/sionna",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    },
+    {
+      "id": "RF_ISAC",
+      "url": "https://ieeexplore.ieee.org/document/11273187/",
+      "checked_date": "2026-10-15",
+      "verification_scope": "Official course/standard/documentation page or primary paper/abstract entry located; individual video subtitles, exercise numbering, full paper access and live lab availability require item-level checking.",
+      "language": "English for linked US lecture series; English page for other entries",
+      "access": "public_entry_page; paper full-text access may vary"
+    }
+  ],
+  "projects_and_reproduction_gates": [
+    {
+      "patch_id": "P01",
+      "artifact": "Small seeded simulator with classical state estimator, dynamics learner and policy; machine-readable trajectories and manifest.",
+      "gate": "Run all fixed-seed tests and a distinct held-out world; only claim an improvement when a paired confidence interval for task success excludes zero and no hard safety invariant fails. Otherwise mark exploratory.",
+      "count_once": true
+    },
+    {
+      "patch_id": "P02",
+      "artifact": "Parameterized low-bit GEMM and chiplet-link model; optional bounded backside IR-drop spreadsheet with stated simplifications.",
+      "gate": "All specified MX encodings round-trip according to the OCP reference; unit and randomized shape tests pass; publish throughput/error Pareto and p95 transfer estimate. No silicon PPA claim.",
+      "count_once": true
+    },
+    {
+      "patch_id": "P03",
+      "artifact": "Small-code syndrome stream with reference matching decoder; modular link budget as a documented paper calculation.",
+      "gate": "Pass exhaustive syndromes for a toy code and reproducibility from clean environment; no latency-superiority claim unless uncertainty excludes no difference. Network figures labeled simulation.",
+      "count_once": true
+    },
+    {
+      "patch_id": "P04",
+      "artifact": "Seeded low-dimensional physical simulator, baseline numerical solver, learned surrogate and replayable sensor stream.",
+      "gate": "A zero-hard-deadline-miss acceptance suite and explicit fallback on unsafe residual; publish interval coverage and failure counterexamples. A surrogate improvement needs paired held-out evidence.",
+      "count_once": true
+    },
+    {
+      "patch_id": "P05",
+      "artifact": "Two-agent task scheduler with event trace, QoS settings, lease expiry and partition recovery.",
+      "gate": "No unsafe conflict in frozen fault suite; report p95 latency, success by failure class and at least one documented counterexample. Claims restricted to simulation.",
+      "count_once": true
+    },
+    {
+      "patch_id": "P06",
+      "artifact": "Licensed or synthetic I/Q dataset, reproducible baseline DSP detector and small neural comparator; optional RIS phase-quantization scenario.",
+      "gate": "No leakage across device/session/channel; publish paired held-out uncertainty, seed variance, OOD failures and a falsifiable next hypothesis. Never assert FR3 allocation or hardware gain from simulation.",
+      "count_once": true
+    }
+  ],
+  "top_three_expected_value_strategies": [
+    {
+      "strategy_name": "A Direct API and transcript-first",
+      "assumptions": "100k baseline tokens/agent-hour; 80/20 in/out; 25% retry; fixed allowances as recorded",
+      "benefits": "Lowest modeled fixed cost and job readiness retained",
+      "monetary_and_time_cost": {
+        "baseline_tokens_million": 16.0333,
+        "total_tokens_with_extra_and_retries_million": 28.0583,
+        "api_cost_usd": 27.9701,
+        "api_allowance_usd": 30.71,
+        "headroom_usd": 2.7398,
+        "minimum_total_ceiling_usd": 71.9557
+      },
+      "estimated_utility_score_0_100": null,
+      "strongest_evidence": "Official prices and source curriculum; no task outcome measurement",
+      "main_failure_modes": [
+        "Long output/reasoning",
+        "Missing visual lecture content"
+      ],
+      "conditions_for_success": "Accepted outputs and unaided learning gates pass on held-out work",
+      "regret_under_adversarial_cases": null,
+      "decision_rationale": "Default until trial demonstrates marginal improvement"
+    },
+    {
+      "strategy_name": "B Gemini visual pilot",
+      "assumptions": "Replace 25% of curriculum extra token pool; introductory Gemini 3.8 price",
+      "benefits": "Native audio/video/PDF support on targeted clips",
+      "monetary_and_time_cost": {
+        "baseline_tokens_million": 16.0333,
+        "total_tokens_with_extra_and_retries_million": 28.0583,
+        "api_cost_usd": 29.1245,
+        "api_allowance_usd": 30.71,
+        "headroom_usd": 1.5854,
+        "minimum_total_ceiling_usd": 73.2384
+      },
+      "estimated_utility_score_0_100": null,
+      "strongest_evidence": "Google model and price specifications; quality delta unmeasured",
+      "main_failure_modes": [
+        "Full-video static token blowout",
+        "Omissions/hallucinations",
+        "January 2027 price step"
+      ],
+      "conditions_for_success": "Improves held-out source fidelity enough to offset marginal cost and repair",
+      "regret_under_adversarial_cases": null,
+      "decision_rationale": "Small reversible trial with explicit maximum spend"
+    },
+    {
+      "strategy_name": "C OpenCode Go heavy-coding contingent",
+      "assumptions": "Subscription $10/month; quotas and account access verified before use",
+      "benefits": "Potential high request capacity for eligible coding models and provider diversification",
+      "monetary_and_time_cost": {
+        "subscription_usd_month": 10,
+        "incremental_after_actual_displaced_calls": null
+      },
+      "estimated_utility_score_0_100": null,
+      "strongest_evidence": "Official subscription pricing/limits, no measured accepted-task rate",
+      "main_failure_modes": [
+        "Quota constraints",
+        "No displacement of $10 direct cost",
+        "Data terms incompatible with private source"
+      ],
+      "conditions_for_success": "At least $10 comparable spend actually displaced, same or better accepted quality and privacy",
+      "regret_under_adversarial_cases": null,
+      "decision_rationale": "Keep as contingency, not a current purchase"
+    }
+  ],
+  "adversarial_scenarios": [
+    {
+      "id": "PRICE_2027_GEMINI",
+      "mechanism": "Gemini Flash introductory rate ends",
+      "quantitative_effect": "At unchanged 80/20 tokens, blended Gemini rises $1.35 to $2.70 per million; pilot deltas must be repriced.",
+      "probability": null
+    },
+    {
+      "id": "ARGON_DEC",
+      "mechanism": "Argon promotional rate ends 1 Dec 2026",
+      "quantitative_effect": "Its per-million input/output doubles; base premium blend rises according to 15% token share.",
+      "probability": null
+    },
+    {
+      "id": "DS_PEAK",
+      "mechanism": "DeepSeek calls land in peak windows",
+      "quantitative_effect": "Input/output rate doubles for that share; scheduling can mitigate only nonurgent tasks.",
+      "probability": null
+    },
+    {
+      "id": "RAW_VIDEO",
+      "mechanism": "Ten hours of static low-resolution video each day",
+      "quantitative_effect": "108M input tokens/month ≈$81 introductory standard input charge before outputs.",
+      "probability": null
+    },
+    {
+      "id": "OUTPUT_VOLUME",
+      "mechanism": "Higher effort generates more reasoning/output tokens",
+      "quantitative_effect": "80/20 pricing assumption breaks; recompute on billed mix.",
+      "probability": null
+    },
+    {
+      "id": "HAIKU_LONG_CONTEXT",
+      "mechanism": "Prompt exceeds 100k tokens",
+      "quantitative_effect": "Published Haiku long-context rates rise; split or route with verified fidelity.",
+      "probability": null
+    },
+    {
+      "id": "SOL_LUNA_LONG_CONTEXT",
+      "mechanism": "Prompt exceeds 272k tokens",
+      "quantitative_effect": "Published OpenAI long-context multiplier applies to full request.",
+      "probability": null
+    },
+    {
+      "id": "GO_QUOTA",
+      "mechanism": "OpenCode Go five-hour or monthly limit reached",
+      "quantitative_effect": null,
+      "decision_trigger": "Require direct API fallback and no duplicated quota credit.",
+      "probability": null
+    },
+    {
+      "id": "PROVIDER_OUTAGE",
+      "mechanism": "One provider unavailable",
+      "quantitative_effect": null,
+      "decision_trigger": "Fail over only with compatible data boundary and capped spend.",
+      "probability": null
+    },
+    {
+      "id": "RETRIEVAL_CONTAMINATION",
+      "mechanism": "Untrusted page or repo content injects instructions",
+      "quantitative_effect": null,
+      "decision_trigger": "Treat retrieved bytes as data; source verification and sandbox.",
+      "probability": null
+    },
+    {
+      "id": "HUMAN_REPAIR",
+      "mechanism": "Generated code/summary requires substantial correction",
+      "quantitative_effect": null,
+      "decision_trigger": "Include repair minutes in accepted-cost metric.",
+      "probability": null
+    },
+    {
+      "id": "STUDY_18H",
+      "mechanism": "Employed human core remains 18 hours/week",
+      "quantitative_effect": "7200/18=400 active weeks before gate delays, ~8.70 years at 46 active weeks/year.",
+      "probability": null
+    },
+    {
+      "id": "NO_HARDWARE",
+      "mechanism": "GPU/robot/SDR/quantum lab access absent",
+      "quantitative_effect": null,
+      "decision_trigger": "Keep simulation and published measurements; do not claim silicon or RF deployment.",
+      "probability": null
+    },
+    {
+      "id": "PREREQ_FAIL",
+      "mechanism": "Diagnostic on controls/linear algebra/stabilizers fails",
+      "quantitative_effect": null,
+      "decision_trigger": "Repair prerequisite from reserve or defer elective.",
+      "probability": null
+    },
+    {
+      "id": "RESEARCH_OBSOLESCENCE",
+      "mechanism": "Fast-moving frontier paper loses transfer value",
+      "quantitative_effect": null,
+      "decision_trigger": "Quarterly watchlist review, retire without milestone penalty.",
+      "probability": null
+    },
+    {
+      "id": "SERVICE_SECURITY",
+      "mechanism": "A generated deployment fails security/recovery gate",
+      "quantitative_effect": null,
+      "decision_trigger": "Stop release, rollback, preserve fault reproduction.",
+      "probability": null
+    }
+  ],
+  "uncertainties_and_revalidation_triggers": [
+    "Current provider prices/quotas should be checked at purchase and at Gemini/Argon promotional change dates.",
+    "The 100k tokens per agent-hour and 25% retry factors are sensitivity assumptions, not measured distributions.",
+    "End-to-end 10-video/day study throughput and retention need actual timestamped source fidelity and unaided comprehension checks.",
+    "Specific HEPA acronym remains unresolved; no silent JEPA substitution.",
+    "Curriculum's 14468 inherited base hours lack full ancestral line-item ledger, as disclosed in unified open_gap_register.",
+    "Private sx contents and current GitHub version are unavailable; inspect before applying code-facing patches.",
+    "Educational course entry-page availability does not prove every lecture has English subtitles.",
+    "RF FR3 is a research band label; actual local regulation and licensing must be checked before field work."
+  ],
+  "final_decision": {
+    "stack": "A baseline with a small, capped B multimodal evaluation using direct Google API only where captions miss technical visuals; DeepSeek off-peak remains volume coding route. No Go subscription until break-even observed.",
+    "budget": "$75/month unemployed or ~$80/month employed at illustrative 100k tokens/agent-hour; use $70 only if logged token intensity stays under its supported threshold.",
+    "curriculum": "Retain N0-N11 job path and broad S0-S17 as advanced reference. Offer P01-P06 as conditional within-module substitutions, with no new required hours. Keep QLAN, FR3 regulatory assumptions, multiplayer world models and speculative transistor scaling in watchlist unless resources and gates justify a specialist branch.",
+    "recheck_after": "14 days of task- and provider-level token, repair and accepted-output logs; next model price transition."
+  },
+  "rejection_of_further_increments": {
+    "stack": "Reject a new model/subscription unless marginal cost per accepted deliverable falls with equal or better source fidelity, security and review cost on held-out tasks.",
+    "curriculum": "Reject a new mandatory module until prerequisites, existing coverage, displaced hours, runnable artifact and independently scored gate all pass.",
+    "statistics": "No empirical quality interval, overfitting rate, 1-3% error bound, Bayesian best-plan probability or original-research superiority is claimed without observed data."
+  }
+}
